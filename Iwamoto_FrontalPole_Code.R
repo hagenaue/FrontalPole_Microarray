@@ -10,31 +10,17 @@ library(plyr)
 library(affy)
 
 #cdf and the chip.
-
-# pd.hgu133plus2.hs.ensg_25.0.0.tar.gz
-# hgu133plus2hsensgcdf_25.0.0.tar.gz
-# hgu133plus2hsensgprobe_25.0.0.tar.gz
-
-install.packages("C:/Users/Frosty/Desktop/Research/Summer 2021 Frontal Pole Research/FrontalPole_Microarray/pd.hgu133plus2.hs.ensg_25.0.0.tar.gz", repos = NULL, type = "source")
-install.packages("C:/Users/Frosty/Desktop/Research/Summer 2021 Frontal Pole Research/FrontalPole_Microarray/hgu133plus2hsensgprobe_25.0.0.tar.gz", repos = NULL, type = "source")
-install.packages("C:/Users/Frosty/Desktop/Research/Summer 2021 Frontal Pole Research/FrontalPole_Microarray/hgu133plus2hsensgcdf_25.0.0.tar.gz", repos = NULL, type = "source")
+install.packages("C:/Users/Frosty/Desktop/Research/Summer 2021 Frontal Pole Research/FrontalPole_Microarray/pd.hgu95av2.hs.entrezg_25.0.0.tar.gz", repos = NULL, type = "source")
+install.packages("C:/Users/Frosty/Desktop/Research/Summer 2021 Frontal Pole Research/FrontalPole_Microarray/hgu95av2hsentrezgprobe_25.0.0.tar.gz", repos = NULL, type = "source")
+install.packages("C:/Users/Frosty/Desktop/Research/Summer 2021 Frontal Pole Research/FrontalPole_Microarray/hgu95av2hsentrezgcdf_25.0.0.tar.gz", repos = NULL, type = "source")
 
 #Changes working directory to where the .cel files are located
 setwd("C:/Users/Frosty/Desktop/Research/Summer 2021 Frontal Pole Research/FrontalPole_Microarray/Iwamoto_GSE12654")
 
 #Reads .CEL files into an Affybatch
-data2<-ReadAffy(cdfname ="hgu133plus2hsensg")
+data2<-ReadAffy(cdfname ="hgu95av2hsentrezg")
 str(data2)
 data2
-
-# AffyBatch object
-# size of arrays=640x640 features (40 kb)
-# cdf=hgu133plus2hsensg (19976 affyids)
-# number of samples=50
-# number of genes=19976
-# annotation=hgu133plus2hsensg
-# notes=
-
 
 #Converts the data2 AffyBatch into an ExpressionSet object using the robust multi-array average (RMA) expression measure. The expression measure is given in log base 2 scale.
 eset2 <- rma(data2)
@@ -46,23 +32,13 @@ write.csv(RMAExpression_customCDFplus2, "RMAExpression_customCDFplus2.csv")
 
 
 ScanDate<-protocolData(data2)$ScanDate
-#Yep, there are definitely different scan dates here. And different date formats :(
-#Oh wait - I think they are mostly just divided up by region
-cbind(Tissue, ScanDate)
-#Yep. Alright, never mind.
-
-#Old code:
-# library(reshape2)
-# ScanDate_Split<-colsplit(ScanDate, pattern=" ", c("ScanDate", "ScanTime"))
-# table(ScanDate_Split$ScanDate)
 
 
 #####################################################
 ## This is an alternative version of the analysis that I ran to see if controlling for RNA degradation improved the results (especially since the PMI is so long for these analyses). Controlling for RIN improves our analyses of the Illumina data, but those results are more sensitive to the reliability of individual probes, whereas Affy uses probesets.
 #This dataset actually has RIN values that accompany the data - I'll be curious to see how strongly they predict this.
 
-source("https://bioconductor.org/biocLite.R")
-biocLite("AffyRNADegradation")
+BiocManager::install("AffyRNADegradation")
 library(AffyRNADegradation)
 
 tongs <- GetTongs(data2, chip.idx = 4)
@@ -74,81 +50,11 @@ rna.deg<- RNADegradation(data2, location.type = "index")
 RNADegradPerSample<-d(rna.deg)
 str(RNADegradPerSample)
 
-png("RNADegradPerSampleVsRIN.png")
-plot(RNADegradPerSample~RIN)
-dev.off()
-#Definitely not perfect I wonder how much of that is due to the custom .cdf. I should come back later and try this without the custom .cdf.
-# summary.lm(lm(RNADegradPerSample~RIN))
-# Coefficients:
-#   Estimate Std. Error t value Pr(>|t|)    
-# (Intercept) 0.136806   0.021866   6.256 2.29e-09 ***
-#   RIN         0.037989   0.002841  13.372  < 2e-16 ***
-#   ---
-#   Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-# 
-# Residual standard error: 0.03419 on 203 degrees of freedom
-# Multiple R-squared:  0.4683,	Adjusted R-squared:  0.4657 
-# F-statistic: 178.8 on 1 and 203 DF,  p-value: < 2.2e-16
 
-png("RNADegradPerSampleVsPMI.png")
-plot(RNADegradPerSample~PMI)
-dev.off()
-#Interesting - the correlation with PMI is almost non-existent.
-png("RINVsPMI.png")
-plot(RIN~PMI)
-dev.off()
 
-#I'm going to test whether the custom cdf is screwing up the RNAdeg calculation:
-setwd("~/Documents/Microarray Gen/Lanz_GSE53987/RawData/JustDLPFC")
 
-data2<-ReadAffy()
-# AffyBatch object
-# size of arrays=1164x1164 features (44 kb)
-# cdf=HG-U133_Plus_2 (54675 affyids)
-# number of samples=68
-# number of genes=54675
-# annotation=hgu133plus2
-# notes=
-#eset2 <- rma(data2)
-rna.deg<- RNADegradation(data2, location.type = "index")
-RNADegradPerSample2<-d(rna.deg)
-str(RNADegradPerSample2)
-write.csv(RNADegradPerSample2, "RNADegradSample2.csv")
 
-png("RNADegradPerSampleNoCustomCDFVsRIN.png")
-plot(RNADegradPerSample2~RIN)
-dev.off()
 
-png("RNADegradPerSampleNoCustomCDFVsPMI.png")
-plot(RNADegradPerSample2~PMI)
-dev.off()
-
-#Conclusion: Calculating RNADegradation using the original .cdf and the custom .cdf makes little difference.
-rm(data2)
-
-###################
-setwd("~/Documents/Microarray Gen/Lanz_GSE53987/DLPFC")
-Lanz_SampleCharacteristics<-data.frame(Lanz_SampleCharacteristics, RNADegradPerSample)
-write.csv(Lanz_SampleCharacteristics, "Lanz_SampleCharacteristics_DLPFC.csv")
-
-#Old code:
-#' data3<-afbatch(rna.deg)
-#' eset2 <- rma(data3)
-#' write.exprs(eset2,file="data_customCDFplus2_RNADegCNTRL.txt")
-#' RMAExpression_customCDFplus2_RNADegCNTRL<-read.delim("data_customCDFplus2_RNADegCNTRL.txt", sep="\t")
-#' str(RMAExpression_customCDFplus2_RNADegCNTRL)
-#' #'data.frame':	19764 obs. of  60 variables:
-#' write.csv(RMAExpression_customCDFplus2_RNADegCNTRL, "RMAExpression_customCDFplus2_RNADegCNTRL.csv")
-#' RMAExpression_customCDFplus2<-RMAExpression_customCDFplus2_RNADegCNTRL
-
-#Old comments:
-#Alright - after snooping at the PCA vs. RNA degradation plots, it looks like they were actually aggravated by this correction. I suspect it is because we are using a custom .cdf and the correction that they are applying is based on the index of the probe within the probeset - i.e. probably references the original probeset and not the custom .cdf mapping of probe to transcript.
-#Here's some quotes from the users manual to back up my suspicion:
-# "Instead of using the probe index within the probeset as argument of the degra- dation degree, one can use the actual probe locations within the transcript. We have pre-computed the distance of each probe to the 3’ end of its target transcript for all Affymetrix 3’ expression arrays. These probe location files are available under the URL http://www.izbi.uni-leipzig.de/downloads_ links/programs/rna_integrity.php."
-#"It is possible to use custom probe locations, for example if one wishes to analyze custom built microarrays or if one relies on alternative probe annotations."
-#My thought: this sort of problem is likely to bias the results for any particular probeset, but the average amount of degradation across probesets per individual sample is likely to be unaltered - I think I should probably just include this as a covariate in my analyses instead of using their corrected Affybatch values.
-
-#####################################################
 
 
 head(RMAExpression_customCDFplus2)
