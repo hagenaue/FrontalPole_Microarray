@@ -12,28 +12,28 @@ Meta(GSMList(gse)$GSM317649)$characteristics_ch1
 # [1] "prefrontal cortex (BA10)" "control"
 
 
-sub("tissue: ","", Meta(GSMList(gse)$GSM317649)$characteristics_ch1[1])
-sub("diagnosis: ","", Meta(GSMList(gse)$GSM317649)$characteristics_ch1[2], fixed = T)
+New_Iwamoto_MetaData<-read.csv("demo_kato_short.csv", header=T, stringsAsFactors=FALSE)
 
-SampleID<-as.matrix(names(GSMList(gse)))
-Tissue<-matrix("a", nrow=50, ncol=1)
-Diagnosis2<-matrix("a", nrow=50, ncol=1)
-
-
-i<-1
-for(i in c(1:50)){
-  Tissue[i]<-sub("tissue: ","", Meta(GSMList(gse)[[i]])$characteristics_ch1[1])
-  Diagnosis2[i]<-sub("disease state: ","", Meta(GSMList(gse)[[i]])$characteristics_ch1[2], fixed=T)
-}
+SampleID<-as.matrix(New_Iwamoto_MetaData$Trimmed_Sample_id)
+Gender<-as.matrix(New_Iwamoto_MetaData$Trimmed_Sex)
+Age<-as.matrix(New_Iwamoto_MetaData$Trimmed_Age)
+BrainpH<-as.matrix(New_Iwamoto_MetaData$Trimmed_Brain.PH)
+PMI<-as.matrix(New_Iwamoto_MetaData$Trimmed_PMI..h.)
+Diagnosis2<-as.matrix(New_Iwamoto_MetaData$Trimmed_Profile)
+LeftBrainStatus<-as.matrix(New_Iwamoto_MetaData$Trimmed_Left.Brain)
+SuicideStatus<-as.matrix(New_Iwamoto_MetaData$Trimmed_Suicide.Status)
+PsychoticFeature<-as.matrix(New_Iwamoto_MetaData$Trimmed_Psychotic.Feature)
+RateofDeath<-as.matrix(New_Iwamoto_MetaData$Trimmed_Rate.of.Death)
+SmokingatTimeofDeath<-as.matrix(New_Iwamoto_MetaData$Trimmed_Smoking.at.Time.of.Death)
+LifetimeAlcohol<-as.matrix(New_Iwamoto_MetaData$Trimmed_Lifetime.Alcohol)
+LifetimeDrugs<-as.matrix(New_Iwamoto_MetaData$Trimmed_Lifetime.Drugs)
 
 Diagnosis<-Diagnosis2
-Diagnosis<-relevel(as.factor(Diagnosis), ref="control")
+Diagnosis<-relevel(as.factor(Diagnosis), ref="Control")
 
-Iwamoto_SampleCharacteristics<-data.frame(SampleID, Tissue, Diagnosis, stringsAsFactors=F)
+Iwamoto_SampleCharacteristics<-data.frame(SampleID, Gender, Age, BrainpH, PMI, Diagnosis, LeftBrainStatus, SuicideStatus, PsychoticFeature, RateofDeath, SmokingatTimeofDeath, LifetimeAlcohol, LifetimeDrugs)
 
 head(Iwamoto_SampleCharacteristics)
-
-write.csv(Iwamoto_SampleCharacteristics, "Iwamoto_SampleCharacteristics.csv")
 
 library(org.Hs.eg.db)
 library(plyr)
@@ -51,16 +51,18 @@ data2
 
 ScanDate2<-protocolData(data2)$ScanDate
 ScanDateDayOnly2<-matrix("a", nrow=50, ncol=1)
+ScanDate<-matrix("a", nrow=50, ncol=1)
 
 i<-1
 for(i in c(1:50)){
   ScanDateDayOnly2[i]<-substr(ScanDate2[i], 1, 8)
+  ScanDate[i]<-ScanDate2[i]
 }
 
-ScanDate<-ScanDate2
-ScanDate<-relevel(as.factor(ScanDate2), ref= "08/24/01 15:28:22")
-ScanDateDayOnly<-ScanDateDayOnly2
-ScanDateDayOnly<-relevel(as.factor(ScanDateDayOnly), ref="08/24/01")
+#ScanDate<-ScanDate2
+#ScanDate<-relevel(as.factor(ScanDate2), ref= "08/24/01 15:28:22")
+#ScanDateDayOnly<-ScanDateDayOnly2
+#ScanDateDayOnly<-relevel(as.factor(ScanDateDayOnly), ref="08/24/01")
 
 #Converts the data2 AffyBatch into an ExpressionSet object using the robust multi-array average (RMA) expression measure. 
 #The expression measure is given in log base 2 scale.
@@ -105,19 +107,37 @@ EntrezVsGeneSymbol<-data.frame(EntrezGeneID, GeneSymbol, stringsAsFactors=F)
 
 RMAExpression_customCDFAnnotation2plus2<-join(RMAExpression_customCDFAnnotationplus2, EntrezVsGeneSymbol, by="EntrezGeneID", type="left")
 
+sum(is.na(RMAExpression_customCDFAnnotation2plus2[,3])==F)
+#[1] 8484
+dim(RMAExpression_customCDFAnnotation2plus2)
+#[1] 8551     3
 write.csv(RMAExpression_customCDFAnnotation2plus2, "RMAExpression_customCDFAnnotation2plus2.csv")
 
 SignalSortedNoNA3<-as.matrix(RMAExpression_customCDFplus2[,-1])
 
+cbind(SampleID, colnames(SignalSortedNoNA3))
+
 setwd("C:/Users/Frosty/Desktop/Research/Summer 2021 Frontal Pole Research/FrontalPole_Microarray/Iwamoto_GSE12654/Graphs")
 
+#Quality Control
+
+RMAExpression_customCDFAnnotation2plus2[RMAExpression_customCDFAnnotation2plus2[,3]=="XIST",]
+
+RMAExpression_customCDFAnnotation2plus2[RMAExpression_customCDFAnnotation2plus2[,3]=="XIST",][173,]
+
+#checking for gender switches
+#not working for some reason
+png("XIST_vs_Gender_customCDFplus2.png")
+boxplot(SignalSortedNoNA3[RMAExpression_customCDFAnnotation2plus2[,3]=="XIST",][173,]~Gender, col=2)
+dev.off()
+#
 
 #Variable Analysis
-SubjectFactorVariables<-cbind(Diagnosis, ScanDateDayOnly)
-colnames(SubjectFactorVariables)<-c("Diagnosis", "ScanDateDayOnly")
+SubjectFactorVariables<-cbind(Diagnosis, Gender, LeftBrainStatus, SuicideStatus, PsychoticFeature, RateofDeath, SmokingatTimeofDeath, LifetimeAlcohol, LifetimeDrugs, ScanDate)
+colnames(SubjectFactorVariables)<-c("Diagnosis", "Gender", "LeftBrainStatus", "SuicideStatus", "PsychoticFeature", "RateofDeath", "SmokingatTimeofDeath", "LifetimeAlcohol", "LifetimeDrugs", "ScanDate")
 
-SubjectContinuousVariables<-cbind(RNADegradPerSample)
-colnames(SubjectContinuousVariables)<-c("RNADegradPerSample")
+SubjectContinuousVariables<-cbind(BrainpH, PMI, Age, RNADegradPerSample)
+colnames(SubjectContinuousVariables)<-c("BrainpH", "PMI", "Age", "RNADegradPerSample")
 
 for (i in 1:length(SubjectContinuousVariables[1,])){
   png(paste(paste("Histogram of", colnames(SubjectContinuousVariables)[i], sep="  "), "png", sep="."))	
@@ -148,12 +168,20 @@ for (i in 1:length(SubjectContinuousVariables[1,])){
 }
 
 #Creating a text file of contingency tables to visually examine the relationships between categorical subject variables:
-CrossTabsIV<-file("14 Cross Tabs Between Subject Factors.txt")
+CrossTabsIV<-file("Cross Tabs Between Subject Factors.txt")
 out<-c(
   capture.output(
     
     summary(Diagnosis),
-    summary(ScanDateDayOnly),
+    summary(Gender),
+    summary(ScanDate),
+    summary(LeftBrainStatus),
+    summary(SuicideStatus),
+    summary(PsychoticFeature),
+    summary(RateofDeath),
+    summary(SmokingatTimeofDeath),
+    summary(LifetimeAlcohol),
+    summary(LifetimeDrugs),
     
     for (i in 1:length(SubjectFactorVariables[1,])){
       for(j in 1:length(SubjectFactorVariables[1,])){
@@ -165,18 +193,18 @@ out<-c(
     }
   )
 )
-cat(out, file="14 Cross Tabs Between Subject Factors.txt", sep="\n", append=TRUE)
+cat(out, file="Cross Tabs Between Subject Factors.txt", sep="\n", append=TRUE)
 close(CrossTabsIV)
 rm(out)
 
 library(car)
 
-StatisticalRelationshipsIV<-file("14 Statistical Relationships between Subject Variables.txt")
+StatisticalRelationshipsIV<-file("Statistical Relationships between Subject Variables.txt")
 out<-c(
   
   capture.output(
     #Calculating the variance inflation factor (vif) to determine which subject variables are highly related to other subject variables in the data set. Most important, of course, is whether any of the subject variables strongly correlate with Diagnosis. 
-    vif(lm(SignalSortedNoNA3[1,]~Diagnosis+RNADegradPerSample+ScanDateDayOnly))
+    vif(lm(SignalSortedNoNA3[1,]~BrainpH+PMI+Diagnosis+Gender+Age+LeftBrainStatus+SuicideStatus+PsychoticFeature+RateofDeath+SmokingatTimeofDeath+LifetimeAlcohol+LifetimeDrugs+RNADegradPerSample+ScanDate))
     
   ),
   
@@ -213,12 +241,12 @@ out<-c(
   )
   
 )
-cat(out, file="14 Statistical Relationships between Subject Variables.txt", sep="\n", append=TRUE)
+cat(out, file="Statistical Relationships between Subject Variables.txt", sep="\n", append=TRUE)
 close(StatisticalRelationshipsIV)
 rm(out)
 
 #Flagging variables that are collinear with other subject variables:
-FlaggedRelationshipsBetweenIV<-file("14 Flagged Relationships Between Subject Variables.txt")
+FlaggedRelationshipsBetweenIV<-file("Flagged Relationships Between Subject Variables.txt")
 out<-c(
   
   #Using linear regression to examine the statistical relationships between the continuous subject variables:
@@ -254,6 +282,6 @@ out<-c(
     }
   )
 )
-cat(out, file="14 Flagged Relationships Between Subject Variables.txt", sep="\n", append=TRUE)
+cat(out, file="Flagged Relationships Between Subject Variables.txt", sep="\n", append=TRUE)
 close(FlaggedRelationshipsBetweenIV)
 rm(out)
