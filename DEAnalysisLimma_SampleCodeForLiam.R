@@ -16,7 +16,11 @@ design <- model.matrix(~Enrichment+SocialDefeat+date_of_dissection+CountsPerSamp
 design
 
 #Double check this code - look up in manual (copied from RNA-Seq code)
+#Here's the link: https://www.rdocumentation.org/packages/limma/versions/3.28.14/topics/lmFit
+#From their link: object is a *matrix* not a data-frame
+#A matrix-like data object containing log-ratios or log-expression values for a series of arrays, with rows corresponding to genes and columns to samples.
 #Differential expression analysis: Basically this function runs a linear model (defined by design) for all rows of data in your gene expression matrix (all "genes" or transcripts) 
+
 vfit <- lmFit(YourGeneExpressionDataNoOutliers, design)
 str(vfit)
 
