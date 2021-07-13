@@ -23,13 +23,19 @@ str(CellTypeVsSubjVarVariances)
 # $ Lanz.2014           : num  2.82e-02 NA 6.13e-05 2.08e-05 8.09e-03 ...
 
 
-#Example run:
+#In my previous analyses, I found examples of meta-analyses run as fixed-effect models (using rma.mv()) or as random effect models (using rma())
+#Since we are measuring the same output (log2FC in the frontal pole) for diagnosis in each dataset, we could potentially use a fixed effects model
+#However, the log2FC from each of these datasets is not quite equivalent (slightly different dissection, hypoxia, co-variates), so someone could argue that a random-effects model is more appropriate.
+#The random effects model is more conservative (i.e., we are less likely to have trouble with reviewers), so I have set the code to do that.
+
+#Example run for the results from a single gene:
 
 #So I think this is probably unhappy because my data has names. :(
 TempYi<-as.numeric(unname(CellTypeVsSubjVarBetas[1,])[1,])
 TempV<-as.numeric(unname(CellTypeVsSubjVarVariances[1,])[1,])
-rma.mv(yi=TempYi, V=TempV)
+rma(yi=TempYi, V=TempV)
 
+#Example output for a single gene:
 
 # Multivariate Meta-Analysis Model (k = 4; method: REML)
 # 
@@ -46,18 +52,19 @@ rma.mv(yi=TempYi, V=TempV)
 #   ---
 #   Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
 
-
-RMAOutput<-rma.mv(yi=TempYi, V=TempV)
+#More example output & forest plot:
+RMAOutput<-rma(yi=TempYi, V=TempV)
 forest(RMAOutput)
 
 RMAOutput$b
-#intrcpt -0.4598921
+#intercept -0.4598921
 RMAOutput$se
 #[1] 0.06896819
 
 RMAOutput$pval
 #[1] 2.590011e-11
 
+#Making a matrix to store results:
 RMAOutputForAllCellTypeVsVar<-matrix(NA, nrow(CellTypeVsSubjVarBetas), 3)
 colnames(RMAOutputForAllCellTypeVsVar)<-c("b", "se", "pval")
 row.names(RMAOutputForAllCellTypeVsVar)<-row.names(CellTypeVsSubjVarBetas)
@@ -68,7 +75,7 @@ for(i in c(1:nrow(CellTypeVsSubjVarBetas))){
   TempYi<-as.numeric(unname(CellTypeVsSubjVarBetas[i,])[1,])
   TempV<-as.numeric(unname(CellTypeVsSubjVarVariances[i,])[1,])
   if(sum(is.na(TempYi))<3){
-  RMAOutput<-rma.mv(yi=TempYi, V=TempV)
+  RMAOutput<-rma(yi=TempYi, V=TempV)
   RMAOutputForAllCellTypeVsVar[i,1]<-RMAOutput$b
   RMAOutputForAllCellTypeVsVar[i,2]<-RMAOutput$se
   RMAOutputForAllCellTypeVsVar[i,3]<-RMAOutput$pval
@@ -76,7 +83,7 @@ for(i in c(1:nrow(CellTypeVsSubjVarBetas))){
 }
 
 
-
+#Running FDR corrections on the p-values:
 library(multtest)
   TempPvalAdj<-mt.rawp2adjp(RMAOutputForAllCellTypeVsVar[,3], proc=c("BH"))
   
