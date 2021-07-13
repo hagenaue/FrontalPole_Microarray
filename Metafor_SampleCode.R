@@ -4,6 +4,7 @@
 library(metafor)
 setwd("~/Documents/Microarray Gen/Cell Type Paper/Replication")
 
+#Betas = log2FC or coefficient from limma model
 CellTypeVsSubjVarBetas<-read.csv("CellTypeVsSubjVarBetas_ForMetafor.csv", header=T, row.names=1, stringsAsFactors = F, na.strings="NA")
 str(CellTypeVsSubjVarBetas)
 # 'data.frame':	90 obs. of  4 variables:
@@ -12,6 +13,7 @@ str(CellTypeVsSubjVarBetas)
 # $ Narayan.et.al..2008.: num  -0.856764 NA -0.005818 -0.000648 0.278124 ...
 # $ Lanz.2014           : num  -0.46067 NA 0.00212 0.00949 0.11853 ...
 
+#Variances = standard error from limma model (SE) squared
 CellTypeVsSubjVarVariances<-read.csv("CellTypeVsSubjVarVariances_ForMetafor.csv", header=T, row.names=1, stringsAsFactors = F, na.strings="NA")
 str(CellTypeVsSubjVarVariances)
 # 'data.frame':	90 obs. of  4 variables:
@@ -60,6 +62,7 @@ RMAOutputForAllCellTypeVsVar<-matrix(NA, nrow(CellTypeVsSubjVarBetas), 3)
 colnames(RMAOutputForAllCellTypeVsVar)<-c("b", "se", "pval")
 row.names(RMAOutputForAllCellTypeVsVar)<-row.names(CellTypeVsSubjVarBetas)
 
+#We should change the if/then statement to require at least 2 datasets (or >1) to have data to run the meta-analysis.
 for(i in c(1:nrow(CellTypeVsSubjVarBetas))){
   print(i)
   TempYi<-as.numeric(unname(CellTypeVsSubjVarBetas[i,])[1,])
