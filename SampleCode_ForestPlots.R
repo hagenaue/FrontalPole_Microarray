@@ -24,20 +24,20 @@ for(i in 1:length(temp$Symbol)){
               paste((temp$Symbol)[i]), ".tiff"), res=300, compression="lzw",
        width = 8.5, height = 8, units = 'in')
   
+  #These are the columns that include the Log2FC - separate data.frame for you
   effect<-c(temp$`d Affy F4`[i], temp$`d RNAseq F29`[i], temp$`d NC F34`[i], 
             temp$`d F37`[i], temp$`d F43`[i])
+  #These are columns that include the sampling variance - separate data.frame for you
   var<-c(temp$`var d Affy F4`[i], temp$`var d RNAseq F29`[i], temp$`var d NC F34`[i], 
          temp$`var d F37`[i], temp$`var d F43`[i])
   
+  #This is the part that includes the study names
   forest.rma(rma.mv(effect, var), slab=c("MBNI_AffymetrixRae230_F4", "MBNI_RNASeq_F29", 
                                          "Alabama_NimbleGen_F34", "MBNI_RNASeq_F37",
                                          "MBNI_RNASeq_F43"), 
              xlim=c(-18, 15), cex=1.6)
   text(-11, 3.6, "Investigator & Study", cex=1.6)
-  text(-14, 4.6, "bLR", cex=1.8)
-  mtext(paste("Adult\n", temp$Symbol[i]), line=-1.5, cex=2.5)
   text(8, 3.6, "Cohen's D [95% CI]", cex=1.6)
-  text(11, 4.6, "bHR", cex=1.8)
   
   dev.off()
 }
