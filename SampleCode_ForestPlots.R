@@ -37,7 +37,7 @@ for(i in 1:length(temp$Symbol)){
                                          "MBNI_RNASeq_F43"), 
              xlim=c(-18, 15), cex=1.6)
   text(-11, 3.6, "Investigator & Study", cex=1.6)
-  text(8, 3.6, "Cohen's D [95% CI]", cex=1.6)
+  text(8, 3.6, "Log2FC [95% CI]", cex=1.6)
   
   dev.off()
 }
