@@ -1,0 +1,51 @@
+Sample_id	dB_id	Collection Type     	Age	Age(rounded)     	Sex     	Race     	Profile     	DSM IV Codes     	Axis I Primary Diagnosis     	PMI (h)     	Brain PH     	Left Brain     	Suicide Status     	Psychotic Feature     	Rate of Death     	Exacerbation     	Smoking at Time of Death     	Lifetime Alcohol     	Lifetime Drugs     	Lifetime Anti-psychotics   
+GSM317649	C-26 	Consortium 	52	50	M 	White 	Control 		CONTROL 	8	6.5	Frozen 	No 	No 	Sudden 	Unknown 	No 	Social 	Little or none 	0
+GSM317650	C-30 	Consortium 	52	50	M 	White 	Depression 	311	DEPRESSIVE DISORDER NOS 	12	6.5	Fixed 	No 	No 	Sudden 	Probably Not 	No 	Social 	Little or none 	0
+GSM317651	C-50 	Consortium 	56	55	M 	White 	Depression 	296.32	DEPRESSIVE DISORDER 	23	6.5	Frozen 	No 	No 	Sudden 	Probably Not 	Yes 	Little or none 	Little or none 	0
+GSM317652	C-45 	Consortium 	35	35	F 	White 	Control 		CONTROL 	23	6.6	Fixed 	No 	No 	Sudden 	Unknown 	Unknown 	Social 	Little or none 	0
+GSM317653	C-25 	Consortium 	48	50	M 	White 	Bipolar 	296.44	BP I 	13	6.1	Fixed 	Yes 	Yes 	On respirator 	Definite 	Yes 	Moderate present 	Moderate in present 	200
+GSM317654	C-1 	Consortium 	30	30	F 	White 	Schizophrenia 	295.9	SCHIZ UNDIFF 	60	6.2	Fixed 	Yes 	Yes 	On respirator 	Definite 	Yes 	Moderate in past 	Heavy in past 	6000
+GSM317655	C-23 	Consortium 	31	30	M 	White 	Schizophrenia 	295.9	SCHIZ UNDIFF 	14	5.8	Frozen 	Yes 	Yes 	On respirator 	Definite 	No 	Social 	Little or none 	4000
+GSM317656	C-43 	Consortium 	50	50	M 	White 	Bipolar 	296.44	BP I 	19	6.2	Frozen 	Yes 	Yes 	Sudden 	Definite 	No 	Social 	Little or none 	60000
+GSM317657	C-2 	Consortium 	32	30	F 	White 	Depression 	296.23	DEPRESSIVE DISORDER 	47	6	Frozen 	Yes 	No 	Sudden 	Probable or possible 	Unknown 	Little or none 	Heavy in past 	0
+GSM317658	C-22 	Consortium 	34	35	M 	White 	Bipolar 	296.54	BP I 	23	6.3	Fixed 	Yes 	Yes 	Sudden 	Definite 	Yes 	Heavy in present 	Moderate in present 	7000
+GSM317659	C-3 	Consortium 	52	50	M 	White 	Schizophrenia 	295.3	SCHIZ PARANOID 	61	6	Frozen 	No 	Yes 	Sudden 	Probably Not 	Unknown 	Little or none 	Little or none 	9000
+GSM317660	C-11 	Consortium 	37	35	F 	White 	Bipolar 	296.64	BP I 	29	6.5	Fixed 	Yes 	Yes 	Sudden 	Definite 	No 	Social 	Heavy in past 	1250
+GSM317661	C-16 	Consortium 	60	60	M 	White 	Schizophrenia 	295.9	SCHIZ UNDIFF 	31	6.2	Fixed 	No 	Yes 	Sudden 	Probably Not 	Unknown 	Little or none 	Little or none 	80000
+GSM317662	C-4 	Consortium 	30	30	M 	White 	Schizophrenia 	295.9	SCHIZ UNDIFF 	32	5.8	Frozen 	No 	Yes 	Possible anoxia 	Probably Not 	No 	Social 	Little or none 	50000
+GSM317663	C-28 	Consortium 	30	30	M 	White 	Bipolar 	296.89	BP II 	45	6.3	Frozen 	Unknown 	No 	Sudden 	Probable or possible 	Unknown 	Unknown 	Moderate in present 	0
+GSM317664	C-5 	Consortium 	25	25	F 	White 	Bipolar 	296.54	BP I 	24	6.4	Fixed 	Yes 	Yes 	Sudden 	Definite 	Yes 	Heavy in present 	Moderate in present 	7500
+GSM317665	C-27 	Consortium 	31	30	M 	White 	Bipolar 	296.54	BP I 	28	6.3	Fixed 	Yes 	Yes 	Sudden 	Definite 	Yes 	Heavy in past 	Heavy in present 	30000
+GSM317666	C-51 	Consortium 	35	35	F 	White 	Control 		CONTROL 	40	5.8	Frozen 	No 	No 	Sudden 	Unknown 	Unknown 	Little or none 	Little or none 	0
+GSM317667	C-53 	Consortium 	56	55	F 	White 	Depression 	296.33	DEPRESSIVE DISORDER 	28	5.8	Frozen 	No 	No 	Sudden 	Probably Not 	Unknown 	Social 	Little or none 	0
+GSM317668	C-9 	Consortium 	60	60	F 	White 	Schizophrenia 	295.9	SCHIZ UNDIFF 	40	6.2	Frozen 	No 	Yes 	Sudden 	Probably Not 	Unknown 	Little or none 	Little or none 	0
+GSM317669	C-31 	Consortium 	25	25	M 	White 	Schizophrenia 	295.9	SCHIZ UNDIFF 	32	6.6	Frozen 	Yes 	Yes 	Sudden 	Definite 	Yes 	Heavy in past 	Little or none 	4000
+GSM317670	C-56 	Consortium 	43	45	M 	White 	Depression 	296.33	DEPRESSIVE DISORDER 	43	5.9	Frozen 	No 	No 	Sudden 	Probably Not 	Unknown 	Heavy in present 	Heavy in present 	0
+GSM317671	C-38 	Consortium 	56	55	F 	Non-White 	Schizophrenia 	295.9	SCHIZ UNDIFF 	12	6.4	Fixed 	Yes 	Yes 	Sudden 	Probable or possible 	Yes 	Little or none 	Moderate in past 	150000
+GSM317672	C-40 	Consortium 	52	50	M 	White 	Control 		CONTROL 	22	6.2	Fixed 	No 	No 	Sudden 	Unknown 	Yes 	Moderate present 	Little or none 	0
+GSM317673	C-20 	Consortium 	57	55	M 	White 	Bipolar 	296.44	BP I 	19	6.2	Frozen 	No 	Yes 	Sudden 	Probably Not 	Yes 	Heavy in past 	Little or none 	60000
+GSM317674	C-14 	Consortium 	65	65	M 	White 	Depression 	296.33	DEPRESSIVE DISORDER 	19	6.2	Fixed 	No 	No 	Sudden 	Probably Not 	No 	Social 	Little or none 	0
+GSM317675	C-46 	Consortium 	42	40	M 	White 	Depression 	296.31	DEPRESSIVE DISORDER 	7	6.2	Frozen 	Yes 	No 	Sudden 	Definite 	Yes 	Little or none 	Social 	0
+GSM317676	C-37 	Consortium 	44	45	M 	White 	Schizophrenia 	295.3	SCHIZ PARANOID 	29	5.9	Frozen 	No 	Yes 	Sudden 	Probably Not 	Yes 	Moderate in past 	Heavy in past 	130000
+GSM317677	C-55 	Consortium 	30	30	F 	White 	Depression 	296.33	DEPRESSIVE DISORDER 	33	6	Frozen 	Yes 	No 	Sudden 	Definite 	No 	Moderate present 	Little or none 	0
+GSM317678	C-34 	Consortium 	42	40	F 	White 	Depression 	296.22	DEPRESSIVE DISORDER 	25	6.3	Fixed 	No 	No 	Sudden 	Probably Not 	Yes 	Social 	Little or none 	0
+GSM317679	C-13 	Consortium 	52	50	M 	White 	Control 		CONTROL 	28	6.5	Frozen 	No 	No 	Sudden 	Unknown 	No 	Moderate in past 	Little or none 	0
+GSM317680	C-8 	Consortium 	62	60	F 	Non-White 	Schizophrenia 	295.3	SCHIZ PARANOID 	26	6.1	Frozen 	Unknown 	Yes 	Sudden 	Probable or possible 	No 	Social 	Little or none 	50000
+GSM317681	C-21 	Consortium 	59	60	M 	White 	Control 		CONTROL 	26	6.4	Fixed 	No 	No 	Sudden 	Unknown 	Yes 	Moderate present 	Little or none 	0
+GSM317682	C-42 	Consortium 	44	45	M 	White 	Control 		CONTROL 	10	6.4	Frozen 	No 	No 	Sudden 	Unknown 	Unknown 	Social 	Little or none 	0
+GSM317683	C-49 	Consortium 	42	40	M 	White 	Control 		CONTROL 	27	6.6	Fixed 	No 	No 	Sudden 	Unknown 	Unknown 	Little or none 	Little or none 	0
+GSM317684	C-58 	Consortium 	49	50	F 	White 	Schizophrenia 	295.9	SCHIZ UNDIFF 	38	6.2	Frozen 	No 	Yes 	Sudden 	Unknown 	Yes 	Little or none 	Little or none 	150000
+GSM317685	C-39 	Consortium 	35	35	M 	White 	Schizophrenia 	295.3	SCHIZ PARANOID 	35	6.5	Fixed 	No 	Yes 	Sudden 	Probably Not 	No 	Moderate present 	Moderate in present 	50000
+GSM317686	C-18 	Consortium 	30	30	M 	White 	Bipolar 	296.53	BP I 	56	5.8	Fixed 	Yes 	No 	Possible anoxia 	Definite 	Unknown 	Social 	Little or none 	0
+GSM317687	C-10 	Consortium 	44	45	F 	White 	Depression 	296.3	DEPRESSIVE DISORDER 	32	6.2	Frozen 	Yes 	No 	Sudden 	Definite 	Yes 	Social 	Little or none 	0
+GSM317688	C-35 	Consortium 	61	60	F 	White 	Bipolar 	296.54	BP I 	60	6.5	Frozen 	Yes 	Yes 	Sudden 	Definite 	Unknown 	Social 	Little or none 	40000
+GSM317689	C-52 	Consortium 	68	70	F 	White 	Control 		CONTROL 	13	6.3	Frozen 	No 	No 	Sudden 	Unknown 	No 	Little or none 	Little or none 	0
+GSM317690	C-15 	Consortium 	30	30	M 	White 	Bipolar 	296.64	BP I 	31	6.1	Fixed 	No 	Yes 	Possible anoxia 	Probably Not 	No 	Moderate present 	Little or none 	60000
+GSM317691	C-47 	Consortium 	41	40	M 	Non-White 	Control 		CONTROL 	11	6	Fixed 	No 	No 	Sudden 	Unknown 	Unknown 	Social 	Little or none 	0
+GSM317692	C-54 	Consortium 	58	60	M 	White 	Control 		CONTROL 	27	6	Frozen 	No 	No 	Sudden 	Unknown 	Unknown 	Social 	Little or none 	0
+GSM317693	C-60 	Consortium 	57	55	F 	White 	Control 		CONTROL 	26	6	Fixed 	No 	No 	On respirator 	Unknown 	Unknown 	Little or none 	Little or none 	0
+GSM317694	C-17 	Consortium 	32	30	M 	Non-White 	Schizophrenia 	295.9	SCHIZ UNDIFF 	19	6.1	Frozen 	No 	Yes 	Sudden 	Probably Not 	Yes 	Heavy in present 	Heavy in present 	15000
+GSM317695	C-57 	Consortium 	47	45	M 	White 	Depression 	296.33	DEPRESSIVE DISORDER 	28	6.4	Frozen 	No 	No 	Sudden 	Probably Not 	Unknown 	Little or none 	Little or none 	0
+GSM317696	C-19 	Consortium 	44	45	F 	White 	Control 		CONTROL 	25	6.3	Fixed 	No 	No 	Sudden 	Unknown 	Yes 	Social 	Little or none 	0
+GSM317697	C-59 	Consortium 	29	30	F 	White 	Control 		CONTROL 	42	6.2	Frozen 	No 	No 	Sudden 	Unknown 	Unknown 	Little or none 	Little or none 	0
+GSM317698	C-41 	Consortium 	53	55	M 	White 	Control 		CONTROL 	28	6.2	Frozen 	No 	No 	Sudden 	Unknown 	No 	Moderate in past 	Moderate in past 	0

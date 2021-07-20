@@ -1,0 +1,3 @@
+The Maycox Models appear to vary a bit in their top results.
+
+None of the Maycox genes surpass the traditional thresholds (FDR<0.1) for false detection correction.

@@ -21,16 +21,16 @@ Meta(GSMList(gse)$GSM439778)$title
 
 sub("gender: ","", Meta(GSMList(gse)$GSM439778)$characteristics_ch1[1])
 as.numeric(sub("age: ","", Meta(GSMList(gse)$GSM439778)$characteristics_ch1[2]))
-PMDlabelremoved<-sub("post-mortem delay: ","", Meta(GSMList(gse)$GSM439778)$characteristics_ch1[3], fixed = T)
-as.numeric(substr(PMDlabelremoved, 1, nchar(PMDlabelremoved)-1))
-rm(PMDlabelremoved)
+PMIlabelremoved<-sub("post-mortem delay: ","", Meta(GSMList(gse)$GSM439778)$characteristics_ch1[3], fixed = T)
+as.numeric(substr(PMIlabelremoved, 1, nchar(PMIlabelremoved)-1))
+rm(PMIlabelremoved)
 as.numeric(sub("ph: ","", Meta(GSMList(gse)$GSM439778)$characteristics_ch1[4]))
 
 SampleID<-as.matrix(names(GSMList(gse)))
 Gender<-matrix("a", nrow=51, ncol=1)
 Age<-matrix(0, nrow=51, ncol=1)
 BrainpH<-matrix(0, nrow=51, ncol=1)
-PMD<-matrix(0, nrow=51, ncol=1)
+PMI<-matrix(0, nrow=51, ncol=1)
 Diagnosis2<-matrix("a", nrow=51, ncol=1)
 
 
@@ -38,9 +38,9 @@ i<-1
 for(i in c(1:51)){
   Gender[i]<-sub("gender: ","", Meta(GSMList(gse)[[i]])$characteristics_ch1[1])
   Age[i]<-as.numeric(sub("age: ","", Meta(GSMList(gse)[[i]])$characteristics_ch1[2]))
-  PMDlabelremoved<-sub("post-mortem delay: ","", Meta(GSMList(gse)[[i]])$characteristics_ch1[3], fixed = T)
-  PMD[i]<-as.numeric(substr(PMDlabelremoved, 1, nchar(PMDlabelremoved)-1))
-  rm(PMDlabelremoved)
+  PMIlabelremoved<-sub("post-mortem delay: ","", Meta(GSMList(gse)[[i]])$characteristics_ch1[3], fixed = T)
+  PMI[i]<-as.numeric(substr(PMIlabelremoved, 1, nchar(PMIlabelremoved)-1))
+  rm(PMIlabelremoved)
   BrainpH[i]<-as.numeric(sub("ph: ","", Meta(GSMList(gse)[[i]])$characteristics_ch1[4]))
   if(all(substr(Meta(GSMList(gse)[[i]])$title, 6,8)=="Scz")) Diagnosis2[i]<-"Scz" else Diagnosis2[i]<-"Control"
 }
@@ -48,19 +48,15 @@ for(i in c(1:51)){
 # This entry does not have a gender listed, so the data needs to be assigned outside of the for loop
 Gender[11]<-NA
 Age[11]<-as.numeric(sub("age: ","", Meta(GSMList(gse)$GSM439788)$characteristics_ch1[1]))
-PMDlabelremoved<-sub("post-mortem delay: ","", Meta(GSMList(gse)$GSM439788)$characteristics_ch1[2], fixed = T)
-PMD[11]<-as.numeric(substr(PMDlabelremoved, 1, nchar(PMDlabelremoved)-1))
-rm(PMDlabelremoved)
+PMIlabelremoved<-sub("post-mortem delay: ","", Meta(GSMList(gse)$GSM439788)$characteristics_ch1[2], fixed = T)
+PMI[11]<-as.numeric(substr(PMIlabelremoved, 1, nchar(PMIlabelremoved)-1))
+rm(PMIlabelremoved)
 BrainpH[11]<-as.numeric(sub("ph: ","", Meta(GSMList(gse)$GSM439788)$characteristics_ch1[3]))
 
 Diagnosis<-Diagnosis2
 Diagnosis<-relevel(as.factor(Diagnosis), ref="Control")
 
-Maycox_SampleCharacteristics<-data.frame(SampleID, Gender, Age, PMD, BrainpH, Diagnosis, stringsAsFactors=F)
 
-head(Maycox_SampleCharacteristics)
-
-write.csv(Maycox_SampleCharacteristics, "Maycox_SampleCharacteristics.csv")
 
 library(org.Hs.eg.db)
 library(plyr)
@@ -90,7 +86,13 @@ for(i in c(1:51)){
 ScanDate<-ScanDate2
 ScanDate<-relevel(as.factor(ScanDate2), ref= "01/21/04 10:44:01")
 ScanDateDayOnly<-ScanDateDayOnly2
-ScanDateDayOnly<-relevel(as.factor(ScanDateDayOnly), ref="01/21/04")
+ScanDateDayOnly<-relevel(as.factor(ScanDateDayOnly), ref="01/22/04")
+
+Maycox_SampleCharacteristics<-data.frame(SampleID, Gender, Age, PMI, BrainpH, Diagnosis, ScanDateDayOnly, stringsAsFactors=F)
+
+head(Maycox_SampleCharacteristics)
+
+write.csv(Maycox_SampleCharacteristics, "Maycox_SampleCharacteristics.csv")
 
 #Converts the data2 AffyBatch into an ExpressionSet object using the robust multi-array average (RMA) expression measure. 
 #The expression measure is given in log base 2 scale.
@@ -101,7 +103,6 @@ str(RMAExpression_customCDFplus2)
 #'data.frame':	8551 obs. of  51 variables
 write.csv(RMAExpression_customCDFplus2, "RMAExpression_customCDFplus2.csv")
 
-BiocManager::install("AffyRNADegradation")
 library(AffyRNADegradation)
 
 #Generate and visualize tongs plots
@@ -138,15 +139,73 @@ write.csv(RMAExpression_customCDFAnnotation2plus2, "RMAExpression_customCDFAnnot
 
 SignalSortedNoNA3<-as.matrix(RMAExpression_customCDFplus2[,-1])
 
+cbind(SampleID, colnames(SignalSortedNoNA3))
+
 setwd("C:/Users/Frosty/Desktop/Research/Summer 2021 Frontal Pole Research/FrontalPole_Microarray/Maycox_GSE17612/Graphs")
+
+#Quality Control
+
+RMAExpression_customCDFAnnotation2plus2[which(RMAExpression_customCDFAnnotation2plus2[,3]=="XIST"),]
+
+RMAExpression_customCDFAnnotation2plus2[RMAExpression_customCDFAnnotation2plus2[,3]=="XIST",][173,]
+
+#checking for gender switches
+png("XIST_vs_Gender_customCDFplus2.png")
+boxplot(SignalSortedNoNA3[which(RMAExpression_customCDFAnnotation2plus2[,3]=="XIST"),]~Gender, col=2)
+dev.off()
+
+png("RPS4Y1_vs_Gender_customCDFplus2.png")
+boxplot(SignalSortedNoNA3[which(RMAExpression_customCDFAnnotation2plus2[,3]=="RPS4Y1"),]~Gender, col=2)
+dev.off()
+
+
+png("DDX3Y_vs_Gender_customCDFplus2.png")
+boxplot(SignalSortedNoNA3[which(RMAExpression_customCDFAnnotation2plus2[,3]=="DDX3Y"),]~Gender, col=2)
+dev.off()
+
+
+png("RPS4Y1vsXIST_GenderCheck.png")
+plot(SignalSortedNoNA3[which(RMAExpression_customCDFAnnotation2plus2[,3]=="RPS4Y1"),]~SignalSortedNoNA3[which(RMAExpression_customCDFAnnotation2plus2[,3]=="XIST"),], col=as.numeric(as.factor(Gender)))
+dev.off()
+
+png("DDX3YvsXIST_GenderCheck.png")
+plot(SignalSortedNoNA3[which(RMAExpression_customCDFAnnotation2plus2[,3]=="DDX3Y"),]~SignalSortedNoNA3[which(RMAExpression_customCDFAnnotation2plus2[,3]=="XIST"),], col=as.numeric(as.factor(Gender)))
+dev.off()
+
+
+
+##Removing bad samples
+KnownBadSamples<-c("GSM439786","GSM439795")
+
+SampleCharacteristics_NoOutliers<-Maycox_SampleCharacteristics[(SampleID%in%KnownBadSamples)==F,]
+dim(SampleCharacteristics_NoOutliers)
+
+SignalSortedNoNA3NoOutliers<-SignalSortedNoNA3[,(SampleID%in%KnownBadSamples)==F]
+dim(SignalSortedNoNA3NoOutliers)
+
+RNADegradPerSampleNoOutliers<-RNADegradPerSample[(SampleID%in%KnownBadSamples)==F]
+
+
+#Redefining the variables to only include good data:
+SignalSortedNoNA3<-SignalSortedNoNA3NoOutliers
+
+Gender<-SampleCharacteristics_NoOutliers$Gender
+Age<-SampleCharacteristics_NoOutliers$Age
+PMI<-SampleCharacteristics_NoOutliers$PMI
+BrainpH<-SampleCharacteristics_NoOutliers$BrainpH
+Diagnosis<-SampleCharacteristics_NoOutliers$Diagnosis
+RNADegradPerSample<-RNADegradPerSampleNoOutliers
+ScanDateDayOnly<-SampleCharacteristics_NoOutliers$ScanDateDayOnly
+
+setwd("C:/Users/Frosty/Desktop/Research/Summer 2021 Frontal Pole Research/FrontalPole_Microarray/Maycox_GSE17612/RemovedOutliers/Graphs")
 
 
 #Variable Analysis
 SubjectFactorVariables<-cbind(Diagnosis, Gender, ScanDateDayOnly)
 colnames(SubjectFactorVariables)<-c("Diagnosis", "Gender", "ScanDateDayOnly")
 
-SubjectContinuousVariables<-cbind(BrainpH, PMD, Age, RNADegradPerSample)
-colnames(SubjectContinuousVariables)<-c("BrainpH", "PMD", "Age", "RNADegradPerSample")
+SubjectContinuousVariables<-cbind(BrainpH, PMI, Age, RNADegradPerSample)
+colnames(SubjectContinuousVariables)<-c("BrainpH", "PMI", "Age", "RNADegradPerSample")
 
 for (i in 1:length(SubjectContinuousVariables[1,])){
   png(paste(paste("Histogram of", colnames(SubjectContinuousVariables)[i], sep="  "), "png", sep="."))	
@@ -206,7 +265,7 @@ out<-c(
   
   capture.output(
     #Calculating the variance inflation factor (vif) to determine which subject variables are highly related to other subject variables in the data set. Most important, of course, is whether any of the subject variables strongly correlate with Diagnosis. 
-    vif(lm(SignalSortedNoNA3[1,]~BrainpH+PMD+Diagnosis+Gender+Age+RNADegradPerSample+ScanDateDayOnly))
+    vif(lm(SignalSortedNoNA3[1,]~BrainpH+PMI+Diagnosis+Gender+Age+RNADegradPerSample+ScanDateDayOnly))
     
   ),
   
@@ -286,4 +345,155 @@ out<-c(
 )
 cat(out, file="Flagged Relationships Between Subject Variables.txt", sep="\n", append=TRUE)
 close(FlaggedRelationshipsBetweenIV)
+rm(out)
+
+#PCA
+setwd("C:/Users/Frosty/Desktop/Research/Summer 2021 Frontal Pole Research/FrontalPole_Microarray/Maycox_GSE17612/RemovedOutliers/PCA")
+
+
+
+pcaNormFilterednoOutliers<-prcomp(t(SignalSortedNoNA3))
+tmp<-pcaNormFilterednoOutliers$x[,1:4]
+write.table(tmp, "PCA_1_4.txt", sep="\t")
+
+
+PCeigenvectors<-pcaNormFilterednoOutliers$rotation[ ,c(1:4)]
+PCeigenvectors2<-cbind(PCeigenvectors, RMAExpression_customCDFAnnotation2plus2)
+write.csv(PCeigenvectors2, "PCeigenvectors.csv")
+
+PC1noOutliers<-pcaNormFilterednoOutliers$x[,1]
+PC2noOutliers<-pcaNormFilterednoOutliers$x[,2]
+
+PC3noOutliers<-pcaNormFilterednoOutliers$x[,3]
+PC4noOutliers<-pcaNormFilterednoOutliers$x[,4]
+
+#Output a scree plot for the PCA (no outliers):
+png("10 PCA Scree Plot1.png")
+plot(summary(pcaNormFilterednoOutliers)$importance[2,]~(c(1:length(summary(pcaNormFilterednoOutliers)$importance[2,]))), main="Variance Explained by Each Principal Component", xlab="PC #", ylab="Proportion of Variance Explained", col=2)
+dev.off()
+
+png("10 PCA Scree Plot2.png")
+plot(summary(pcaNormFilterednoOutliers)$importance[3,]~(c(1:length(summary(pcaNormFilterednoOutliers)$importance[2,]))), main="Variance Explained by Each Principal Component", xlab="PC #", ylab="Cumulative Proportion of Variance Explained", col=3)
+dev.off()
+
+
+#Output a scatterplot illustrating the relationship between Principal components 1 & 2 (PC1 & PC2):
+png("10 PC1 vs PC2.png")
+plot(PC1noOutliers~PC2noOutliers, main="Principal Components Analysis of Normalized Filtered Data No Outliers")
+dev.off()
+
+#After outlier removal:
+png("10 PC1 vs PC2_byDiagnosis.png")
+plot(PC1noOutliers~PC2noOutliers, main="Principal Components Analysis of Normalized Filtered Data No Outliers", col=as.factor(Diagnosis))
+dev.off()
+
+
+# #Output a scatterplot illustrating the relationship between Principal components 3 & 4 (PC3 & PC4):
+png("10 PC3 vs PC4.png")
+plot(PC3noOutliers~PC4noOutliers, main="Principal Components Analysis of Normalized Filtered Data No Outliers")
+dev.off()
+
+#After outlier removal:
+png("10 PC3 vs PC4_byGender.png")
+plot(PC3noOutliers~PC4noOutliers, main="Principal Components Analysis of Normalized Filtered Data No Outliers", col=as.factor(Gender))
+dev.off()
+
+png("10 PC3 vs PC4_byDiagnosis.png")
+plot(PC3noOutliers~PC4noOutliers, main="Principal Components Analysis of Normalized Filtered Data No Outliers", col=as.factor(Diagnosis))
+dev.off()
+
+SubjectPCA<-cbind(PC1noOutliers, PC2noOutliers, PC3noOutliers, PC4noOutliers)
+
+PCAoutput<-cbind(SubjectFactorVariables, SubjectContinuousVariables, SubjectPCA)
+write.csv(PCAoutput, "PCAoutput.csv")
+
+#Visualize the sample-sample correlations using a heatmap:
+png("09 Sample Sample Correlations Heatmap.png")
+image(cor(SignalSortedNoNA3), main="Visualizing the correlations between entire samples (by index#)", xlab="Red=Less correlated, Light yellow=Highly correlated")
+dev.off()
+
+#Visualize the sample-sample correlations using a boxplot:
+png("09 Boxplot Sample Sample Correlations.png", width=1000, height=600)
+boxplot(data.frame(cor(SignalSortedNoNA3)), cex=0.25, las=3, par(cex.axis=0.75, mar=c(15,4,4,4)), main="Boxplot of sample-sample correlations", xlab="Subject", ylab="Sample-Sample Correlations")
+Median10thQuantile<-median(apply((cor(SignalSortedNoNA3)), 1, quantile, 0.1))
+MedianQuantile<-median(apply((cor(SignalSortedNoNA3)), 1, quantile, 0.5))
+abline(a=Median10thQuantile, b=0, col=2)
+abline(a=MedianQuantile, b=0, col=3)
+mtext(paste("Median Sample-Sample Correlation=", round(MedianQuantile, digits=3), sep=" ")) 
+dev.off()
+
+
+##Plotting PCA vs Subject Variables
+setwd("C:/Users/Frosty/Desktop/Research/Summer 2021 Frontal Pole Research/FrontalPole_Microarray/Maycox_GSE17612/RemovedOutliers/Graphs/PCA_vs_Subject_Variables")
+
+#Using a scatterplot with best fit line to visually examine the relationships between the continuous subject variables and SubjectPCA:
+for (i in 1:length(SubjectPCA[1,])){
+  for(j in 1:length(SubjectContinuousVariables[1,])){
+    png(paste("15", paste(colnames(SubjectPCA)[i], "vs", colnames(SubjectContinuousVariables)[j], sep="  "), "png", sep="."))	
+    plot(SubjectPCA[,i]~SubjectContinuousVariables[,j], main=paste(colnames(SubjectPCA)[i], "vs", colnames(SubjectContinuousVariables)[j], sep="  "), xlab=colnames(SubjectContinuousVariables)[j], ylab=colnames(SubjectPCA)[i])
+    RegressionLine<-lm(SubjectPCA[,i]~SubjectContinuousVariables[,j])
+    abline(RegressionLine, col=2)
+    mtext(paste("p-value=", round(summary.lm(RegressionLine)$coefficients[8], digits=4)))
+    dev.off()		
+  }		
+}
+
+#Using boxplots to visually examine the relationships between the PCA and categorical subject variables:
+for (i in 1:length(SubjectPCA[1,])){
+  for(j in 1:length(SubjectFactorVariables[1,])){
+    png(paste("15", paste(colnames(SubjectPCA)[i], "vs", colnames(SubjectFactorVariables)[j], sep="  "), "png", sep="."))	
+    boxplot(SubjectPCA[,i]~SubjectFactorVariables[,j], main=paste(colnames(SubjectPCA)[i], "vs", colnames(SubjectFactorVariables)[j], sep="  "), xlab=colnames(SubjectFactorVariables)[j], ylab=colnames(SubjectPCA)[i])
+    mtext(paste("p-value=", round(summary(aov(SubjectPCA[,i]~SubjectFactorVariables[,j]))[[1]][["Pr(>F)"]][1], digits=4)))
+    dev.off()		
+  }		
+}
+
+#Outputting a text file containing the statistical relationships between all of the subject variables and PCA:
+
+StatisticalRelationshipsIVvsPCA<-file("15 Statistical Relationships between Subject Variables and PCA.txt")
+out<-c(
+ 
+  capture.output(
+    #Calculating the variance inflation factor (vif) to determine which subject variables are highly related to other subject variables in the data set. Most important, of course, is whether any of the subject variables strongly correlate with Diagnosis. Note that "Location on Chip" has been removed as a variable because it is partially redundant with gender. 
+    summary.lm(lm(SubjectPCA[,1]~BrainpH+PMI+Diagnosis+Gender+Age+RNADegradPerSample+ScanDateDayOnly))
+  ),
+  
+  capture.output(
+    summary.lm(lm(SubjectPCA[,2]~BrainpH+PMI+Diagnosis+Gender+Age+RNADegradPerSample+ScanDateDayOnly))
+  ),
+  
+  capture.output(
+    summary.lm(lm(SubjectPCA[,3]~BrainpH+PMI+Diagnosis+Gender+Age+RNADegradPerSample+ScanDateDayOnly))
+  ),
+  
+  capture.output(
+    summary.lm(lm(SubjectPCA[,4]~BrainpH+PMI+Diagnosis+Gender+Age+RNADegradPerSample+ScanDateDayOnly))
+  ),
+  
+  
+  #Using linear regression to examine the statistical relationships between PCA and the continuous subject variables:
+  
+  capture.output(
+    for (i in 1:length(SubjectPCA[1,])){
+      for(j in 1:length(SubjectContinuousVariables[1,])){
+        print(paste(colnames(SubjectPCA)[i], "vs", colnames(SubjectContinuousVariables)[j], sep="  "))
+        print(summary.lm(lm(SubjectPCA[,i]~SubjectContinuousVariables[,j])))
+      }		
+    }
+  ),
+  
+  #Using anova to examine the statistical relationships between PCA and categorical subject variables:
+  
+  capture.output(
+    for (i in 1:length(SubjectPCA[1,])){
+      for(j in 1:length(SubjectFactorVariables[1,])){
+        print(paste(colnames(SubjectPCA)[i], "vs", colnames(SubjectFactorVariables)[j], sep="  "))
+        print(summary(aov(SubjectPCA[,i]~SubjectFactorVariables[,j])))		
+      }		
+    }
+  )
+  
+)
+cat(out, file="15 Statistical Relationships between Subject Variables and PCA.txt", sep="\n", append=TRUE)
+close(StatisticalRelationshipsIVvsPCA)
 rm(out)

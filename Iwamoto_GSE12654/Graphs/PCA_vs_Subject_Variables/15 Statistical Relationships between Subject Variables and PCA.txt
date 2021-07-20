@@ -1,0 +1,2824 @@
+
+Call:
+lm(formula = SubjectPCA[, 1] ~ BrainpH + PMI + Diagnosis + Gender + 
+    Age + LeftBrainStatus + SuicideStatus + PsychoticFeature + 
+    RateofDeath + SmokingatTimeofDeath + LifetimeAlcohol + LifetimeDrugs + 
+    RNADegradPerSample + ScanDateDayOnly)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-10.457  -3.549   0.000   2.383  12.339 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                       299.8752   107.1022   2.800   0.0160 *
+BrainpH                           -21.5829    14.0598  -1.535   0.1507  
+PMI                                 0.2309     0.3352   0.689   0.5039  
+DiagnosisBipolar                   -7.8970    25.1378  -0.314   0.7588  
+DiagnosisDepression                -7.8613     7.9086  -0.994   0.3398  
+DiagnosisSchizophrenia            -13.8281    23.0304  -0.600   0.5594  
+GenderM                            -0.7313     6.1613  -0.119   0.9075  
+Age                                -0.1256     0.3300  -0.381   0.7102  
+LeftBrainStatusFrozen              -0.5010     6.5127  -0.077   0.9399  
+SuicideStatusUnknown               29.0794    19.5698   1.486   0.1631  
+SuicideStatusYes                   -8.2625     8.8875  -0.930   0.3709  
+PsychoticFeatureYes                -0.3351    20.5534  -0.016   0.9873  
+RateofDeathPossible anoxia         -0.1858    21.2505  -0.009   0.9932  
+RateofDeathSudden                  -0.6111     9.4391  -0.065   0.9494  
+SmokingatTimeofDeathUnknown        -7.2577     8.9919  -0.807   0.4353  
+SmokingatTimeofDeathYes             2.5925     6.8893   0.376   0.7133  
+LifetimeAlcoholHeavy in present    -3.0081    12.6771  -0.237   0.8164  
+LifetimeAlcoholLittle or none     -18.3977    14.7636  -1.246   0.2365  
+LifetimeAlcoholModerate in past   -38.7372    18.4561  -2.099   0.0577 .
+LifetimeAlcoholModerate present   -25.6844    13.8781  -1.851   0.0890 .
+LifetimeAlcoholSocial             -14.7698    13.1238  -1.125   0.2824  
+LifetimeAlcoholUnknown            -42.6499    38.7540  -1.101   0.2927  
+LifetimeDrugsHeavy in present     -28.3522    17.1984  -1.649   0.1252  
+LifetimeDrugsLittle or none        -3.5656    12.4162  -0.287   0.7789  
+LifetimeDrugsModerate in past      14.6824    19.6232   0.748   0.4687  
+LifetimeDrugsModerate in present    4.7251    16.5640   0.285   0.7803  
+LifetimeDrugsSocial                 3.6833    22.8865   0.161   0.8748  
+RNADegradPerSample               -143.2110    50.0901  -2.859   0.0144 *
+ScanDateDayOnly01/09/02           -11.9702    17.4276  -0.687   0.5052  
+ScanDateDayOnly10/16/01            -6.7764    21.3295  -0.318   0.7562  
+ScanDateDayOnly10/18/01             8.6329    19.6631   0.439   0.6684  
+ScanDateDayOnly11/08/01           -10.7920    17.5872  -0.614   0.5509  
+ScanDateDayOnly11/20/01           -17.3159    16.9175  -1.024   0.3262  
+ScanDateDayOnly11/27/01           -12.2711    16.5039  -0.744   0.4715  
+ScanDateDayOnly11/29/01           -21.1807    16.1337  -1.313   0.2138  
+ScanDateDayOnly12/06/01           -26.8270    16.7866  -1.598   0.1360  
+ScanDateDayOnly12/19/01           -14.6976    16.3598  -0.898   0.3866  
+ScanDateDayOnly12/20/01           -18.0857    16.4811  -1.097   0.2940  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 11.46 on 12 degrees of freedom
+Multiple R-squared:  0.7973,	Adjusted R-squared:  0.1725 
+F-statistic: 1.276 on 37 and 12 DF,  p-value: 0.3367
+
+
+Call:
+lm(formula = SubjectPCA[, 2] ~ BrainpH + PMI + Diagnosis + Gender + 
+    Age + LeftBrainStatus + SuicideStatus + PsychoticFeature + 
+    RateofDeath + SmokingatTimeofDeath + LifetimeAlcohol + LifetimeDrugs + 
+    RNADegradPerSample + ScanDateDayOnly)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.5764 -0.7959  0.0000  1.1466  5.6217 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                       42.82270   43.01642   0.995  0.33915   
+BrainpH                          -14.50865    5.64695  -2.569  0.02458 * 
+PMI                                0.08987    0.13461   0.668  0.51699   
+DiagnosisBipolar                   2.81784   10.09633   0.279  0.78492   
+DiagnosisDepression                3.35165    3.17641   1.055  0.31213   
+DiagnosisSchizophrenia            -4.38237    9.24991  -0.474  0.64416   
+GenderM                            6.97041    2.47460   2.817  0.01555 * 
+Age                               -0.16854    0.13253  -1.272  0.22755   
+LeftBrainStatusFrozen             -8.92493    2.61574  -3.412  0.00515 **
+SuicideStatusUnknown              -6.93342    7.86001  -0.882  0.39504   
+SuicideStatusYes                   2.00568    3.56956   0.562  0.58454   
+PsychoticFeatureYes                2.69609    8.25503   0.327  0.74960   
+RateofDeathPossible anoxia        -5.08470    8.53504  -0.596  0.56241   
+RateofDeathSudden                  1.30100    3.79110   0.343  0.73741   
+SmokingatTimeofDeathUnknown       -1.71243    3.61150  -0.474  0.64390   
+SmokingatTimeofDeathYes           -4.91364    2.76701  -1.776  0.10111   
+LifetimeAlcoholHeavy in present   20.76482    5.09161   4.078  0.00153 **
+LifetimeAlcoholLittle or none     11.22581    5.92964   1.893  0.08270 . 
+LifetimeAlcoholModerate in past   11.53392    7.41268   1.556  0.14568   
+LifetimeAlcoholModerate present    6.28886    5.57398   1.128  0.28127   
+LifetimeAlcoholSocial              4.49005    5.27102   0.852  0.41098   
+LifetimeAlcoholUnknown            36.04975   15.56512   2.316  0.03905 * 
+LifetimeDrugsHeavy in present     -0.72956    6.90754  -0.106  0.91763   
+LifetimeDrugsLittle or none       10.49045    4.98682   2.104  0.05717 . 
+LifetimeDrugsModerate in past     12.91498    7.88143   1.639  0.12722   
+LifetimeDrugsModerate in present -10.66221    6.65274  -1.603  0.13499   
+LifetimeDrugsSocial                6.56233    9.19210   0.714  0.48894   
+RNADegradPerSample                38.50436   20.11812   1.914  0.07978 . 
+ScanDateDayOnly01/09/02           15.72438    6.99960   2.246  0.04428 * 
+ScanDateDayOnly10/16/01            9.63893    8.56678   1.125  0.28253   
+ScanDateDayOnly10/18/01            9.28026    7.89747   1.175  0.26275   
+ScanDateDayOnly11/08/01            2.20286    7.06372   0.312  0.76050   
+ScanDateDayOnly11/20/01            3.37668    6.79472   0.497  0.62820   
+ScanDateDayOnly11/27/01            9.63884    6.62861   1.454  0.17156   
+ScanDateDayOnly11/29/01            2.35183    6.47993   0.363  0.72296   
+ScanDateDayOnly12/06/01            3.12848    6.74217   0.464  0.65094   
+ScanDateDayOnly12/19/01           -2.50864    6.57071  -0.382  0.70929   
+ScanDateDayOnly12/20/01           15.93108    6.61946   2.407  0.03311 * 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.604 on 12 degrees of freedom
+Multiple R-squared:  0.9262,	Adjusted R-squared:  0.6987 
+F-statistic:  4.07 on 37 and 12 DF,  p-value: 0.0061
+
+
+Call:
+lm(formula = SubjectPCA[, 3] ~ BrainpH + PMI + Diagnosis + Gender + 
+    Age + LeftBrainStatus + SuicideStatus + PsychoticFeature + 
+    RateofDeath + SmokingatTimeofDeath + LifetimeAlcohol + LifetimeDrugs + 
+    RNADegradPerSample + ScanDateDayOnly)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-5.503 -1.290  0.000  1.212  5.066 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                      -139.9948    42.2682  -3.312  0.00620 **
+BrainpH                            17.0042     5.5487   3.065  0.00982 **
+PMI                                 0.2382     0.1323   1.801  0.09688 . 
+DiagnosisBipolar                  -13.3537     9.9207  -1.346  0.20317   
+DiagnosisDepression                 0.7153     3.1212   0.229  0.82260   
+DiagnosisSchizophrenia            -17.6335     9.0890  -1.940  0.07623 . 
+GenderM                             8.3178     2.4316   3.421  0.00507 **
+Age                                 0.0326     0.1302   0.250  0.80654   
+LeftBrainStatusFrozen              -5.9720     2.5702  -2.324  0.03852 * 
+SuicideStatusUnknown               -2.4441     7.7233  -0.316  0.75710   
+SuicideStatusYes                   -0.1498     3.5075  -0.043  0.96664   
+PsychoticFeatureYes                12.7713     8.1114   1.574  0.14136   
+RateofDeathPossible anoxia          1.0351     8.3866   0.123  0.90382   
+RateofDeathSudden                  -0.0331     3.7252  -0.009  0.99306   
+SmokingatTimeofDeathUnknown        -7.5797     3.5487  -2.136  0.05398 . 
+SmokingatTimeofDeathYes            -6.8121     2.7189  -2.505  0.02764 * 
+LifetimeAlcoholHeavy in present     8.6378     5.0030   1.727  0.10988   
+LifetimeAlcoholLittle or none       2.4367     5.8265   0.418  0.68317   
+LifetimeAlcoholModerate in past    -3.8195     7.2837  -0.524  0.60956   
+LifetimeAlcoholModerate present    -6.7222     5.4770  -1.227  0.24322   
+LifetimeAlcoholSocial              -2.0215     5.1793  -0.390  0.70315   
+LifetimeAlcoholUnknown             19.1192    15.2944   1.250  0.23510   
+LifetimeDrugsHeavy in present      -4.0508     6.7874  -0.597  0.56172   
+LifetimeDrugsLittle or none         2.6491     4.9001   0.541  0.59866   
+LifetimeDrugsModerate in past       1.8876     7.7443   0.244  0.81155   
+LifetimeDrugsModerate in present   -9.3521     6.5370  -1.431  0.17805   
+LifetimeDrugsSocial                 6.5743     9.0322   0.728  0.48066   
+RNADegradPerSample                 28.8621    19.7682   1.460  0.16996   
+ScanDateDayOnly01/09/02             6.7547     6.8778   0.982  0.34544   
+ScanDateDayOnly10/16/01            21.9017     8.4178   2.602  0.02315 * 
+ScanDateDayOnly10/18/01             5.3615     7.7601   0.691  0.50277   
+ScanDateDayOnly11/08/01             7.8263     6.9409   1.128  0.28154   
+ScanDateDayOnly11/20/01            12.7860     6.6765   1.915  0.07962 . 
+ScanDateDayOnly11/27/01             5.3426     6.5133   0.820  0.42806   
+ScanDateDayOnly11/29/01             6.1869     6.3672   0.972  0.35039   
+ScanDateDayOnly12/06/01             5.1765     6.6249   0.781  0.44972   
+ScanDateDayOnly12/19/01            -4.6503     6.4564  -0.720  0.48516   
+ScanDateDayOnly12/20/01            10.7266     6.5043   1.649  0.12503   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.524 on 12 degrees of freedom
+Multiple R-squared:  0.9149,	Adjusted R-squared:  0.6525 
+F-statistic: 3.487 on 37 and 12 DF,  p-value: 0.01202
+
+
+Call:
+lm(formula = SubjectPCA[, 4] ~ BrainpH + PMI + Diagnosis + Gender + 
+    Age + LeftBrainStatus + SuicideStatus + PsychoticFeature + 
+    RateofDeath + SmokingatTimeofDeath + LifetimeAlcohol + LifetimeDrugs + 
+    RNADegradPerSample + ScanDateDayOnly)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-6.599 -1.299  0.000  1.457  4.284 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                       41.78061   38.91489   1.074   0.3041  
+BrainpH                           -3.95700    5.10852  -0.775   0.4536  
+PMI                                0.03086    0.12177   0.253   0.8042  
+DiagnosisBipolar                  -4.83023    9.13367  -0.529   0.6066  
+DiagnosisDepression                4.26339    2.87355   1.484   0.1637  
+DiagnosisSchizophrenia            -2.66830    8.36795  -0.319   0.7553  
+GenderM                            0.02995    2.23865   0.013   0.9895  
+Age                               -0.04434    0.11989  -0.370   0.7179  
+LeftBrainStatusFrozen             -2.03001    2.36634  -0.858   0.4078  
+SuicideStatusUnknown              15.36174    7.11057   2.160   0.0517 .
+SuicideStatusYes                   3.56859    3.22921   1.105   0.2908  
+PsychoticFeatureYes                2.24322    7.46793   0.300   0.7690  
+RateofDeathPossible anoxia        11.94380    7.72124   1.547   0.1478  
+RateofDeathSudden                  5.42309    3.42962   1.581   0.1398  
+SmokingatTimeofDeathUnknown       -4.00971    3.26715  -1.227   0.2433  
+SmokingatTimeofDeathYes           -2.61266    2.50318  -1.044   0.3172  
+LifetimeAlcoholHeavy in present   -1.22911    4.60614  -0.267   0.7941  
+LifetimeAlcoholLittle or none      1.14229    5.36426   0.213   0.8349  
+LifetimeAlcoholModerate in past    4.43402    6.70589   0.661   0.5210  
+LifetimeAlcoholModerate present   -3.90899    5.04252  -0.775   0.4532  
+LifetimeAlcoholSocial             -3.53819    4.76844  -0.742   0.4724  
+LifetimeAlcoholUnknown           -12.85461   14.08102  -0.913   0.3793  
+LifetimeDrugsHeavy in present      2.32077    6.24892   0.371   0.7168  
+LifetimeDrugsLittle or none        5.91955    4.51134   1.312   0.2140  
+LifetimeDrugsModerate in past      9.42825    7.12995   1.322   0.2107  
+LifetimeDrugsModerate in present   9.36357    6.01842   1.556   0.1457  
+LifetimeDrugsSocial                3.70970    8.31565   0.446   0.6635  
+RNADegradPerSample               -15.95636   18.19990  -0.877   0.3978  
+ScanDateDayOnly01/09/02          -11.11457    6.33220  -1.755   0.1047  
+ScanDateDayOnly10/16/01          -21.32934    7.74995  -2.752   0.0175 *
+ScanDateDayOnly10/18/01          -11.37016    7.14446  -1.591   0.1375  
+ScanDateDayOnly11/08/01          -12.94222    6.39021  -2.025   0.0657 .
+ScanDateDayOnly11/20/01           -8.28737    6.14686  -1.348   0.2025  
+ScanDateDayOnly11/27/01          -13.13331    5.99659  -2.190   0.0490 *
+ScanDateDayOnly11/29/01           -5.49358    5.86208  -0.937   0.3672  
+ScanDateDayOnly12/06/01           -5.76212    6.09931  -0.945   0.3634  
+ScanDateDayOnly12/19/01          -17.32295    5.94421  -2.914   0.0130 *
+ScanDateDayOnly12/20/01          -12.57228    5.98831  -2.099   0.0576 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.165 on 12 degrees of freedom
+Multiple R-squared:  0.8603,	Adjusted R-squared:  0.4297 
+F-statistic: 1.998 on 37 and 12 DF,  p-value: 0.09909
+
+[1] "PC1noOutliers  vs  BrainpH"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-24.652  -9.075  -0.918   6.801  35.695 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                       68.327     47.902   1.426     0.16
+SubjectContinuousVariables[, j]  -10.996      7.704  -1.427     0.16
+
+Residual standard error: 12.47 on 48 degrees of freedom
+Multiple R-squared:  0.04072,	Adjusted R-squared:  0.02073 
+F-statistic: 2.037 on 1 and 48 DF,  p-value: 0.16
+
+[1] "PC1noOutliers  vs  PMI"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-25.463  -8.846  -1.633   5.145  40.297 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                     -2.41547    4.30000  -0.562    0.577
+SubjectContinuousVariables[, j]  0.08452    0.13674   0.618    0.539
+
+Residual standard error: 12.68 on 48 degrees of freedom
+Multiple R-squared:  0.007895,	Adjusted R-squared:  -0.01277 
+F-statistic: 0.382 on 1 and 48 DF,  p-value: 0.5395
+
+[1] "PC1noOutliers  vs  Age"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-23.875  -8.121  -2.256   4.793  40.709 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      1.79997    7.02948   0.256    0.799
+SubjectContinuousVariables[, j] -0.04038    0.15243  -0.265    0.792
+
+Residual standard error: 12.72 on 48 degrees of freedom
+Multiple R-squared:  0.00146,	Adjusted R-squared:  -0.01934 
+F-statistic: 0.07016 on 1 and 48 DF,  p-value: 0.7922
+
+[1] "PC1noOutliers  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-25.8850  -6.1161  -0.5436   4.8790  27.2889 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                        80.74      15.73   5.132 5.14e-06 ***
+SubjectContinuousVariables[, j]   -97.38      18.89  -5.154 4.77e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 10.22 on 48 degrees of freedom
+Multiple R-squared:  0.3562,	Adjusted R-squared:  0.3428 
+F-statistic: 26.56 on 1 and 48 DF,  p-value: 4.766e-06
+
+[1] "PC2noOutliers  vs  BrainpH"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-15.333  -4.922  -1.329   3.472  19.124 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      106.696     28.673   3.721 0.000520 ***
+SubjectContinuousVariables[, j]  -17.170      4.611  -3.724 0.000516 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.464 on 48 degrees of freedom
+Multiple R-squared:  0.2241,	Adjusted R-squared:  0.208 
+F-statistic: 13.87 on 1 and 48 DF,  p-value: 0.0005159
+
+[1] "PC2noOutliers  vs  PMI"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-16.5182  -5.9275  -0.3113   3.8821  23.1315 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                     -2.74379    2.84008  -0.966    0.339
+SubjectContinuousVariables[, j]  0.09600    0.09032   1.063    0.293
+
+Residual standard error: 8.376 on 48 degrees of freedom
+Multiple R-squared:  0.023,	Adjusted R-squared:  0.002644 
+F-statistic:  1.13 on 1 and 48 DF,  p-value: 0.2931
+
+[1] "PC2noOutliers  vs  Age"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-17.8260  -5.8957   0.1369   4.0465  24.3838 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      3.72516    4.64887   0.801    0.427
+SubjectContinuousVariables[, j] -0.08356    0.10081  -0.829    0.411
+
+Residual standard error: 8.414 on 48 degrees of freedom
+Multiple R-squared:  0.01411,	Adjusted R-squared:  -0.006427 
+F-statistic: 0.6871 on 1 and 48 DF,  p-value: 0.4113
+
+[1] "PC2noOutliers  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-16.1885  -6.4451  -0.6919   3.5104  24.5150 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                     -0.05752   13.05035  -0.004    0.997
+SubjectContinuousVariables[, j]  0.06937   15.67317   0.004    0.996
+
+Residual standard error: 8.474 on 48 degrees of freedom
+Multiple R-squared:  4.081e-07,	Adjusted R-squared:  -0.02083 
+F-statistic: 1.959e-05 on 1 and 48 DF,  p-value: 0.9965
+
+[1] "PC3noOutliers  vs  BrainpH"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-13.7765  -4.5673  -0.0623   3.8166  18.8594 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                     -122.925     23.919  -5.139 5.01e-06 ***
+SubjectContinuousVariables[, j]   19.782      3.847   5.143 4.95e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.226 on 48 degrees of freedom
+Multiple R-squared:  0.3553,	Adjusted R-squared:  0.3418 
+F-statistic: 26.45 on 1 and 48 DF,  p-value: 4.948e-06
+
+[1] "PC3noOutliers  vs  PMI"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-22.0611  -4.4483   0.4282   3.8537  14.4204 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                      4.67581    2.52231   1.854   0.0699 .
+SubjectContinuousVariables[, j] -0.16360    0.08021  -2.040   0.0469 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.439 on 48 degrees of freedom
+Multiple R-squared:  0.07976,	Adjusted R-squared:  0.06059 
+F-statistic:  4.16 on 1 and 48 DF,  p-value: 0.04691
+
+[1] "PC3noOutliers  vs  Age"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-22.888  -2.921   0.193   4.418  15.015 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                     -3.59784    4.25068  -0.846    0.402
+SubjectContinuousVariables[, j]  0.08071    0.09217   0.876    0.386
+
+Residual standard error: 7.693 on 48 degrees of freedom
+Multiple R-squared:  0.01572,	Adjusted R-squared:  -0.004785 
+F-statistic: 0.7666 on 1 and 48 DF,  p-value: 0.3856
+
+[1] "PC3noOutliers  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-21.7033  -3.1637   0.4586   5.1548  15.5039 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                       -1.638     11.940  -0.137    0.891
+SubjectContinuousVariables[, j]    1.976     14.340   0.138    0.891
+
+Residual standard error: 7.753 on 48 degrees of freedom
+Multiple R-squared:  0.0003954,	Adjusted R-squared:  -0.02043 
+F-statistic: 0.01899 on 1 and 48 DF,  p-value: 0.891
+
+[1] "PC4noOutliers  vs  BrainpH"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-12.1531  -3.2637  -0.3401   3.1443  12.3326 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      -4.7006    21.3961   -0.22    0.827
+SubjectContinuousVariables[, j]   0.7565     3.4409    0.22    0.827
+
+Residual standard error: 5.57 on 48 degrees of freedom
+Multiple R-squared:  0.001006,	Adjusted R-squared:  -0.01981 
+F-statistic: 0.04833 on 1 and 48 DF,  p-value: 0.8269
+
+[1] "PC4noOutliers  vs  PMI"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-12.456  -3.288  -0.389   2.820  12.198 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      0.53569    1.88764   0.284    0.778
+SubjectContinuousVariables[, j] -0.01874    0.06003  -0.312    0.756
+
+Residual standard error: 5.567 on 48 degrees of freedom
+Multiple R-squared:  0.002027,	Adjusted R-squared:  -0.01876 
+F-statistic: 0.0975 on 1 and 48 DF,  p-value: 0.7562
+
+[1] "PC4noOutliers  vs  Age"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-12.0004  -3.3525   0.0336   2.9527  13.0776 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      2.12720    3.06257   0.695    0.491
+SubjectContinuousVariables[, j] -0.04772    0.06641  -0.719    0.476
+
+Residual standard error: 5.543 on 48 degrees of freedom
+Multiple R-squared:  0.01064,	Adjusted R-squared:  -0.009971 
+F-statistic: 0.5163 on 1 and 48 DF,  p-value: 0.4759
+
+[1] "PC4noOutliers  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-12.1255  -3.2431  -0.2211   2.9734  11.6579 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                       -2.945      8.572  -0.344    0.733
+SubjectContinuousVariables[, j]    3.552     10.294   0.345    0.732
+
+Residual standard error: 5.566 on 48 degrees of freedom
+Multiple R-squared:  0.002475,	Adjusted R-squared:  -0.01831 
+F-statistic: 0.1191 on 1 and 48 DF,  p-value: 0.7315
+
+[1] "PC1noOutliers  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  3     94    31.2   0.187  0.905
+Residuals                   46   7687   167.1               
+[1] "PC1noOutliers  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1     21   21.39   0.132  0.718
+Residuals                   48   7759  161.65               
+[1] "PC1noOutliers  vs  LeftBrainStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    375   375.0    2.43  0.126
+Residuals                   48   7406   154.3               
+[1] "PC1noOutliers  vs  SuicideStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2     89   44.48   0.272  0.763
+Residuals                   47   7692  163.65               
+[1] "PC1noOutliers  vs  PsychoticFeature"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    118   117.7   0.738  0.395
+Residuals                   48   7663   159.6               
+[1] "PC1noOutliers  vs  RateofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2   1268   633.8   4.574 0.0153 *
+Residuals                   47   6513   138.6                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC1noOutliers  vs  SmokingatTimeofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2     89   44.41   0.271  0.764
+Residuals                   47   7692  163.65               
+[1] "PC1noOutliers  vs  LifetimeAlcohol"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  6    908   151.4   0.947  0.472
+Residuals                   43   6872   159.8               
+[1] "PC1noOutliers  vs  LifetimeDrugs"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  5    829   165.9    1.05  0.401
+Residuals                   44   6951   158.0               
+[1] "PC1noOutliers  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j] 10   2340   234.1   1.678  0.121
+Residuals                   39   5440   139.5               
+[1] "PC2noOutliers  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  3    142   47.17   0.656  0.583
+Residuals                   46   3305   71.85               
+[1] "PC2noOutliers  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1     58   58.21   0.825  0.368
+Residuals                   48   3388   70.59               
+[1] "PC2noOutliers  vs  LeftBrainStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1      0    0.34   0.005  0.945
+Residuals                   48   3446   71.80               
+[1] "PC2noOutliers  vs  SuicideStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2     69   34.28   0.477  0.624
+Residuals                   47   3378   71.87               
+[1] "PC2noOutliers  vs  PsychoticFeature"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1     59   58.84   0.834  0.366
+Residuals                   48   3388   70.58               
+[1] "PC2noOutliers  vs  RateofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2  437.4  218.70   3.416 0.0412 *
+Residuals                   47 3009.3   64.03                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC2noOutliers  vs  SmokingatTimeofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2  514.8  257.42   4.127 0.0223 *
+Residuals                   47 2931.8   62.38                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC2noOutliers  vs  LifetimeAlcohol"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  6  542.4   90.39   1.338  0.261
+Residuals                   43 2904.3   67.54               
+[1] "PC2noOutliers  vs  LifetimeDrugs"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  5     68   13.66   0.178  0.969
+Residuals                   44   3378   76.78               
+[1] "PC2noOutliers  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value  Pr(>F)   
+SubjectFactorVariables[, j] 10   1545  154.49   3.168 0.00464 **
+Residuals                   39   1902   48.76                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC3noOutliers  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  3    133   44.32   0.741  0.533
+Residuals                   46   2753   59.85               
+[1] "PC3noOutliers  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  1  217.8  217.82   3.918 0.0535 .
+Residuals                   48 2668.4   55.59                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC3noOutliers  vs  LeftBrainStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  1  196.9  196.88   3.514 0.0669 .
+Residuals                   48 2689.3   56.03                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC3noOutliers  vs  SuicideStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2   49.6   24.78   0.411  0.666
+Residuals                   47 2836.7   60.35               
+[1] "PC3noOutliers  vs  PsychoticFeature"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    5.2    5.18   0.086   0.77
+Residuals                   48 2881.0   60.02               
+[1] "PC3noOutliers  vs  RateofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2   61.2   30.62   0.509  0.604
+Residuals                   47 2825.0   60.11               
+[1] "PC3noOutliers  vs  SmokingatTimeofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2  184.4   92.18   1.603  0.212
+Residuals                   47 2701.9   57.49               
+[1] "PC3noOutliers  vs  LifetimeAlcohol"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  6  117.6   19.60   0.304  0.931
+Residuals                   43 2768.6   64.39               
+[1] "PC3noOutliers  vs  LifetimeDrugs"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  5   87.9   17.58   0.276  0.924
+Residuals                   44 2798.3   63.60               
+[1] "PC3noOutliers  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j] 10   1025  102.46   2.147 0.0435 *
+Residuals                   39   1862   47.73                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC4noOutliers  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  3   21.9    7.30   0.229  0.876
+Residuals                   46 1468.6   31.93               
+[1] "PC4noOutliers  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1   15.9   15.95   0.519  0.475
+Residuals                   48 1474.6   30.72               
+[1] "PC4noOutliers  vs  LeftBrainStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    0.9   0.928    0.03  0.863
+Residuals                   48 1489.6  31.034               
+[1] "PC4noOutliers  vs  SuicideStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2  161.8   80.91   2.862 0.0672 .
+Residuals                   47 1328.7   28.27                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC4noOutliers  vs  PsychoticFeature"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1   43.5   43.48   1.442  0.236
+Residuals                   48 1447.1   30.15               
+[1] "PC4noOutliers  vs  RateofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2  109.2   54.61   1.858  0.167
+Residuals                   47 1381.3   29.39               
+[1] "PC4noOutliers  vs  SmokingatTimeofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2    3.5    1.75   0.055  0.946
+Residuals                   47 1487.1   31.64               
+[1] "PC4noOutliers  vs  LifetimeAlcohol"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  6  118.9   19.82   0.621  0.712
+Residuals                   43 1371.6   31.90               
+[1] "PC4noOutliers  vs  LifetimeDrugs"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  5   98.8   19.76   0.625  0.682
+Residuals                   44 1391.8   31.63               
+[1] "PC4noOutliers  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)   
+SubjectFactorVariables[, j] 10  676.2   67.62   3.238  0.004 **
+Residuals                   39  814.4   20.88                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Call:
+lm(formula = SubjectPCA[, 1] ~ BrainpH + PMI + Diagnosis + Gender + 
+    Age + LeftBrainStatus + SuicideStatus + PsychoticFeature + 
+    RateofDeath + SmokingatTimeofDeath + LifetimeAlcohol + LifetimeDrugs + 
+    RNADegradPerSample + ScanDateDayOnly)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-10.457  -3.549   0.000   2.383  12.339 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                       299.8752   107.1022   2.800   0.0160 *
+BrainpH                           -21.5829    14.0598  -1.535   0.1507  
+PMI                                 0.2309     0.3352   0.689   0.5039  
+DiagnosisBipolar                   -7.8970    25.1378  -0.314   0.7588  
+DiagnosisDepression                -7.8613     7.9086  -0.994   0.3398  
+DiagnosisSchizophrenia            -13.8281    23.0304  -0.600   0.5594  
+GenderM                            -0.7313     6.1613  -0.119   0.9075  
+Age                                -0.1256     0.3300  -0.381   0.7102  
+LeftBrainStatusFrozen              -0.5010     6.5127  -0.077   0.9399  
+SuicideStatusUnknown               29.0794    19.5698   1.486   0.1631  
+SuicideStatusYes                   -8.2625     8.8875  -0.930   0.3709  
+PsychoticFeatureYes                -0.3351    20.5534  -0.016   0.9873  
+RateofDeathPossible anoxia         -0.1858    21.2505  -0.009   0.9932  
+RateofDeathSudden                  -0.6111     9.4391  -0.065   0.9494  
+SmokingatTimeofDeathUnknown        -7.2577     8.9919  -0.807   0.4353  
+SmokingatTimeofDeathYes             2.5925     6.8893   0.376   0.7133  
+LifetimeAlcoholHeavy in present    -3.0081    12.6771  -0.237   0.8164  
+LifetimeAlcoholLittle or none     -18.3977    14.7636  -1.246   0.2365  
+LifetimeAlcoholModerate in past   -38.7372    18.4561  -2.099   0.0577 .
+LifetimeAlcoholModerate present   -25.6844    13.8781  -1.851   0.0890 .
+LifetimeAlcoholSocial             -14.7698    13.1238  -1.125   0.2824  
+LifetimeAlcoholUnknown            -42.6499    38.7540  -1.101   0.2927  
+LifetimeDrugsHeavy in present     -28.3522    17.1984  -1.649   0.1252  
+LifetimeDrugsLittle or none        -3.5656    12.4162  -0.287   0.7789  
+LifetimeDrugsModerate in past      14.6824    19.6232   0.748   0.4687  
+LifetimeDrugsModerate in present    4.7251    16.5640   0.285   0.7803  
+LifetimeDrugsSocial                 3.6833    22.8865   0.161   0.8748  
+RNADegradPerSample               -143.2110    50.0901  -2.859   0.0144 *
+ScanDateDayOnly01/09/02           -11.9702    17.4276  -0.687   0.5052  
+ScanDateDayOnly10/16/01            -6.7764    21.3295  -0.318   0.7562  
+ScanDateDayOnly10/18/01             8.6329    19.6631   0.439   0.6684  
+ScanDateDayOnly11/08/01           -10.7920    17.5872  -0.614   0.5509  
+ScanDateDayOnly11/20/01           -17.3159    16.9175  -1.024   0.3262  
+ScanDateDayOnly11/27/01           -12.2711    16.5039  -0.744   0.4715  
+ScanDateDayOnly11/29/01           -21.1807    16.1337  -1.313   0.2138  
+ScanDateDayOnly12/06/01           -26.8270    16.7866  -1.598   0.1360  
+ScanDateDayOnly12/19/01           -14.6976    16.3598  -0.898   0.3866  
+ScanDateDayOnly12/20/01           -18.0857    16.4811  -1.097   0.2940  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 11.46 on 12 degrees of freedom
+Multiple R-squared:  0.7973,	Adjusted R-squared:  0.1725 
+F-statistic: 1.276 on 37 and 12 DF,  p-value: 0.3367
+
+
+Call:
+lm(formula = SubjectPCA[, 2] ~ BrainpH + PMI + Diagnosis + Gender + 
+    Age + LeftBrainStatus + SuicideStatus + PsychoticFeature + 
+    RateofDeath + SmokingatTimeofDeath + LifetimeAlcohol + LifetimeDrugs + 
+    RNADegradPerSample + ScanDateDayOnly)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.5764 -0.7959  0.0000  1.1466  5.6217 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                       42.82270   43.01642   0.995  0.33915   
+BrainpH                          -14.50865    5.64695  -2.569  0.02458 * 
+PMI                                0.08987    0.13461   0.668  0.51699   
+DiagnosisBipolar                   2.81784   10.09633   0.279  0.78492   
+DiagnosisDepression                3.35165    3.17641   1.055  0.31213   
+DiagnosisSchizophrenia            -4.38237    9.24991  -0.474  0.64416   
+GenderM                            6.97041    2.47460   2.817  0.01555 * 
+Age                               -0.16854    0.13253  -1.272  0.22755   
+LeftBrainStatusFrozen             -8.92493    2.61574  -3.412  0.00515 **
+SuicideStatusUnknown              -6.93342    7.86001  -0.882  0.39504   
+SuicideStatusYes                   2.00568    3.56956   0.562  0.58454   
+PsychoticFeatureYes                2.69609    8.25503   0.327  0.74960   
+RateofDeathPossible anoxia        -5.08470    8.53504  -0.596  0.56241   
+RateofDeathSudden                  1.30100    3.79110   0.343  0.73741   
+SmokingatTimeofDeathUnknown       -1.71243    3.61150  -0.474  0.64390   
+SmokingatTimeofDeathYes           -4.91364    2.76701  -1.776  0.10111   
+LifetimeAlcoholHeavy in present   20.76482    5.09161   4.078  0.00153 **
+LifetimeAlcoholLittle or none     11.22581    5.92964   1.893  0.08270 . 
+LifetimeAlcoholModerate in past   11.53392    7.41268   1.556  0.14568   
+LifetimeAlcoholModerate present    6.28886    5.57398   1.128  0.28127   
+LifetimeAlcoholSocial              4.49005    5.27102   0.852  0.41098   
+LifetimeAlcoholUnknown            36.04975   15.56512   2.316  0.03905 * 
+LifetimeDrugsHeavy in present     -0.72956    6.90754  -0.106  0.91763   
+LifetimeDrugsLittle or none       10.49045    4.98682   2.104  0.05717 . 
+LifetimeDrugsModerate in past     12.91498    7.88143   1.639  0.12722   
+LifetimeDrugsModerate in present -10.66221    6.65274  -1.603  0.13499   
+LifetimeDrugsSocial                6.56233    9.19210   0.714  0.48894   
+RNADegradPerSample                38.50436   20.11812   1.914  0.07978 . 
+ScanDateDayOnly01/09/02           15.72438    6.99960   2.246  0.04428 * 
+ScanDateDayOnly10/16/01            9.63893    8.56678   1.125  0.28253   
+ScanDateDayOnly10/18/01            9.28026    7.89747   1.175  0.26275   
+ScanDateDayOnly11/08/01            2.20286    7.06372   0.312  0.76050   
+ScanDateDayOnly11/20/01            3.37668    6.79472   0.497  0.62820   
+ScanDateDayOnly11/27/01            9.63884    6.62861   1.454  0.17156   
+ScanDateDayOnly11/29/01            2.35183    6.47993   0.363  0.72296   
+ScanDateDayOnly12/06/01            3.12848    6.74217   0.464  0.65094   
+ScanDateDayOnly12/19/01           -2.50864    6.57071  -0.382  0.70929   
+ScanDateDayOnly12/20/01           15.93108    6.61946   2.407  0.03311 * 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.604 on 12 degrees of freedom
+Multiple R-squared:  0.9262,	Adjusted R-squared:  0.6987 
+F-statistic:  4.07 on 37 and 12 DF,  p-value: 0.0061
+
+
+Call:
+lm(formula = SubjectPCA[, 3] ~ BrainpH + PMI + Diagnosis + Gender + 
+    Age + LeftBrainStatus + SuicideStatus + PsychoticFeature + 
+    RateofDeath + SmokingatTimeofDeath + LifetimeAlcohol + LifetimeDrugs + 
+    RNADegradPerSample + ScanDateDayOnly)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-5.503 -1.290  0.000  1.212  5.066 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                      -139.9948    42.2682  -3.312  0.00620 **
+BrainpH                            17.0042     5.5487   3.065  0.00982 **
+PMI                                 0.2382     0.1323   1.801  0.09688 . 
+DiagnosisBipolar                  -13.3537     9.9207  -1.346  0.20317   
+DiagnosisDepression                 0.7153     3.1212   0.229  0.82260   
+DiagnosisSchizophrenia            -17.6335     9.0890  -1.940  0.07623 . 
+GenderM                             8.3178     2.4316   3.421  0.00507 **
+Age                                 0.0326     0.1302   0.250  0.80654   
+LeftBrainStatusFrozen              -5.9720     2.5702  -2.324  0.03852 * 
+SuicideStatusUnknown               -2.4441     7.7233  -0.316  0.75710   
+SuicideStatusYes                   -0.1498     3.5075  -0.043  0.96664   
+PsychoticFeatureYes                12.7713     8.1114   1.574  0.14136   
+RateofDeathPossible anoxia          1.0351     8.3866   0.123  0.90382   
+RateofDeathSudden                  -0.0331     3.7252  -0.009  0.99306   
+SmokingatTimeofDeathUnknown        -7.5797     3.5487  -2.136  0.05398 . 
+SmokingatTimeofDeathYes            -6.8121     2.7189  -2.505  0.02764 * 
+LifetimeAlcoholHeavy in present     8.6378     5.0030   1.727  0.10988   
+LifetimeAlcoholLittle or none       2.4367     5.8265   0.418  0.68317   
+LifetimeAlcoholModerate in past    -3.8195     7.2837  -0.524  0.60956   
+LifetimeAlcoholModerate present    -6.7222     5.4770  -1.227  0.24322   
+LifetimeAlcoholSocial              -2.0215     5.1793  -0.390  0.70315   
+LifetimeAlcoholUnknown             19.1192    15.2944   1.250  0.23510   
+LifetimeDrugsHeavy in present      -4.0508     6.7874  -0.597  0.56172   
+LifetimeDrugsLittle or none         2.6491     4.9001   0.541  0.59866   
+LifetimeDrugsModerate in past       1.8876     7.7443   0.244  0.81155   
+LifetimeDrugsModerate in present   -9.3521     6.5370  -1.431  0.17805   
+LifetimeDrugsSocial                 6.5743     9.0322   0.728  0.48066   
+RNADegradPerSample                 28.8621    19.7682   1.460  0.16996   
+ScanDateDayOnly01/09/02             6.7547     6.8778   0.982  0.34544   
+ScanDateDayOnly10/16/01            21.9017     8.4178   2.602  0.02315 * 
+ScanDateDayOnly10/18/01             5.3615     7.7601   0.691  0.50277   
+ScanDateDayOnly11/08/01             7.8263     6.9409   1.128  0.28154   
+ScanDateDayOnly11/20/01            12.7860     6.6765   1.915  0.07962 . 
+ScanDateDayOnly11/27/01             5.3426     6.5133   0.820  0.42806   
+ScanDateDayOnly11/29/01             6.1869     6.3672   0.972  0.35039   
+ScanDateDayOnly12/06/01             5.1765     6.6249   0.781  0.44972   
+ScanDateDayOnly12/19/01            -4.6503     6.4564  -0.720  0.48516   
+ScanDateDayOnly12/20/01            10.7266     6.5043   1.649  0.12503   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.524 on 12 degrees of freedom
+Multiple R-squared:  0.9149,	Adjusted R-squared:  0.6525 
+F-statistic: 3.487 on 37 and 12 DF,  p-value: 0.01202
+
+
+Call:
+lm(formula = SubjectPCA[, 4] ~ BrainpH + PMI + Diagnosis + Gender + 
+    Age + LeftBrainStatus + SuicideStatus + PsychoticFeature + 
+    RateofDeath + SmokingatTimeofDeath + LifetimeAlcohol + LifetimeDrugs + 
+    RNADegradPerSample + ScanDateDayOnly)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-6.599 -1.299  0.000  1.457  4.284 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                       41.78061   38.91489   1.074   0.3041  
+BrainpH                           -3.95700    5.10852  -0.775   0.4536  
+PMI                                0.03086    0.12177   0.253   0.8042  
+DiagnosisBipolar                  -4.83023    9.13367  -0.529   0.6066  
+DiagnosisDepression                4.26339    2.87355   1.484   0.1637  
+DiagnosisSchizophrenia            -2.66830    8.36795  -0.319   0.7553  
+GenderM                            0.02995    2.23865   0.013   0.9895  
+Age                               -0.04434    0.11989  -0.370   0.7179  
+LeftBrainStatusFrozen             -2.03001    2.36634  -0.858   0.4078  
+SuicideStatusUnknown              15.36174    7.11057   2.160   0.0517 .
+SuicideStatusYes                   3.56859    3.22921   1.105   0.2908  
+PsychoticFeatureYes                2.24322    7.46793   0.300   0.7690  
+RateofDeathPossible anoxia        11.94380    7.72124   1.547   0.1478  
+RateofDeathSudden                  5.42309    3.42962   1.581   0.1398  
+SmokingatTimeofDeathUnknown       -4.00971    3.26715  -1.227   0.2433  
+SmokingatTimeofDeathYes           -2.61266    2.50318  -1.044   0.3172  
+LifetimeAlcoholHeavy in present   -1.22911    4.60614  -0.267   0.7941  
+LifetimeAlcoholLittle or none      1.14229    5.36426   0.213   0.8349  
+LifetimeAlcoholModerate in past    4.43402    6.70589   0.661   0.5210  
+LifetimeAlcoholModerate present   -3.90899    5.04252  -0.775   0.4532  
+LifetimeAlcoholSocial             -3.53819    4.76844  -0.742   0.4724  
+LifetimeAlcoholUnknown           -12.85461   14.08102  -0.913   0.3793  
+LifetimeDrugsHeavy in present      2.32077    6.24892   0.371   0.7168  
+LifetimeDrugsLittle or none        5.91955    4.51134   1.312   0.2140  
+LifetimeDrugsModerate in past      9.42825    7.12995   1.322   0.2107  
+LifetimeDrugsModerate in present   9.36357    6.01842   1.556   0.1457  
+LifetimeDrugsSocial                3.70970    8.31565   0.446   0.6635  
+RNADegradPerSample               -15.95636   18.19990  -0.877   0.3978  
+ScanDateDayOnly01/09/02          -11.11457    6.33220  -1.755   0.1047  
+ScanDateDayOnly10/16/01          -21.32934    7.74995  -2.752   0.0175 *
+ScanDateDayOnly10/18/01          -11.37016    7.14446  -1.591   0.1375  
+ScanDateDayOnly11/08/01          -12.94222    6.39021  -2.025   0.0657 .
+ScanDateDayOnly11/20/01           -8.28737    6.14686  -1.348   0.2025  
+ScanDateDayOnly11/27/01          -13.13331    5.99659  -2.190   0.0490 *
+ScanDateDayOnly11/29/01           -5.49358    5.86208  -0.937   0.3672  
+ScanDateDayOnly12/06/01           -5.76212    6.09931  -0.945   0.3634  
+ScanDateDayOnly12/19/01          -17.32295    5.94421  -2.914   0.0130 *
+ScanDateDayOnly12/20/01          -12.57228    5.98831  -2.099   0.0576 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.165 on 12 degrees of freedom
+Multiple R-squared:  0.8603,	Adjusted R-squared:  0.4297 
+F-statistic: 1.998 on 37 and 12 DF,  p-value: 0.09909
+
+[1] "PC1noOutliers  vs  BrainpH"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-24.652  -9.075  -0.918   6.801  35.695 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                       68.327     47.902   1.426     0.16
+SubjectContinuousVariables[, j]  -10.996      7.704  -1.427     0.16
+
+Residual standard error: 12.47 on 48 degrees of freedom
+Multiple R-squared:  0.04072,	Adjusted R-squared:  0.02073 
+F-statistic: 2.037 on 1 and 48 DF,  p-value: 0.16
+
+[1] "PC1noOutliers  vs  PMI"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-25.463  -8.846  -1.633   5.145  40.297 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                     -2.41547    4.30000  -0.562    0.577
+SubjectContinuousVariables[, j]  0.08452    0.13674   0.618    0.539
+
+Residual standard error: 12.68 on 48 degrees of freedom
+Multiple R-squared:  0.007895,	Adjusted R-squared:  -0.01277 
+F-statistic: 0.382 on 1 and 48 DF,  p-value: 0.5395
+
+[1] "PC1noOutliers  vs  Age"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-23.875  -8.121  -2.256   4.793  40.709 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      1.79997    7.02948   0.256    0.799
+SubjectContinuousVariables[, j] -0.04038    0.15243  -0.265    0.792
+
+Residual standard error: 12.72 on 48 degrees of freedom
+Multiple R-squared:  0.00146,	Adjusted R-squared:  -0.01934 
+F-statistic: 0.07016 on 1 and 48 DF,  p-value: 0.7922
+
+[1] "PC1noOutliers  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-25.8850  -6.1161  -0.5436   4.8790  27.2889 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                        80.74      15.73   5.132 5.14e-06 ***
+SubjectContinuousVariables[, j]   -97.38      18.89  -5.154 4.77e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 10.22 on 48 degrees of freedom
+Multiple R-squared:  0.3562,	Adjusted R-squared:  0.3428 
+F-statistic: 26.56 on 1 and 48 DF,  p-value: 4.766e-06
+
+[1] "PC2noOutliers  vs  BrainpH"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-15.333  -4.922  -1.329   3.472  19.124 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      106.696     28.673   3.721 0.000520 ***
+SubjectContinuousVariables[, j]  -17.170      4.611  -3.724 0.000516 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.464 on 48 degrees of freedom
+Multiple R-squared:  0.2241,	Adjusted R-squared:  0.208 
+F-statistic: 13.87 on 1 and 48 DF,  p-value: 0.0005159
+
+[1] "PC2noOutliers  vs  PMI"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-16.5182  -5.9275  -0.3113   3.8821  23.1315 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                     -2.74379    2.84008  -0.966    0.339
+SubjectContinuousVariables[, j]  0.09600    0.09032   1.063    0.293
+
+Residual standard error: 8.376 on 48 degrees of freedom
+Multiple R-squared:  0.023,	Adjusted R-squared:  0.002644 
+F-statistic:  1.13 on 1 and 48 DF,  p-value: 0.2931
+
+[1] "PC2noOutliers  vs  Age"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-17.8260  -5.8957   0.1369   4.0465  24.3838 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      3.72516    4.64887   0.801    0.427
+SubjectContinuousVariables[, j] -0.08356    0.10081  -0.829    0.411
+
+Residual standard error: 8.414 on 48 degrees of freedom
+Multiple R-squared:  0.01411,	Adjusted R-squared:  -0.006427 
+F-statistic: 0.6871 on 1 and 48 DF,  p-value: 0.4113
+
+[1] "PC2noOutliers  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-16.1885  -6.4451  -0.6919   3.5104  24.5150 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                     -0.05752   13.05035  -0.004    0.997
+SubjectContinuousVariables[, j]  0.06937   15.67317   0.004    0.996
+
+Residual standard error: 8.474 on 48 degrees of freedom
+Multiple R-squared:  4.081e-07,	Adjusted R-squared:  -0.02083 
+F-statistic: 1.959e-05 on 1 and 48 DF,  p-value: 0.9965
+
+[1] "PC3noOutliers  vs  BrainpH"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-13.7765  -4.5673  -0.0623   3.8166  18.8594 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                     -122.925     23.919  -5.139 5.01e-06 ***
+SubjectContinuousVariables[, j]   19.782      3.847   5.143 4.95e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.226 on 48 degrees of freedom
+Multiple R-squared:  0.3553,	Adjusted R-squared:  0.3418 
+F-statistic: 26.45 on 1 and 48 DF,  p-value: 4.948e-06
+
+[1] "PC3noOutliers  vs  PMI"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-22.0611  -4.4483   0.4282   3.8537  14.4204 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                      4.67581    2.52231   1.854   0.0699 .
+SubjectContinuousVariables[, j] -0.16360    0.08021  -2.040   0.0469 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.439 on 48 degrees of freedom
+Multiple R-squared:  0.07976,	Adjusted R-squared:  0.06059 
+F-statistic:  4.16 on 1 and 48 DF,  p-value: 0.04691
+
+[1] "PC3noOutliers  vs  Age"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-22.888  -2.921   0.193   4.418  15.015 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                     -3.59784    4.25068  -0.846    0.402
+SubjectContinuousVariables[, j]  0.08071    0.09217   0.876    0.386
+
+Residual standard error: 7.693 on 48 degrees of freedom
+Multiple R-squared:  0.01572,	Adjusted R-squared:  -0.004785 
+F-statistic: 0.7666 on 1 and 48 DF,  p-value: 0.3856
+
+[1] "PC3noOutliers  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-21.7033  -3.1637   0.4586   5.1548  15.5039 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                       -1.638     11.940  -0.137    0.891
+SubjectContinuousVariables[, j]    1.976     14.340   0.138    0.891
+
+Residual standard error: 7.753 on 48 degrees of freedom
+Multiple R-squared:  0.0003954,	Adjusted R-squared:  -0.02043 
+F-statistic: 0.01899 on 1 and 48 DF,  p-value: 0.891
+
+[1] "PC4noOutliers  vs  BrainpH"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-12.1531  -3.2637  -0.3401   3.1443  12.3326 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      -4.7006    21.3961   -0.22    0.827
+SubjectContinuousVariables[, j]   0.7565     3.4409    0.22    0.827
+
+Residual standard error: 5.57 on 48 degrees of freedom
+Multiple R-squared:  0.001006,	Adjusted R-squared:  -0.01981 
+F-statistic: 0.04833 on 1 and 48 DF,  p-value: 0.8269
+
+[1] "PC4noOutliers  vs  PMI"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-12.456  -3.288  -0.389   2.820  12.198 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      0.53569    1.88764   0.284    0.778
+SubjectContinuousVariables[, j] -0.01874    0.06003  -0.312    0.756
+
+Residual standard error: 5.567 on 48 degrees of freedom
+Multiple R-squared:  0.002027,	Adjusted R-squared:  -0.01876 
+F-statistic: 0.0975 on 1 and 48 DF,  p-value: 0.7562
+
+[1] "PC4noOutliers  vs  Age"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-12.0004  -3.3525   0.0336   2.9527  13.0776 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      2.12720    3.06257   0.695    0.491
+SubjectContinuousVariables[, j] -0.04772    0.06641  -0.719    0.476
+
+Residual standard error: 5.543 on 48 degrees of freedom
+Multiple R-squared:  0.01064,	Adjusted R-squared:  -0.009971 
+F-statistic: 0.5163 on 1 and 48 DF,  p-value: 0.4759
+
+[1] "PC4noOutliers  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-12.1255  -3.2431  -0.2211   2.9734  11.6579 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                       -2.945      8.572  -0.344    0.733
+SubjectContinuousVariables[, j]    3.552     10.294   0.345    0.732
+
+Residual standard error: 5.566 on 48 degrees of freedom
+Multiple R-squared:  0.002475,	Adjusted R-squared:  -0.01831 
+F-statistic: 0.1191 on 1 and 48 DF,  p-value: 0.7315
+
+[1] "PC1noOutliers  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  3     94    31.2   0.187  0.905
+Residuals                   46   7687   167.1               
+[1] "PC1noOutliers  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1     21   21.39   0.132  0.718
+Residuals                   48   7759  161.65               
+[1] "PC1noOutliers  vs  LeftBrainStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    375   375.0    2.43  0.126
+Residuals                   48   7406   154.3               
+[1] "PC1noOutliers  vs  SuicideStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2     89   44.48   0.272  0.763
+Residuals                   47   7692  163.65               
+[1] "PC1noOutliers  vs  PsychoticFeature"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    118   117.7   0.738  0.395
+Residuals                   48   7663   159.6               
+[1] "PC1noOutliers  vs  RateofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2   1268   633.8   4.574 0.0153 *
+Residuals                   47   6513   138.6                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC1noOutliers  vs  SmokingatTimeofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2     89   44.41   0.271  0.764
+Residuals                   47   7692  163.65               
+[1] "PC1noOutliers  vs  LifetimeAlcohol"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  6    908   151.4   0.947  0.472
+Residuals                   43   6872   159.8               
+[1] "PC1noOutliers  vs  LifetimeDrugs"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  5    829   165.9    1.05  0.401
+Residuals                   44   6951   158.0               
+[1] "PC1noOutliers  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j] 10   2340   234.1   1.678  0.121
+Residuals                   39   5440   139.5               
+[1] "PC2noOutliers  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  3    142   47.17   0.656  0.583
+Residuals                   46   3305   71.85               
+[1] "PC2noOutliers  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1     58   58.21   0.825  0.368
+Residuals                   48   3388   70.59               
+[1] "PC2noOutliers  vs  LeftBrainStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1      0    0.34   0.005  0.945
+Residuals                   48   3446   71.80               
+[1] "PC2noOutliers  vs  SuicideStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2     69   34.28   0.477  0.624
+Residuals                   47   3378   71.87               
+[1] "PC2noOutliers  vs  PsychoticFeature"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1     59   58.84   0.834  0.366
+Residuals                   48   3388   70.58               
+[1] "PC2noOutliers  vs  RateofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2  437.4  218.70   3.416 0.0412 *
+Residuals                   47 3009.3   64.03                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC2noOutliers  vs  SmokingatTimeofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2  514.8  257.42   4.127 0.0223 *
+Residuals                   47 2931.8   62.38                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC2noOutliers  vs  LifetimeAlcohol"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  6  542.4   90.39   1.338  0.261
+Residuals                   43 2904.3   67.54               
+[1] "PC2noOutliers  vs  LifetimeDrugs"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  5     68   13.66   0.178  0.969
+Residuals                   44   3378   76.78               
+[1] "PC2noOutliers  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value  Pr(>F)   
+SubjectFactorVariables[, j] 10   1545  154.49   3.168 0.00464 **
+Residuals                   39   1902   48.76                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC3noOutliers  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  3    133   44.32   0.741  0.533
+Residuals                   46   2753   59.85               
+[1] "PC3noOutliers  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  1  217.8  217.82   3.918 0.0535 .
+Residuals                   48 2668.4   55.59                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC3noOutliers  vs  LeftBrainStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  1  196.9  196.88   3.514 0.0669 .
+Residuals                   48 2689.3   56.03                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC3noOutliers  vs  SuicideStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2   49.6   24.78   0.411  0.666
+Residuals                   47 2836.7   60.35               
+[1] "PC3noOutliers  vs  PsychoticFeature"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    5.2    5.18   0.086   0.77
+Residuals                   48 2881.0   60.02               
+[1] "PC3noOutliers  vs  RateofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2   61.2   30.62   0.509  0.604
+Residuals                   47 2825.0   60.11               
+[1] "PC3noOutliers  vs  SmokingatTimeofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2  184.4   92.18   1.603  0.212
+Residuals                   47 2701.9   57.49               
+[1] "PC3noOutliers  vs  LifetimeAlcohol"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  6  117.6   19.60   0.304  0.931
+Residuals                   43 2768.6   64.39               
+[1] "PC3noOutliers  vs  LifetimeDrugs"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  5   87.9   17.58   0.276  0.924
+Residuals                   44 2798.3   63.60               
+[1] "PC3noOutliers  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j] 10   1025  102.46   2.147 0.0435 *
+Residuals                   39   1862   47.73                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC4noOutliers  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  3   21.9    7.30   0.229  0.876
+Residuals                   46 1468.6   31.93               
+[1] "PC4noOutliers  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1   15.9   15.95   0.519  0.475
+Residuals                   48 1474.6   30.72               
+[1] "PC4noOutliers  vs  LeftBrainStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    0.9   0.928    0.03  0.863
+Residuals                   48 1489.6  31.034               
+[1] "PC4noOutliers  vs  SuicideStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2  161.8   80.91   2.862 0.0672 .
+Residuals                   47 1328.7   28.27                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC4noOutliers  vs  PsychoticFeature"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1   43.5   43.48   1.442  0.236
+Residuals                   48 1447.1   30.15               
+[1] "PC4noOutliers  vs  RateofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2  109.2   54.61   1.858  0.167
+Residuals                   47 1381.3   29.39               
+[1] "PC4noOutliers  vs  SmokingatTimeofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2    3.5    1.75   0.055  0.946
+Residuals                   47 1487.1   31.64               
+[1] "PC4noOutliers  vs  LifetimeAlcohol"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  6  118.9   19.82   0.621  0.712
+Residuals                   43 1371.6   31.90               
+[1] "PC4noOutliers  vs  LifetimeDrugs"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  5   98.8   19.76   0.625  0.682
+Residuals                   44 1391.8   31.63               
+[1] "PC4noOutliers  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)   
+SubjectFactorVariables[, j] 10  676.2   67.62   3.238  0.004 **
+Residuals                   39  814.4   20.88                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Call:
+lm(formula = SubjectPCA[, 1] ~ BrainpH + PMI + Diagnosis + Gender + 
+    Age + LeftBrainStatus + SuicideStatus + PsychoticFeature + 
+    RateofDeath + SmokingatTimeofDeath + LifetimeAlcohol + LifetimeDrugs + 
+    RNADegradPerSample + ScanDateDayOnly)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-10.457  -3.549   0.000   2.383  12.339 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                       299.8752   107.1022   2.800   0.0160 *
+BrainpH                           -21.5829    14.0598  -1.535   0.1507  
+PMI                                 0.2309     0.3352   0.689   0.5039  
+DiagnosisBipolar                   -7.8970    25.1378  -0.314   0.7588  
+DiagnosisDepression                -7.8613     7.9086  -0.994   0.3398  
+DiagnosisSchizophrenia            -13.8281    23.0304  -0.600   0.5594  
+GenderM                            -0.7313     6.1613  -0.119   0.9075  
+Age                                -0.1256     0.3300  -0.381   0.7102  
+LeftBrainStatusFrozen              -0.5010     6.5127  -0.077   0.9399  
+SuicideStatusUnknown               29.0794    19.5698   1.486   0.1631  
+SuicideStatusYes                   -8.2625     8.8875  -0.930   0.3709  
+PsychoticFeatureYes                -0.3351    20.5534  -0.016   0.9873  
+RateofDeathPossible anoxia         -0.1858    21.2505  -0.009   0.9932  
+RateofDeathSudden                  -0.6111     9.4391  -0.065   0.9494  
+SmokingatTimeofDeathUnknown        -7.2577     8.9919  -0.807   0.4353  
+SmokingatTimeofDeathYes             2.5925     6.8893   0.376   0.7133  
+LifetimeAlcoholHeavy in present    -3.0081    12.6771  -0.237   0.8164  
+LifetimeAlcoholLittle or none     -18.3977    14.7636  -1.246   0.2365  
+LifetimeAlcoholModerate in past   -38.7372    18.4561  -2.099   0.0577 .
+LifetimeAlcoholModerate present   -25.6844    13.8781  -1.851   0.0890 .
+LifetimeAlcoholSocial             -14.7698    13.1238  -1.125   0.2824  
+LifetimeAlcoholUnknown            -42.6499    38.7540  -1.101   0.2927  
+LifetimeDrugsHeavy in present     -28.3522    17.1984  -1.649   0.1252  
+LifetimeDrugsLittle or none        -3.5656    12.4162  -0.287   0.7789  
+LifetimeDrugsModerate in past      14.6824    19.6232   0.748   0.4687  
+LifetimeDrugsModerate in present    4.7251    16.5640   0.285   0.7803  
+LifetimeDrugsSocial                 3.6833    22.8865   0.161   0.8748  
+RNADegradPerSample               -143.2110    50.0901  -2.859   0.0144 *
+ScanDateDayOnly01/09/02           -11.9702    17.4276  -0.687   0.5052  
+ScanDateDayOnly10/16/01            -6.7764    21.3295  -0.318   0.7562  
+ScanDateDayOnly10/18/01             8.6329    19.6631   0.439   0.6684  
+ScanDateDayOnly11/08/01           -10.7920    17.5872  -0.614   0.5509  
+ScanDateDayOnly11/20/01           -17.3159    16.9175  -1.024   0.3262  
+ScanDateDayOnly11/27/01           -12.2711    16.5039  -0.744   0.4715  
+ScanDateDayOnly11/29/01           -21.1807    16.1337  -1.313   0.2138  
+ScanDateDayOnly12/06/01           -26.8270    16.7866  -1.598   0.1360  
+ScanDateDayOnly12/19/01           -14.6976    16.3598  -0.898   0.3866  
+ScanDateDayOnly12/20/01           -18.0857    16.4811  -1.097   0.2940  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 11.46 on 12 degrees of freedom
+Multiple R-squared:  0.7973,	Adjusted R-squared:  0.1725 
+F-statistic: 1.276 on 37 and 12 DF,  p-value: 0.3367
+
+
+Call:
+lm(formula = SubjectPCA[, 2] ~ BrainpH + PMI + Diagnosis + Gender + 
+    Age + LeftBrainStatus + SuicideStatus + PsychoticFeature + 
+    RateofDeath + SmokingatTimeofDeath + LifetimeAlcohol + LifetimeDrugs + 
+    RNADegradPerSample + ScanDateDayOnly)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.5764 -0.7959  0.0000  1.1466  5.6217 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                       42.82270   43.01642   0.995  0.33915   
+BrainpH                          -14.50865    5.64695  -2.569  0.02458 * 
+PMI                                0.08987    0.13461   0.668  0.51699   
+DiagnosisBipolar                   2.81784   10.09633   0.279  0.78492   
+DiagnosisDepression                3.35165    3.17641   1.055  0.31213   
+DiagnosisSchizophrenia            -4.38237    9.24991  -0.474  0.64416   
+GenderM                            6.97041    2.47460   2.817  0.01555 * 
+Age                               -0.16854    0.13253  -1.272  0.22755   
+LeftBrainStatusFrozen             -8.92493    2.61574  -3.412  0.00515 **
+SuicideStatusUnknown              -6.93342    7.86001  -0.882  0.39504   
+SuicideStatusYes                   2.00568    3.56956   0.562  0.58454   
+PsychoticFeatureYes                2.69609    8.25503   0.327  0.74960   
+RateofDeathPossible anoxia        -5.08470    8.53504  -0.596  0.56241   
+RateofDeathSudden                  1.30100    3.79110   0.343  0.73741   
+SmokingatTimeofDeathUnknown       -1.71243    3.61150  -0.474  0.64390   
+SmokingatTimeofDeathYes           -4.91364    2.76701  -1.776  0.10111   
+LifetimeAlcoholHeavy in present   20.76482    5.09161   4.078  0.00153 **
+LifetimeAlcoholLittle or none     11.22581    5.92964   1.893  0.08270 . 
+LifetimeAlcoholModerate in past   11.53392    7.41268   1.556  0.14568   
+LifetimeAlcoholModerate present    6.28886    5.57398   1.128  0.28127   
+LifetimeAlcoholSocial              4.49005    5.27102   0.852  0.41098   
+LifetimeAlcoholUnknown            36.04975   15.56512   2.316  0.03905 * 
+LifetimeDrugsHeavy in present     -0.72956    6.90754  -0.106  0.91763   
+LifetimeDrugsLittle or none       10.49045    4.98682   2.104  0.05717 . 
+LifetimeDrugsModerate in past     12.91498    7.88143   1.639  0.12722   
+LifetimeDrugsModerate in present -10.66221    6.65274  -1.603  0.13499   
+LifetimeDrugsSocial                6.56233    9.19210   0.714  0.48894   
+RNADegradPerSample                38.50436   20.11812   1.914  0.07978 . 
+ScanDateDayOnly01/09/02           15.72438    6.99960   2.246  0.04428 * 
+ScanDateDayOnly10/16/01            9.63893    8.56678   1.125  0.28253   
+ScanDateDayOnly10/18/01            9.28026    7.89747   1.175  0.26275   
+ScanDateDayOnly11/08/01            2.20286    7.06372   0.312  0.76050   
+ScanDateDayOnly11/20/01            3.37668    6.79472   0.497  0.62820   
+ScanDateDayOnly11/27/01            9.63884    6.62861   1.454  0.17156   
+ScanDateDayOnly11/29/01            2.35183    6.47993   0.363  0.72296   
+ScanDateDayOnly12/06/01            3.12848    6.74217   0.464  0.65094   
+ScanDateDayOnly12/19/01           -2.50864    6.57071  -0.382  0.70929   
+ScanDateDayOnly12/20/01           15.93108    6.61946   2.407  0.03311 * 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.604 on 12 degrees of freedom
+Multiple R-squared:  0.9262,	Adjusted R-squared:  0.6987 
+F-statistic:  4.07 on 37 and 12 DF,  p-value: 0.0061
+
+
+Call:
+lm(formula = SubjectPCA[, 3] ~ BrainpH + PMI + Diagnosis + Gender + 
+    Age + LeftBrainStatus + SuicideStatus + PsychoticFeature + 
+    RateofDeath + SmokingatTimeofDeath + LifetimeAlcohol + LifetimeDrugs + 
+    RNADegradPerSample + ScanDateDayOnly)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-5.503 -1.290  0.000  1.212  5.066 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                      -139.9948    42.2682  -3.312  0.00620 **
+BrainpH                            17.0042     5.5487   3.065  0.00982 **
+PMI                                 0.2382     0.1323   1.801  0.09688 . 
+DiagnosisBipolar                  -13.3537     9.9207  -1.346  0.20317   
+DiagnosisDepression                 0.7153     3.1212   0.229  0.82260   
+DiagnosisSchizophrenia            -17.6335     9.0890  -1.940  0.07623 . 
+GenderM                             8.3178     2.4316   3.421  0.00507 **
+Age                                 0.0326     0.1302   0.250  0.80654   
+LeftBrainStatusFrozen              -5.9720     2.5702  -2.324  0.03852 * 
+SuicideStatusUnknown               -2.4441     7.7233  -0.316  0.75710   
+SuicideStatusYes                   -0.1498     3.5075  -0.043  0.96664   
+PsychoticFeatureYes                12.7713     8.1114   1.574  0.14136   
+RateofDeathPossible anoxia          1.0351     8.3866   0.123  0.90382   
+RateofDeathSudden                  -0.0331     3.7252  -0.009  0.99306   
+SmokingatTimeofDeathUnknown        -7.5797     3.5487  -2.136  0.05398 . 
+SmokingatTimeofDeathYes            -6.8121     2.7189  -2.505  0.02764 * 
+LifetimeAlcoholHeavy in present     8.6378     5.0030   1.727  0.10988   
+LifetimeAlcoholLittle or none       2.4367     5.8265   0.418  0.68317   
+LifetimeAlcoholModerate in past    -3.8195     7.2837  -0.524  0.60956   
+LifetimeAlcoholModerate present    -6.7222     5.4770  -1.227  0.24322   
+LifetimeAlcoholSocial              -2.0215     5.1793  -0.390  0.70315   
+LifetimeAlcoholUnknown             19.1192    15.2944   1.250  0.23510   
+LifetimeDrugsHeavy in present      -4.0508     6.7874  -0.597  0.56172   
+LifetimeDrugsLittle or none         2.6491     4.9001   0.541  0.59866   
+LifetimeDrugsModerate in past       1.8876     7.7443   0.244  0.81155   
+LifetimeDrugsModerate in present   -9.3521     6.5370  -1.431  0.17805   
+LifetimeDrugsSocial                 6.5743     9.0322   0.728  0.48066   
+RNADegradPerSample                 28.8621    19.7682   1.460  0.16996   
+ScanDateDayOnly01/09/02             6.7547     6.8778   0.982  0.34544   
+ScanDateDayOnly10/16/01            21.9017     8.4178   2.602  0.02315 * 
+ScanDateDayOnly10/18/01             5.3615     7.7601   0.691  0.50277   
+ScanDateDayOnly11/08/01             7.8263     6.9409   1.128  0.28154   
+ScanDateDayOnly11/20/01            12.7860     6.6765   1.915  0.07962 . 
+ScanDateDayOnly11/27/01             5.3426     6.5133   0.820  0.42806   
+ScanDateDayOnly11/29/01             6.1869     6.3672   0.972  0.35039   
+ScanDateDayOnly12/06/01             5.1765     6.6249   0.781  0.44972   
+ScanDateDayOnly12/19/01            -4.6503     6.4564  -0.720  0.48516   
+ScanDateDayOnly12/20/01            10.7266     6.5043   1.649  0.12503   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.524 on 12 degrees of freedom
+Multiple R-squared:  0.9149,	Adjusted R-squared:  0.6525 
+F-statistic: 3.487 on 37 and 12 DF,  p-value: 0.01202
+
+
+Call:
+lm(formula = SubjectPCA[, 4] ~ BrainpH + PMI + Diagnosis + Gender + 
+    Age + LeftBrainStatus + SuicideStatus + PsychoticFeature + 
+    RateofDeath + SmokingatTimeofDeath + LifetimeAlcohol + LifetimeDrugs + 
+    RNADegradPerSample + ScanDateDayOnly)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-6.599 -1.299  0.000  1.457  4.284 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                       41.78061   38.91489   1.074   0.3041  
+BrainpH                           -3.95700    5.10852  -0.775   0.4536  
+PMI                                0.03086    0.12177   0.253   0.8042  
+DiagnosisBipolar                  -4.83023    9.13367  -0.529   0.6066  
+DiagnosisDepression                4.26339    2.87355   1.484   0.1637  
+DiagnosisSchizophrenia            -2.66830    8.36795  -0.319   0.7553  
+GenderM                            0.02995    2.23865   0.013   0.9895  
+Age                               -0.04434    0.11989  -0.370   0.7179  
+LeftBrainStatusFrozen             -2.03001    2.36634  -0.858   0.4078  
+SuicideStatusUnknown              15.36174    7.11057   2.160   0.0517 .
+SuicideStatusYes                   3.56859    3.22921   1.105   0.2908  
+PsychoticFeatureYes                2.24322    7.46793   0.300   0.7690  
+RateofDeathPossible anoxia        11.94380    7.72124   1.547   0.1478  
+RateofDeathSudden                  5.42309    3.42962   1.581   0.1398  
+SmokingatTimeofDeathUnknown       -4.00971    3.26715  -1.227   0.2433  
+SmokingatTimeofDeathYes           -2.61266    2.50318  -1.044   0.3172  
+LifetimeAlcoholHeavy in present   -1.22911    4.60614  -0.267   0.7941  
+LifetimeAlcoholLittle or none      1.14229    5.36426   0.213   0.8349  
+LifetimeAlcoholModerate in past    4.43402    6.70589   0.661   0.5210  
+LifetimeAlcoholModerate present   -3.90899    5.04252  -0.775   0.4532  
+LifetimeAlcoholSocial             -3.53819    4.76844  -0.742   0.4724  
+LifetimeAlcoholUnknown           -12.85461   14.08102  -0.913   0.3793  
+LifetimeDrugsHeavy in present      2.32077    6.24892   0.371   0.7168  
+LifetimeDrugsLittle or none        5.91955    4.51134   1.312   0.2140  
+LifetimeDrugsModerate in past      9.42825    7.12995   1.322   0.2107  
+LifetimeDrugsModerate in present   9.36357    6.01842   1.556   0.1457  
+LifetimeDrugsSocial                3.70970    8.31565   0.446   0.6635  
+RNADegradPerSample               -15.95636   18.19990  -0.877   0.3978  
+ScanDateDayOnly01/09/02          -11.11457    6.33220  -1.755   0.1047  
+ScanDateDayOnly10/16/01          -21.32934    7.74995  -2.752   0.0175 *
+ScanDateDayOnly10/18/01          -11.37016    7.14446  -1.591   0.1375  
+ScanDateDayOnly11/08/01          -12.94222    6.39021  -2.025   0.0657 .
+ScanDateDayOnly11/20/01           -8.28737    6.14686  -1.348   0.2025  
+ScanDateDayOnly11/27/01          -13.13331    5.99659  -2.190   0.0490 *
+ScanDateDayOnly11/29/01           -5.49358    5.86208  -0.937   0.3672  
+ScanDateDayOnly12/06/01           -5.76212    6.09931  -0.945   0.3634  
+ScanDateDayOnly12/19/01          -17.32295    5.94421  -2.914   0.0130 *
+ScanDateDayOnly12/20/01          -12.57228    5.98831  -2.099   0.0576 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.165 on 12 degrees of freedom
+Multiple R-squared:  0.8603,	Adjusted R-squared:  0.4297 
+F-statistic: 1.998 on 37 and 12 DF,  p-value: 0.09909
+
+[1] "PC1noOutliers  vs  BrainpH"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-24.652  -9.075  -0.918   6.801  35.695 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                       68.327     47.902   1.426     0.16
+SubjectContinuousVariables[, j]  -10.996      7.704  -1.427     0.16
+
+Residual standard error: 12.47 on 48 degrees of freedom
+Multiple R-squared:  0.04072,	Adjusted R-squared:  0.02073 
+F-statistic: 2.037 on 1 and 48 DF,  p-value: 0.16
+
+[1] "PC1noOutliers  vs  PMI"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-25.463  -8.846  -1.633   5.145  40.297 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                     -2.41547    4.30000  -0.562    0.577
+SubjectContinuousVariables[, j]  0.08452    0.13674   0.618    0.539
+
+Residual standard error: 12.68 on 48 degrees of freedom
+Multiple R-squared:  0.007895,	Adjusted R-squared:  -0.01277 
+F-statistic: 0.382 on 1 and 48 DF,  p-value: 0.5395
+
+[1] "PC1noOutliers  vs  Age"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-23.875  -8.121  -2.256   4.793  40.709 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      1.79997    7.02948   0.256    0.799
+SubjectContinuousVariables[, j] -0.04038    0.15243  -0.265    0.792
+
+Residual standard error: 12.72 on 48 degrees of freedom
+Multiple R-squared:  0.00146,	Adjusted R-squared:  -0.01934 
+F-statistic: 0.07016 on 1 and 48 DF,  p-value: 0.7922
+
+[1] "PC1noOutliers  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-25.8850  -6.1161  -0.5436   4.8790  27.2889 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                        80.74      15.73   5.132 5.14e-06 ***
+SubjectContinuousVariables[, j]   -97.38      18.89  -5.154 4.77e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 10.22 on 48 degrees of freedom
+Multiple R-squared:  0.3562,	Adjusted R-squared:  0.3428 
+F-statistic: 26.56 on 1 and 48 DF,  p-value: 4.766e-06
+
+[1] "PC2noOutliers  vs  BrainpH"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-15.333  -4.922  -1.329   3.472  19.124 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      106.696     28.673   3.721 0.000520 ***
+SubjectContinuousVariables[, j]  -17.170      4.611  -3.724 0.000516 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.464 on 48 degrees of freedom
+Multiple R-squared:  0.2241,	Adjusted R-squared:  0.208 
+F-statistic: 13.87 on 1 and 48 DF,  p-value: 0.0005159
+
+[1] "PC2noOutliers  vs  PMI"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-16.5182  -5.9275  -0.3113   3.8821  23.1315 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                     -2.74379    2.84008  -0.966    0.339
+SubjectContinuousVariables[, j]  0.09600    0.09032   1.063    0.293
+
+Residual standard error: 8.376 on 48 degrees of freedom
+Multiple R-squared:  0.023,	Adjusted R-squared:  0.002644 
+F-statistic:  1.13 on 1 and 48 DF,  p-value: 0.2931
+
+[1] "PC2noOutliers  vs  Age"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-17.8260  -5.8957   0.1369   4.0465  24.3838 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      3.72516    4.64887   0.801    0.427
+SubjectContinuousVariables[, j] -0.08356    0.10081  -0.829    0.411
+
+Residual standard error: 8.414 on 48 degrees of freedom
+Multiple R-squared:  0.01411,	Adjusted R-squared:  -0.006427 
+F-statistic: 0.6871 on 1 and 48 DF,  p-value: 0.4113
+
+[1] "PC2noOutliers  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-16.1885  -6.4451  -0.6919   3.5104  24.5150 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                     -0.05752   13.05035  -0.004    0.997
+SubjectContinuousVariables[, j]  0.06937   15.67317   0.004    0.996
+
+Residual standard error: 8.474 on 48 degrees of freedom
+Multiple R-squared:  4.081e-07,	Adjusted R-squared:  -0.02083 
+F-statistic: 1.959e-05 on 1 and 48 DF,  p-value: 0.9965
+
+[1] "PC3noOutliers  vs  BrainpH"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-13.7765  -4.5673  -0.0623   3.8166  18.8594 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                     -122.925     23.919  -5.139 5.01e-06 ***
+SubjectContinuousVariables[, j]   19.782      3.847   5.143 4.95e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.226 on 48 degrees of freedom
+Multiple R-squared:  0.3553,	Adjusted R-squared:  0.3418 
+F-statistic: 26.45 on 1 and 48 DF,  p-value: 4.948e-06
+
+[1] "PC3noOutliers  vs  PMI"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-22.0611  -4.4483   0.4282   3.8537  14.4204 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                      4.67581    2.52231   1.854   0.0699 .
+SubjectContinuousVariables[, j] -0.16360    0.08021  -2.040   0.0469 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.439 on 48 degrees of freedom
+Multiple R-squared:  0.07976,	Adjusted R-squared:  0.06059 
+F-statistic:  4.16 on 1 and 48 DF,  p-value: 0.04691
+
+[1] "PC3noOutliers  vs  Age"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-22.888  -2.921   0.193   4.418  15.015 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                     -3.59784    4.25068  -0.846    0.402
+SubjectContinuousVariables[, j]  0.08071    0.09217   0.876    0.386
+
+Residual standard error: 7.693 on 48 degrees of freedom
+Multiple R-squared:  0.01572,	Adjusted R-squared:  -0.004785 
+F-statistic: 0.7666 on 1 and 48 DF,  p-value: 0.3856
+
+[1] "PC3noOutliers  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-21.7033  -3.1637   0.4586   5.1548  15.5039 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                       -1.638     11.940  -0.137    0.891
+SubjectContinuousVariables[, j]    1.976     14.340   0.138    0.891
+
+Residual standard error: 7.753 on 48 degrees of freedom
+Multiple R-squared:  0.0003954,	Adjusted R-squared:  -0.02043 
+F-statistic: 0.01899 on 1 and 48 DF,  p-value: 0.891
+
+[1] "PC4noOutliers  vs  BrainpH"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-12.1531  -3.2637  -0.3401   3.1443  12.3326 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      -4.7006    21.3961   -0.22    0.827
+SubjectContinuousVariables[, j]   0.7565     3.4409    0.22    0.827
+
+Residual standard error: 5.57 on 48 degrees of freedom
+Multiple R-squared:  0.001006,	Adjusted R-squared:  -0.01981 
+F-statistic: 0.04833 on 1 and 48 DF,  p-value: 0.8269
+
+[1] "PC4noOutliers  vs  PMI"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-12.456  -3.288  -0.389   2.820  12.198 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      0.53569    1.88764   0.284    0.778
+SubjectContinuousVariables[, j] -0.01874    0.06003  -0.312    0.756
+
+Residual standard error: 5.567 on 48 degrees of freedom
+Multiple R-squared:  0.002027,	Adjusted R-squared:  -0.01876 
+F-statistic: 0.0975 on 1 and 48 DF,  p-value: 0.7562
+
+[1] "PC4noOutliers  vs  Age"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-12.0004  -3.3525   0.0336   2.9527  13.0776 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      2.12720    3.06257   0.695    0.491
+SubjectContinuousVariables[, j] -0.04772    0.06641  -0.719    0.476
+
+Residual standard error: 5.543 on 48 degrees of freedom
+Multiple R-squared:  0.01064,	Adjusted R-squared:  -0.009971 
+F-statistic: 0.5163 on 1 and 48 DF,  p-value: 0.4759
+
+[1] "PC4noOutliers  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-12.1255  -3.2431  -0.2211   2.9734  11.6579 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                       -2.945      8.572  -0.344    0.733
+SubjectContinuousVariables[, j]    3.552     10.294   0.345    0.732
+
+Residual standard error: 5.566 on 48 degrees of freedom
+Multiple R-squared:  0.002475,	Adjusted R-squared:  -0.01831 
+F-statistic: 0.1191 on 1 and 48 DF,  p-value: 0.7315
+
+[1] "PC1noOutliers  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  3     94    31.2   0.187  0.905
+Residuals                   46   7687   167.1               
+[1] "PC1noOutliers  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1     21   21.39   0.132  0.718
+Residuals                   48   7759  161.65               
+[1] "PC1noOutliers  vs  LeftBrainStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    375   375.0    2.43  0.126
+Residuals                   48   7406   154.3               
+[1] "PC1noOutliers  vs  SuicideStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2     89   44.48   0.272  0.763
+Residuals                   47   7692  163.65               
+[1] "PC1noOutliers  vs  PsychoticFeature"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    118   117.7   0.738  0.395
+Residuals                   48   7663   159.6               
+[1] "PC1noOutliers  vs  RateofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2   1268   633.8   4.574 0.0153 *
+Residuals                   47   6513   138.6                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC1noOutliers  vs  SmokingatTimeofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2     89   44.41   0.271  0.764
+Residuals                   47   7692  163.65               
+[1] "PC1noOutliers  vs  LifetimeAlcohol"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  6    908   151.4   0.947  0.472
+Residuals                   43   6872   159.8               
+[1] "PC1noOutliers  vs  LifetimeDrugs"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  5    829   165.9    1.05  0.401
+Residuals                   44   6951   158.0               
+[1] "PC1noOutliers  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j] 10   2340   234.1   1.678  0.121
+Residuals                   39   5440   139.5               
+[1] "PC2noOutliers  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  3    142   47.17   0.656  0.583
+Residuals                   46   3305   71.85               
+[1] "PC2noOutliers  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1     58   58.21   0.825  0.368
+Residuals                   48   3388   70.59               
+[1] "PC2noOutliers  vs  LeftBrainStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1      0    0.34   0.005  0.945
+Residuals                   48   3446   71.80               
+[1] "PC2noOutliers  vs  SuicideStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2     69   34.28   0.477  0.624
+Residuals                   47   3378   71.87               
+[1] "PC2noOutliers  vs  PsychoticFeature"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1     59   58.84   0.834  0.366
+Residuals                   48   3388   70.58               
+[1] "PC2noOutliers  vs  RateofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2  437.4  218.70   3.416 0.0412 *
+Residuals                   47 3009.3   64.03                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC2noOutliers  vs  SmokingatTimeofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2  514.8  257.42   4.127 0.0223 *
+Residuals                   47 2931.8   62.38                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC2noOutliers  vs  LifetimeAlcohol"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  6  542.4   90.39   1.338  0.261
+Residuals                   43 2904.3   67.54               
+[1] "PC2noOutliers  vs  LifetimeDrugs"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  5     68   13.66   0.178  0.969
+Residuals                   44   3378   76.78               
+[1] "PC2noOutliers  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value  Pr(>F)   
+SubjectFactorVariables[, j] 10   1545  154.49   3.168 0.00464 **
+Residuals                   39   1902   48.76                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC3noOutliers  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  3    133   44.32   0.741  0.533
+Residuals                   46   2753   59.85               
+[1] "PC3noOutliers  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  1  217.8  217.82   3.918 0.0535 .
+Residuals                   48 2668.4   55.59                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC3noOutliers  vs  LeftBrainStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  1  196.9  196.88   3.514 0.0669 .
+Residuals                   48 2689.3   56.03                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC3noOutliers  vs  SuicideStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2   49.6   24.78   0.411  0.666
+Residuals                   47 2836.7   60.35               
+[1] "PC3noOutliers  vs  PsychoticFeature"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    5.2    5.18   0.086   0.77
+Residuals                   48 2881.0   60.02               
+[1] "PC3noOutliers  vs  RateofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2   61.2   30.62   0.509  0.604
+Residuals                   47 2825.0   60.11               
+[1] "PC3noOutliers  vs  SmokingatTimeofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2  184.4   92.18   1.603  0.212
+Residuals                   47 2701.9   57.49               
+[1] "PC3noOutliers  vs  LifetimeAlcohol"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  6  117.6   19.60   0.304  0.931
+Residuals                   43 2768.6   64.39               
+[1] "PC3noOutliers  vs  LifetimeDrugs"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  5   87.9   17.58   0.276  0.924
+Residuals                   44 2798.3   63.60               
+[1] "PC3noOutliers  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j] 10   1025  102.46   2.147 0.0435 *
+Residuals                   39   1862   47.73                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC4noOutliers  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  3   21.9    7.30   0.229  0.876
+Residuals                   46 1468.6   31.93               
+[1] "PC4noOutliers  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1   15.9   15.95   0.519  0.475
+Residuals                   48 1474.6   30.72               
+[1] "PC4noOutliers  vs  LeftBrainStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    0.9   0.928    0.03  0.863
+Residuals                   48 1489.6  31.034               
+[1] "PC4noOutliers  vs  SuicideStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2  161.8   80.91   2.862 0.0672 .
+Residuals                   47 1328.7   28.27                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC4noOutliers  vs  PsychoticFeature"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1   43.5   43.48   1.442  0.236
+Residuals                   48 1447.1   30.15               
+[1] "PC4noOutliers  vs  RateofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2  109.2   54.61   1.858  0.167
+Residuals                   47 1381.3   29.39               
+[1] "PC4noOutliers  vs  SmokingatTimeofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2    3.5    1.75   0.055  0.946
+Residuals                   47 1487.1   31.64               
+[1] "PC4noOutliers  vs  LifetimeAlcohol"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  6  118.9   19.82   0.621  0.712
+Residuals                   43 1371.6   31.90               
+[1] "PC4noOutliers  vs  LifetimeDrugs"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  5   98.8   19.76   0.625  0.682
+Residuals                   44 1391.8   31.63               
+[1] "PC4noOutliers  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)   
+SubjectFactorVariables[, j] 10  676.2   67.62   3.238  0.004 **
+Residuals                   39  814.4   20.88                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Call:
+lm(formula = SubjectPCA[, 1] ~ BrainpH + PMI + Diagnosis + Gender + 
+    Age + LeftBrainStatus + SuicideStatus + PsychoticFeature + 
+    RateofDeath + SmokingatTimeofDeath + LifetimeAlcohol + LifetimeDrugs + 
+    RNADegradPerSample + ScanDateDayOnly)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-10.457  -3.549   0.000   2.383  12.339 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                       299.8752   107.1022   2.800   0.0160 *
+BrainpH                           -21.5829    14.0598  -1.535   0.1507  
+PMI                                 0.2309     0.3352   0.689   0.5039  
+DiagnosisBipolar                   -7.8970    25.1378  -0.314   0.7588  
+DiagnosisDepression                -7.8613     7.9086  -0.994   0.3398  
+DiagnosisSchizophrenia            -13.8281    23.0304  -0.600   0.5594  
+GenderM                            -0.7313     6.1613  -0.119   0.9075  
+Age                                -0.1256     0.3300  -0.381   0.7102  
+LeftBrainStatusFrozen              -0.5010     6.5127  -0.077   0.9399  
+SuicideStatusUnknown               29.0794    19.5698   1.486   0.1631  
+SuicideStatusYes                   -8.2625     8.8875  -0.930   0.3709  
+PsychoticFeatureYes                -0.3351    20.5534  -0.016   0.9873  
+RateofDeathPossible anoxia         -0.1858    21.2505  -0.009   0.9932  
+RateofDeathSudden                  -0.6111     9.4391  -0.065   0.9494  
+SmokingatTimeofDeathUnknown        -7.2577     8.9919  -0.807   0.4353  
+SmokingatTimeofDeathYes             2.5925     6.8893   0.376   0.7133  
+LifetimeAlcoholHeavy in present    -3.0081    12.6771  -0.237   0.8164  
+LifetimeAlcoholLittle or none     -18.3977    14.7636  -1.246   0.2365  
+LifetimeAlcoholModerate in past   -38.7372    18.4561  -2.099   0.0577 .
+LifetimeAlcoholModerate present   -25.6844    13.8781  -1.851   0.0890 .
+LifetimeAlcoholSocial             -14.7698    13.1238  -1.125   0.2824  
+LifetimeAlcoholUnknown            -42.6499    38.7540  -1.101   0.2927  
+LifetimeDrugsHeavy in present     -28.3522    17.1984  -1.649   0.1252  
+LifetimeDrugsLittle or none        -3.5656    12.4162  -0.287   0.7789  
+LifetimeDrugsModerate in past      14.6824    19.6232   0.748   0.4687  
+LifetimeDrugsModerate in present    4.7251    16.5640   0.285   0.7803  
+LifetimeDrugsSocial                 3.6833    22.8865   0.161   0.8748  
+RNADegradPerSample               -143.2110    50.0901  -2.859   0.0144 *
+ScanDateDayOnly01/09/02           -11.9702    17.4276  -0.687   0.5052  
+ScanDateDayOnly10/16/01            -6.7764    21.3295  -0.318   0.7562  
+ScanDateDayOnly10/18/01             8.6329    19.6631   0.439   0.6684  
+ScanDateDayOnly11/08/01           -10.7920    17.5872  -0.614   0.5509  
+ScanDateDayOnly11/20/01           -17.3159    16.9175  -1.024   0.3262  
+ScanDateDayOnly11/27/01           -12.2711    16.5039  -0.744   0.4715  
+ScanDateDayOnly11/29/01           -21.1807    16.1337  -1.313   0.2138  
+ScanDateDayOnly12/06/01           -26.8270    16.7866  -1.598   0.1360  
+ScanDateDayOnly12/19/01           -14.6976    16.3598  -0.898   0.3866  
+ScanDateDayOnly12/20/01           -18.0857    16.4811  -1.097   0.2940  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 11.46 on 12 degrees of freedom
+Multiple R-squared:  0.7973,	Adjusted R-squared:  0.1725 
+F-statistic: 1.276 on 37 and 12 DF,  p-value: 0.3367
+
+
+Call:
+lm(formula = SubjectPCA[, 2] ~ BrainpH + PMI + Diagnosis + Gender + 
+    Age + LeftBrainStatus + SuicideStatus + PsychoticFeature + 
+    RateofDeath + SmokingatTimeofDeath + LifetimeAlcohol + LifetimeDrugs + 
+    RNADegradPerSample + ScanDateDayOnly)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.5764 -0.7959  0.0000  1.1466  5.6217 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                       42.82270   43.01642   0.995  0.33915   
+BrainpH                          -14.50865    5.64695  -2.569  0.02458 * 
+PMI                                0.08987    0.13461   0.668  0.51699   
+DiagnosisBipolar                   2.81784   10.09633   0.279  0.78492   
+DiagnosisDepression                3.35165    3.17641   1.055  0.31213   
+DiagnosisSchizophrenia            -4.38237    9.24991  -0.474  0.64416   
+GenderM                            6.97041    2.47460   2.817  0.01555 * 
+Age                               -0.16854    0.13253  -1.272  0.22755   
+LeftBrainStatusFrozen             -8.92493    2.61574  -3.412  0.00515 **
+SuicideStatusUnknown              -6.93342    7.86001  -0.882  0.39504   
+SuicideStatusYes                   2.00568    3.56956   0.562  0.58454   
+PsychoticFeatureYes                2.69609    8.25503   0.327  0.74960   
+RateofDeathPossible anoxia        -5.08470    8.53504  -0.596  0.56241   
+RateofDeathSudden                  1.30100    3.79110   0.343  0.73741   
+SmokingatTimeofDeathUnknown       -1.71243    3.61150  -0.474  0.64390   
+SmokingatTimeofDeathYes           -4.91364    2.76701  -1.776  0.10111   
+LifetimeAlcoholHeavy in present   20.76482    5.09161   4.078  0.00153 **
+LifetimeAlcoholLittle or none     11.22581    5.92964   1.893  0.08270 . 
+LifetimeAlcoholModerate in past   11.53392    7.41268   1.556  0.14568   
+LifetimeAlcoholModerate present    6.28886    5.57398   1.128  0.28127   
+LifetimeAlcoholSocial              4.49005    5.27102   0.852  0.41098   
+LifetimeAlcoholUnknown            36.04975   15.56512   2.316  0.03905 * 
+LifetimeDrugsHeavy in present     -0.72956    6.90754  -0.106  0.91763   
+LifetimeDrugsLittle or none       10.49045    4.98682   2.104  0.05717 . 
+LifetimeDrugsModerate in past     12.91498    7.88143   1.639  0.12722   
+LifetimeDrugsModerate in present -10.66221    6.65274  -1.603  0.13499   
+LifetimeDrugsSocial                6.56233    9.19210   0.714  0.48894   
+RNADegradPerSample                38.50436   20.11812   1.914  0.07978 . 
+ScanDateDayOnly01/09/02           15.72438    6.99960   2.246  0.04428 * 
+ScanDateDayOnly10/16/01            9.63893    8.56678   1.125  0.28253   
+ScanDateDayOnly10/18/01            9.28026    7.89747   1.175  0.26275   
+ScanDateDayOnly11/08/01            2.20286    7.06372   0.312  0.76050   
+ScanDateDayOnly11/20/01            3.37668    6.79472   0.497  0.62820   
+ScanDateDayOnly11/27/01            9.63884    6.62861   1.454  0.17156   
+ScanDateDayOnly11/29/01            2.35183    6.47993   0.363  0.72296   
+ScanDateDayOnly12/06/01            3.12848    6.74217   0.464  0.65094   
+ScanDateDayOnly12/19/01           -2.50864    6.57071  -0.382  0.70929   
+ScanDateDayOnly12/20/01           15.93108    6.61946   2.407  0.03311 * 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.604 on 12 degrees of freedom
+Multiple R-squared:  0.9262,	Adjusted R-squared:  0.6987 
+F-statistic:  4.07 on 37 and 12 DF,  p-value: 0.0061
+
+
+Call:
+lm(formula = SubjectPCA[, 3] ~ BrainpH + PMI + Diagnosis + Gender + 
+    Age + LeftBrainStatus + SuicideStatus + PsychoticFeature + 
+    RateofDeath + SmokingatTimeofDeath + LifetimeAlcohol + LifetimeDrugs + 
+    RNADegradPerSample + ScanDateDayOnly)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-5.503 -1.290  0.000  1.212  5.066 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                      -139.9948    42.2682  -3.312  0.00620 **
+BrainpH                            17.0042     5.5487   3.065  0.00982 **
+PMI                                 0.2382     0.1323   1.801  0.09688 . 
+DiagnosisBipolar                  -13.3537     9.9207  -1.346  0.20317   
+DiagnosisDepression                 0.7153     3.1212   0.229  0.82260   
+DiagnosisSchizophrenia            -17.6335     9.0890  -1.940  0.07623 . 
+GenderM                             8.3178     2.4316   3.421  0.00507 **
+Age                                 0.0326     0.1302   0.250  0.80654   
+LeftBrainStatusFrozen              -5.9720     2.5702  -2.324  0.03852 * 
+SuicideStatusUnknown               -2.4441     7.7233  -0.316  0.75710   
+SuicideStatusYes                   -0.1498     3.5075  -0.043  0.96664   
+PsychoticFeatureYes                12.7713     8.1114   1.574  0.14136   
+RateofDeathPossible anoxia          1.0351     8.3866   0.123  0.90382   
+RateofDeathSudden                  -0.0331     3.7252  -0.009  0.99306   
+SmokingatTimeofDeathUnknown        -7.5797     3.5487  -2.136  0.05398 . 
+SmokingatTimeofDeathYes            -6.8121     2.7189  -2.505  0.02764 * 
+LifetimeAlcoholHeavy in present     8.6378     5.0030   1.727  0.10988   
+LifetimeAlcoholLittle or none       2.4367     5.8265   0.418  0.68317   
+LifetimeAlcoholModerate in past    -3.8195     7.2837  -0.524  0.60956   
+LifetimeAlcoholModerate present    -6.7222     5.4770  -1.227  0.24322   
+LifetimeAlcoholSocial              -2.0215     5.1793  -0.390  0.70315   
+LifetimeAlcoholUnknown             19.1192    15.2944   1.250  0.23510   
+LifetimeDrugsHeavy in present      -4.0508     6.7874  -0.597  0.56172   
+LifetimeDrugsLittle or none         2.6491     4.9001   0.541  0.59866   
+LifetimeDrugsModerate in past       1.8876     7.7443   0.244  0.81155   
+LifetimeDrugsModerate in present   -9.3521     6.5370  -1.431  0.17805   
+LifetimeDrugsSocial                 6.5743     9.0322   0.728  0.48066   
+RNADegradPerSample                 28.8621    19.7682   1.460  0.16996   
+ScanDateDayOnly01/09/02             6.7547     6.8778   0.982  0.34544   
+ScanDateDayOnly10/16/01            21.9017     8.4178   2.602  0.02315 * 
+ScanDateDayOnly10/18/01             5.3615     7.7601   0.691  0.50277   
+ScanDateDayOnly11/08/01             7.8263     6.9409   1.128  0.28154   
+ScanDateDayOnly11/20/01            12.7860     6.6765   1.915  0.07962 . 
+ScanDateDayOnly11/27/01             5.3426     6.5133   0.820  0.42806   
+ScanDateDayOnly11/29/01             6.1869     6.3672   0.972  0.35039   
+ScanDateDayOnly12/06/01             5.1765     6.6249   0.781  0.44972   
+ScanDateDayOnly12/19/01            -4.6503     6.4564  -0.720  0.48516   
+ScanDateDayOnly12/20/01            10.7266     6.5043   1.649  0.12503   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.524 on 12 degrees of freedom
+Multiple R-squared:  0.9149,	Adjusted R-squared:  0.6525 
+F-statistic: 3.487 on 37 and 12 DF,  p-value: 0.01202
+
+
+Call:
+lm(formula = SubjectPCA[, 4] ~ BrainpH + PMI + Diagnosis + Gender + 
+    Age + LeftBrainStatus + SuicideStatus + PsychoticFeature + 
+    RateofDeath + SmokingatTimeofDeath + LifetimeAlcohol + LifetimeDrugs + 
+    RNADegradPerSample + ScanDateDayOnly)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-6.599 -1.299  0.000  1.457  4.284 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                       41.78061   38.91489   1.074   0.3041  
+BrainpH                           -3.95700    5.10852  -0.775   0.4536  
+PMI                                0.03086    0.12177   0.253   0.8042  
+DiagnosisBipolar                  -4.83023    9.13367  -0.529   0.6066  
+DiagnosisDepression                4.26339    2.87355   1.484   0.1637  
+DiagnosisSchizophrenia            -2.66830    8.36795  -0.319   0.7553  
+GenderM                            0.02995    2.23865   0.013   0.9895  
+Age                               -0.04434    0.11989  -0.370   0.7179  
+LeftBrainStatusFrozen             -2.03001    2.36634  -0.858   0.4078  
+SuicideStatusUnknown              15.36174    7.11057   2.160   0.0517 .
+SuicideStatusYes                   3.56859    3.22921   1.105   0.2908  
+PsychoticFeatureYes                2.24322    7.46793   0.300   0.7690  
+RateofDeathPossible anoxia        11.94380    7.72124   1.547   0.1478  
+RateofDeathSudden                  5.42309    3.42962   1.581   0.1398  
+SmokingatTimeofDeathUnknown       -4.00971    3.26715  -1.227   0.2433  
+SmokingatTimeofDeathYes           -2.61266    2.50318  -1.044   0.3172  
+LifetimeAlcoholHeavy in present   -1.22911    4.60614  -0.267   0.7941  
+LifetimeAlcoholLittle or none      1.14229    5.36426   0.213   0.8349  
+LifetimeAlcoholModerate in past    4.43402    6.70589   0.661   0.5210  
+LifetimeAlcoholModerate present   -3.90899    5.04252  -0.775   0.4532  
+LifetimeAlcoholSocial             -3.53819    4.76844  -0.742   0.4724  
+LifetimeAlcoholUnknown           -12.85461   14.08102  -0.913   0.3793  
+LifetimeDrugsHeavy in present      2.32077    6.24892   0.371   0.7168  
+LifetimeDrugsLittle or none        5.91955    4.51134   1.312   0.2140  
+LifetimeDrugsModerate in past      9.42825    7.12995   1.322   0.2107  
+LifetimeDrugsModerate in present   9.36357    6.01842   1.556   0.1457  
+LifetimeDrugsSocial                3.70970    8.31565   0.446   0.6635  
+RNADegradPerSample               -15.95636   18.19990  -0.877   0.3978  
+ScanDateDayOnly01/09/02          -11.11457    6.33220  -1.755   0.1047  
+ScanDateDayOnly10/16/01          -21.32934    7.74995  -2.752   0.0175 *
+ScanDateDayOnly10/18/01          -11.37016    7.14446  -1.591   0.1375  
+ScanDateDayOnly11/08/01          -12.94222    6.39021  -2.025   0.0657 .
+ScanDateDayOnly11/20/01           -8.28737    6.14686  -1.348   0.2025  
+ScanDateDayOnly11/27/01          -13.13331    5.99659  -2.190   0.0490 *
+ScanDateDayOnly11/29/01           -5.49358    5.86208  -0.937   0.3672  
+ScanDateDayOnly12/06/01           -5.76212    6.09931  -0.945   0.3634  
+ScanDateDayOnly12/19/01          -17.32295    5.94421  -2.914   0.0130 *
+ScanDateDayOnly12/20/01          -12.57228    5.98831  -2.099   0.0576 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.165 on 12 degrees of freedom
+Multiple R-squared:  0.8603,	Adjusted R-squared:  0.4297 
+F-statistic: 1.998 on 37 and 12 DF,  p-value: 0.09909
+
+[1] "PC1noOutliers  vs  BrainpH"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-24.652  -9.075  -0.918   6.801  35.695 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                       68.327     47.902   1.426     0.16
+SubjectContinuousVariables[, j]  -10.996      7.704  -1.427     0.16
+
+Residual standard error: 12.47 on 48 degrees of freedom
+Multiple R-squared:  0.04072,	Adjusted R-squared:  0.02073 
+F-statistic: 2.037 on 1 and 48 DF,  p-value: 0.16
+
+[1] "PC1noOutliers  vs  PMI"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-25.463  -8.846  -1.633   5.145  40.297 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                     -2.41547    4.30000  -0.562    0.577
+SubjectContinuousVariables[, j]  0.08452    0.13674   0.618    0.539
+
+Residual standard error: 12.68 on 48 degrees of freedom
+Multiple R-squared:  0.007895,	Adjusted R-squared:  -0.01277 
+F-statistic: 0.382 on 1 and 48 DF,  p-value: 0.5395
+
+[1] "PC1noOutliers  vs  Age"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-23.875  -8.121  -2.256   4.793  40.709 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      1.79997    7.02948   0.256    0.799
+SubjectContinuousVariables[, j] -0.04038    0.15243  -0.265    0.792
+
+Residual standard error: 12.72 on 48 degrees of freedom
+Multiple R-squared:  0.00146,	Adjusted R-squared:  -0.01934 
+F-statistic: 0.07016 on 1 and 48 DF,  p-value: 0.7922
+
+[1] "PC1noOutliers  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-25.8850  -6.1161  -0.5436   4.8790  27.2889 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                        80.74      15.73   5.132 5.14e-06 ***
+SubjectContinuousVariables[, j]   -97.38      18.89  -5.154 4.77e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 10.22 on 48 degrees of freedom
+Multiple R-squared:  0.3562,	Adjusted R-squared:  0.3428 
+F-statistic: 26.56 on 1 and 48 DF,  p-value: 4.766e-06
+
+[1] "PC2noOutliers  vs  BrainpH"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-15.333  -4.922  -1.329   3.472  19.124 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      106.696     28.673   3.721 0.000520 ***
+SubjectContinuousVariables[, j]  -17.170      4.611  -3.724 0.000516 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.464 on 48 degrees of freedom
+Multiple R-squared:  0.2241,	Adjusted R-squared:  0.208 
+F-statistic: 13.87 on 1 and 48 DF,  p-value: 0.0005159
+
+[1] "PC2noOutliers  vs  PMI"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-16.5182  -5.9275  -0.3113   3.8821  23.1315 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                     -2.74379    2.84008  -0.966    0.339
+SubjectContinuousVariables[, j]  0.09600    0.09032   1.063    0.293
+
+Residual standard error: 8.376 on 48 degrees of freedom
+Multiple R-squared:  0.023,	Adjusted R-squared:  0.002644 
+F-statistic:  1.13 on 1 and 48 DF,  p-value: 0.2931
+
+[1] "PC2noOutliers  vs  Age"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-17.8260  -5.8957   0.1369   4.0465  24.3838 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      3.72516    4.64887   0.801    0.427
+SubjectContinuousVariables[, j] -0.08356    0.10081  -0.829    0.411
+
+Residual standard error: 8.414 on 48 degrees of freedom
+Multiple R-squared:  0.01411,	Adjusted R-squared:  -0.006427 
+F-statistic: 0.6871 on 1 and 48 DF,  p-value: 0.4113
+
+[1] "PC2noOutliers  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-16.1885  -6.4451  -0.6919   3.5104  24.5150 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                     -0.05752   13.05035  -0.004    0.997
+SubjectContinuousVariables[, j]  0.06937   15.67317   0.004    0.996
+
+Residual standard error: 8.474 on 48 degrees of freedom
+Multiple R-squared:  4.081e-07,	Adjusted R-squared:  -0.02083 
+F-statistic: 1.959e-05 on 1 and 48 DF,  p-value: 0.9965
+
+[1] "PC3noOutliers  vs  BrainpH"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-13.7765  -4.5673  -0.0623   3.8166  18.8594 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                     -122.925     23.919  -5.139 5.01e-06 ***
+SubjectContinuousVariables[, j]   19.782      3.847   5.143 4.95e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 6.226 on 48 degrees of freedom
+Multiple R-squared:  0.3553,	Adjusted R-squared:  0.3418 
+F-statistic: 26.45 on 1 and 48 DF,  p-value: 4.948e-06
+
+[1] "PC3noOutliers  vs  PMI"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-22.0611  -4.4483   0.4282   3.8537  14.4204 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                      4.67581    2.52231   1.854   0.0699 .
+SubjectContinuousVariables[, j] -0.16360    0.08021  -2.040   0.0469 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.439 on 48 degrees of freedom
+Multiple R-squared:  0.07976,	Adjusted R-squared:  0.06059 
+F-statistic:  4.16 on 1 and 48 DF,  p-value: 0.04691
+
+[1] "PC3noOutliers  vs  Age"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-22.888  -2.921   0.193   4.418  15.015 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                     -3.59784    4.25068  -0.846    0.402
+SubjectContinuousVariables[, j]  0.08071    0.09217   0.876    0.386
+
+Residual standard error: 7.693 on 48 degrees of freedom
+Multiple R-squared:  0.01572,	Adjusted R-squared:  -0.004785 
+F-statistic: 0.7666 on 1 and 48 DF,  p-value: 0.3856
+
+[1] "PC3noOutliers  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-21.7033  -3.1637   0.4586   5.1548  15.5039 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                       -1.638     11.940  -0.137    0.891
+SubjectContinuousVariables[, j]    1.976     14.340   0.138    0.891
+
+Residual standard error: 7.753 on 48 degrees of freedom
+Multiple R-squared:  0.0003954,	Adjusted R-squared:  -0.02043 
+F-statistic: 0.01899 on 1 and 48 DF,  p-value: 0.891
+
+[1] "PC4noOutliers  vs  BrainpH"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-12.1531  -3.2637  -0.3401   3.1443  12.3326 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      -4.7006    21.3961   -0.22    0.827
+SubjectContinuousVariables[, j]   0.7565     3.4409    0.22    0.827
+
+Residual standard error: 5.57 on 48 degrees of freedom
+Multiple R-squared:  0.001006,	Adjusted R-squared:  -0.01981 
+F-statistic: 0.04833 on 1 and 48 DF,  p-value: 0.8269
+
+[1] "PC4noOutliers  vs  PMI"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-12.456  -3.288  -0.389   2.820  12.198 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      0.53569    1.88764   0.284    0.778
+SubjectContinuousVariables[, j] -0.01874    0.06003  -0.312    0.756
+
+Residual standard error: 5.567 on 48 degrees of freedom
+Multiple R-squared:  0.002027,	Adjusted R-squared:  -0.01876 
+F-statistic: 0.0975 on 1 and 48 DF,  p-value: 0.7562
+
+[1] "PC4noOutliers  vs  Age"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-12.0004  -3.3525   0.0336   2.9527  13.0776 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      2.12720    3.06257   0.695    0.491
+SubjectContinuousVariables[, j] -0.04772    0.06641  -0.719    0.476
+
+Residual standard error: 5.543 on 48 degrees of freedom
+Multiple R-squared:  0.01064,	Adjusted R-squared:  -0.009971 
+F-statistic: 0.5163 on 1 and 48 DF,  p-value: 0.4759
+
+[1] "PC4noOutliers  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectPCA[, i] ~ SubjectContinuousVariables[, j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-12.1255  -3.2431  -0.2211   2.9734  11.6579 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                       -2.945      8.572  -0.344    0.733
+SubjectContinuousVariables[, j]    3.552     10.294   0.345    0.732
+
+Residual standard error: 5.566 on 48 degrees of freedom
+Multiple R-squared:  0.002475,	Adjusted R-squared:  -0.01831 
+F-statistic: 0.1191 on 1 and 48 DF,  p-value: 0.7315
+
+[1] "PC1noOutliers  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  3     94    31.2   0.187  0.905
+Residuals                   46   7687   167.1               
+[1] "PC1noOutliers  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1     21   21.39   0.132  0.718
+Residuals                   48   7759  161.65               
+[1] "PC1noOutliers  vs  LeftBrainStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    375   375.0    2.43  0.126
+Residuals                   48   7406   154.3               
+[1] "PC1noOutliers  vs  SuicideStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2     89   44.48   0.272  0.763
+Residuals                   47   7692  163.65               
+[1] "PC1noOutliers  vs  PsychoticFeature"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    118   117.7   0.738  0.395
+Residuals                   48   7663   159.6               
+[1] "PC1noOutliers  vs  RateofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2   1268   633.8   4.574 0.0153 *
+Residuals                   47   6513   138.6                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC1noOutliers  vs  SmokingatTimeofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2     89   44.41   0.271  0.764
+Residuals                   47   7692  163.65               
+[1] "PC1noOutliers  vs  LifetimeAlcohol"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  6    908   151.4   0.947  0.472
+Residuals                   43   6872   159.8               
+[1] "PC1noOutliers  vs  LifetimeDrugs"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  5    829   165.9    1.05  0.401
+Residuals                   44   6951   158.0               
+[1] "PC1noOutliers  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j] 10   2340   234.1   1.678  0.121
+Residuals                   39   5440   139.5               
+[1] "PC2noOutliers  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  3    142   47.17   0.656  0.583
+Residuals                   46   3305   71.85               
+[1] "PC2noOutliers  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1     58   58.21   0.825  0.368
+Residuals                   48   3388   70.59               
+[1] "PC2noOutliers  vs  LeftBrainStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1      0    0.34   0.005  0.945
+Residuals                   48   3446   71.80               
+[1] "PC2noOutliers  vs  SuicideStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2     69   34.28   0.477  0.624
+Residuals                   47   3378   71.87               
+[1] "PC2noOutliers  vs  PsychoticFeature"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1     59   58.84   0.834  0.366
+Residuals                   48   3388   70.58               
+[1] "PC2noOutliers  vs  RateofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2  437.4  218.70   3.416 0.0412 *
+Residuals                   47 3009.3   64.03                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC2noOutliers  vs  SmokingatTimeofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2  514.8  257.42   4.127 0.0223 *
+Residuals                   47 2931.8   62.38                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC2noOutliers  vs  LifetimeAlcohol"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  6  542.4   90.39   1.338  0.261
+Residuals                   43 2904.3   67.54               
+[1] "PC2noOutliers  vs  LifetimeDrugs"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  5     68   13.66   0.178  0.969
+Residuals                   44   3378   76.78               
+[1] "PC2noOutliers  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value  Pr(>F)   
+SubjectFactorVariables[, j] 10   1545  154.49   3.168 0.00464 **
+Residuals                   39   1902   48.76                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC3noOutliers  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  3    133   44.32   0.741  0.533
+Residuals                   46   2753   59.85               
+[1] "PC3noOutliers  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  1  217.8  217.82   3.918 0.0535 .
+Residuals                   48 2668.4   55.59                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC3noOutliers  vs  LeftBrainStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  1  196.9  196.88   3.514 0.0669 .
+Residuals                   48 2689.3   56.03                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC3noOutliers  vs  SuicideStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2   49.6   24.78   0.411  0.666
+Residuals                   47 2836.7   60.35               
+[1] "PC3noOutliers  vs  PsychoticFeature"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    5.2    5.18   0.086   0.77
+Residuals                   48 2881.0   60.02               
+[1] "PC3noOutliers  vs  RateofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2   61.2   30.62   0.509  0.604
+Residuals                   47 2825.0   60.11               
+[1] "PC3noOutliers  vs  SmokingatTimeofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2  184.4   92.18   1.603  0.212
+Residuals                   47 2701.9   57.49               
+[1] "PC3noOutliers  vs  LifetimeAlcohol"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  6  117.6   19.60   0.304  0.931
+Residuals                   43 2768.6   64.39               
+[1] "PC3noOutliers  vs  LifetimeDrugs"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  5   87.9   17.58   0.276  0.924
+Residuals                   44 2798.3   63.60               
+[1] "PC3noOutliers  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j] 10   1025  102.46   2.147 0.0435 *
+Residuals                   39   1862   47.73                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC4noOutliers  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  3   21.9    7.30   0.229  0.876
+Residuals                   46 1468.6   31.93               
+[1] "PC4noOutliers  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1   15.9   15.95   0.519  0.475
+Residuals                   48 1474.6   30.72               
+[1] "PC4noOutliers  vs  LeftBrainStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    0.9   0.928    0.03  0.863
+Residuals                   48 1489.6  31.034               
+[1] "PC4noOutliers  vs  SuicideStatus"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2  161.8   80.91   2.862 0.0672 .
+Residuals                   47 1328.7   28.27                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "PC4noOutliers  vs  PsychoticFeature"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1   43.5   43.48   1.442  0.236
+Residuals                   48 1447.1   30.15               
+[1] "PC4noOutliers  vs  RateofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2  109.2   54.61   1.858  0.167
+Residuals                   47 1381.3   29.39               
+[1] "PC4noOutliers  vs  SmokingatTimeofDeath"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2    3.5    1.75   0.055  0.946
+Residuals                   47 1487.1   31.64               
+[1] "PC4noOutliers  vs  LifetimeAlcohol"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  6  118.9   19.82   0.621  0.712
+Residuals                   43 1371.6   31.90               
+[1] "PC4noOutliers  vs  LifetimeDrugs"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  5   98.8   19.76   0.625  0.682
+Residuals                   44 1391.8   31.63               
+[1] "PC4noOutliers  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)   
+SubjectFactorVariables[, j] 10  676.2   67.62   3.238  0.004 **
+Residuals                   39  814.4   20.88                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

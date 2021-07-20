@@ -1,0 +1,2598 @@
+      Control       Bipolar    Depression Schizophrenia 
+           15            11            11            13 
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+08/24/01 01/09/02 10/16/01 10/18/01 11/08/01 11/20/01 11/27/01 11/29/01 12/06/01 12/19/01 12/20/01 
+       1        4        2        1        6        8        7        5        7        6        3 
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+[1] "Diagnosis  vs  Diagnosis"
+   
+     1  2  3  4
+  1 15  0  0  0
+  2  0 11  0  0
+  3  0  0 11  0
+  4  0  0  0 13
+[1] "p-value= 8.81962995480541e-28"
+[1] "Diagnosis  vs  Gender"
+   
+    F M
+  1 6 9
+  2 3 8
+  3 5 6
+  4 5 8
+[1] "p-value= 0.843869414477613"
+[1] "Diagnosis  vs  LeftBrainStatus"
+   
+    Fixed Frozen
+  1     7      8
+  2     7      4
+  3     3      8
+  4     4      9
+[1] "p-value= 0.272410088014135"
+[1] "Diagnosis  vs  SuicideStatus"
+   
+    No Unknown Yes
+  1 15       0   0
+  2  2       1   8
+  3  7       0   4
+  4  8       1   4
+[1] "p-value= 0.00349946341776937"
+[1] "Diagnosis  vs  PsychoticFeature"
+   
+    No Yes
+  1 15   0
+  2  2   9
+  3 11   0
+  4  0  13
+[1] "p-value= 2.06491164841599e-09"
+[1] "Diagnosis  vs  RateofDeath"
+   
+    On respirator Possible anoxia Sudden
+  1             1               0     14
+  2             1               2      8
+  3             0               0     11
+  4             2               1     10
+[1] "p-value= 0.33466784259411"
+[1] "Diagnosis  vs  SmokingatTimeofDeath"
+   
+    No Unknown Yes
+  1  4       8   3
+  2  3       3   5
+  3  3       4   4
+  4  4       3   6
+[1] "p-value= 0.696986765288381"
+[1] "Diagnosis  vs  LifetimeAlcohol"
+   
+    Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  1             0                0              5                2                2      6       0
+  2             2                2              0                0                2      4       1
+  3             0                1              4                0                1      5       0
+  4             1                1              5                2                1      3       0
+[1] "p-value= 0.372331172503753"
+[1] "Diagnosis  vs  LifetimeDrugs"
+   
+    Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  1             0                0             14                1                   0      0
+  2             1                1              5                0                   4      0
+  3             1                1              8                0                   0      1
+  4             2                1              8                1                   1      0
+[1] "p-value= 0.13244066422609"
+[1] "Diagnosis  vs  ScanDateDayOnly"
+   
+    1 10 11 2 3 4 5 6 7 8 9
+  1 1  1  0 1 0 0 1 4 1 3 3
+  2 0  0  0 0 1 0 3 0 3 1 3
+  3 0  4  1 2 0 1 0 1 1 0 1
+  4 0  1  2 1 1 0 2 3 2 1 0
+[1] "p-value= 0.162993695161553"
+[1] "Gender  vs  Diagnosis"
+   
+    1 2 3 4
+  F 6 3 5 5
+  M 9 8 6 8
+[1] "p-value= 0.843869414477613"
+[1] "Gender  vs  Gender"
+   
+     F  M
+  F 19  0
+  M  0 31
+[1] "p-value= 1.2795045613301e-11"
+[1] "Gender  vs  LeftBrainStatus"
+   
+    Fixed Frozen
+  F     8     11
+  M    13     18
+[1] "p-value= 1"
+[1] "Gender  vs  SuicideStatus"
+   
+    No Unknown Yes
+  F 10       1   8
+  M 22       1   8
+[1] "p-value= 0.423370481671397"
+[1] "Gender  vs  PsychoticFeature"
+   
+    No Yes
+  F 11   8
+  M 17  14
+[1] "p-value= 1"
+[1] "Gender  vs  RateofDeath"
+   
+    On respirator Possible anoxia Sudden
+  F             2               0     17
+  M             2               3     26
+[1] "p-value= 0.34538528358661"
+[1] "Gender  vs  SmokingatTimeofDeath"
+   
+    No Unknown Yes
+  F  4       8   7
+  M 10      10  11
+[1] "p-value= 0.653249805727253"
+[1] "Gender  vs  LifetimeAlcohol"
+   
+    Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  F             0                1              8                1                1      8       0
+  M             3                3              6                3                5     10       1
+[1] "p-value= 0.351522609053362"
+[1] "Gender  vs  LifetimeDrugs"
+   
+    Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  F             3                0             14                1                   1      0
+  M             1                3             21                1                   4      1
+[1] "p-value= 0.342290791279578"
+[1] "Gender  vs  ScanDateDayOnly"
+   
+    1 10 11 2 3 4 5 6 7 8 9
+  F 0  1  2 2 0 0 3 3 3 1 4
+  M 1  5  1 2 2 1 3 5 4 4 3
+[1] "p-value= 0.714491143567828"
+[1] "LeftBrainStatus  vs  Diagnosis"
+        
+         1 2 3 4
+  Fixed  7 7 3 4
+  Frozen 8 4 8 9
+[1] "p-value= 0.272410088014135"
+[1] "LeftBrainStatus  vs  Gender"
+        
+          F  M
+  Fixed   8 13
+  Frozen 11 18
+[1] "p-value= 1"
+[1] "LeftBrainStatus  vs  LeftBrainStatus"
+        
+         Fixed Frozen
+  Fixed     21      0
+  Frozen     0     29
+[1] "p-value= 1.19517116772538e-11"
+[1] "LeftBrainStatus  vs  SuicideStatus"
+        
+         No Unknown Yes
+  Fixed  13       0   8
+  Frozen 19       2   8
+[1] "p-value= 0.388005232664159"
+[1] "LeftBrainStatus  vs  PsychoticFeature"
+        
+         No Yes
+  Fixed  11  10
+  Frozen 17  12
+[1] "p-value= 0.880699718317488"
+[1] "LeftBrainStatus  vs  RateofDeath"
+        
+         On respirator Possible anoxia Sudden
+  Fixed              3               2     16
+  Frozen             1               1     27
+[1] "p-value= 0.229624728184559"
+[1] "LeftBrainStatus  vs  SmokingatTimeofDeath"
+        
+         No Unknown Yes
+  Fixed   5       6  10
+  Frozen  9      12   8
+[1] "p-value= 0.343032567390263"
+[1] "LeftBrainStatus  vs  LifetimeAlcohol"
+        
+         Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  Fixed              1                2              4                1                5      8       0
+  Frozen             2                2             10                3                1     10       1
+[1] "p-value= 0.35098436004916"
+[1] "LeftBrainStatus  vs  LifetimeDrugs"
+        
+         Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  Fixed              2                1             13                1                   4      0
+  Frozen             2                2             22                1                   1      1
+[1] "p-value= 0.510246483518489"
+[1] "LeftBrainStatus  vs  ScanDateDayOnly"
+        
+         1 10 11 2 3 4 5 6 7 8 9
+  Fixed  0  1  0 0 1 1 5 4 4 2 3
+  Frozen 1  5  3 4 1 0 1 4 3 3 4
+[1] "p-value= 0.177846594095444"
+[1] "SuicideStatus  vs  Diagnosis"
+         
+           1  2  3  4
+  No      15  2  7  8
+  Unknown  0  1  0  1
+  Yes      0  8  4  4
+[1] "p-value= 0.00349946341776937"
+[1] "SuicideStatus  vs  Gender"
+         
+           F  M
+  No      10 22
+  Unknown  1  1
+  Yes      8  8
+[1] "p-value= 0.423370481671397"
+[1] "SuicideStatus  vs  LeftBrainStatus"
+         
+          Fixed Frozen
+  No         13     19
+  Unknown     0      2
+  Yes         8      8
+[1] "p-value= 0.388005232664159"
+[1] "SuicideStatus  vs  SuicideStatus"
+         
+          No Unknown Yes
+  No      32       0   0
+  Unknown  0       2   0
+  Yes      0       0  16
+[1] "p-value= 9.83662422461607e-21"
+[1] "SuicideStatus  vs  PsychoticFeature"
+         
+          No Yes
+  No      22  10
+  Unknown  1   1
+  Yes      5  11
+[1] "p-value= 0.0469322444574774"
+[1] "SuicideStatus  vs  RateofDeath"
+         
+          On respirator Possible anoxia Sudden
+  No                  1               2     29
+  Unknown             0               0      2
+  Yes                 3               1     12
+[1] "p-value= 0.420101813437945"
+[1] "SuicideStatus  vs  SmokingatTimeofDeath"
+         
+          No Unknown Yes
+  No       9      14   9
+  Unknown  1       1   0
+  Yes      4       3   9
+[1] "p-value= 0.243593147948433"
+[1] "SuicideStatus  vs  LifetimeAlcohol"
+         
+          Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  No                  1                2             11                3                4     11       0
+  Unknown             0                0              0                0                0      1       1
+  Yes                 2                2              3                1                2      6       0
+[1] "p-value= 0.0045500386087837"
+[1] "SuicideStatus  vs  LifetimeDrugs"
+         
+          Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  No                  1                2             27                1                   1      0
+  Unknown             0                0              1                0                   1      0
+  Yes                 3                1              7                1                   3      1
+[1] "p-value= 0.147858037216428"
+[1] "SuicideStatus  vs  ScanDateDayOnly"
+         
+          1 10 11 2 3 4 5 6 7 8 9
+  No      1  4  1 4 1 1 2 5 4 4 5
+  Unknown 0  0  0 0 0 0 0 1 0 1 0
+  Yes     0  2  2 0 1 0 4 2 3 0 2
+[1] "p-value= 0.681528727739921"
+[1] "PsychoticFeature  vs  Diagnosis"
+     
+       1  2  3  4
+  No  15  2 11  0
+  Yes  0  9  0 13
+[1] "p-value= 2.06491164841599e-09"
+[1] "PsychoticFeature  vs  Gender"
+     
+       F  M
+  No  11 17
+  Yes  8 14
+[1] "p-value= 1"
+[1] "PsychoticFeature  vs  LeftBrainStatus"
+     
+      Fixed Frozen
+  No     11     17
+  Yes    10     12
+[1] "p-value= 0.880699718317488"
+[1] "PsychoticFeature  vs  SuicideStatus"
+     
+      No Unknown Yes
+  No  22       1   5
+  Yes 10       1  11
+[1] "p-value= 0.0469322444574774"
+[1] "PsychoticFeature  vs  PsychoticFeature"
+     
+      No Yes
+  No  28   0
+  Yes  0  22
+[1] "p-value= 1.16818340499656e-11"
+[1] "PsychoticFeature  vs  RateofDeath"
+     
+      On respirator Possible anoxia Sudden
+  No              1               1     26
+  Yes             3               2     17
+[1] "p-value= 0.281740568983672"
+[1] "PsychoticFeature  vs  SmokingatTimeofDeath"
+     
+      No Unknown Yes
+  No   7      14   7
+  Yes  7       4  11
+[1] "p-value= 0.0548013525348203"
+[1] "PsychoticFeature  vs  LifetimeAlcohol"
+     
+      Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  No              0                1              9                2                3     12       1
+  Yes             3                3              5                2                3      6       0
+[1] "p-value= 0.274489359864196"
+[1] "PsychoticFeature  vs  LifetimeDrugs"
+     
+      Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  No              1                1             23                1                   1      1
+  Yes             3                2             12                1                   4      0
+[1] "p-value= 0.222816784596014"
+[1] "PsychoticFeature  vs  ScanDateDayOnly"
+     
+      1 10 11 2 3 4 5 6 7 8 9
+  No  1  5  1 3 0 1 1 5 3 4 4
+  Yes 0  1  2 1 2 0 5 3 4 1 3
+[1] "p-value= 0.240017310686593"
+[1] "RateofDeath  vs  Diagnosis"
+                 
+                   1  2  3  4
+  On respirator    1  1  0  2
+  Possible anoxia  0  2  0  1
+  Sudden          14  8 11 10
+[1] "p-value= 0.33466784259411"
+[1] "RateofDeath  vs  Gender"
+                 
+                   F  M
+  On respirator    2  2
+  Possible anoxia  0  3
+  Sudden          17 26
+[1] "p-value= 0.34538528358661"
+[1] "RateofDeath  vs  LeftBrainStatus"
+                 
+                  Fixed Frozen
+  On respirator       3      1
+  Possible anoxia     2      1
+  Sudden             16     27
+[1] "p-value= 0.229624728184559"
+[1] "RateofDeath  vs  SuicideStatus"
+                 
+                  No Unknown Yes
+  On respirator    1       0   3
+  Possible anoxia  2       0   1
+  Sudden          29       2  12
+[1] "p-value= 0.420101813437945"
+[1] "RateofDeath  vs  PsychoticFeature"
+                 
+                  No Yes
+  On respirator    1   3
+  Possible anoxia  1   2
+  Sudden          26  17
+[1] "p-value= 0.281740568983672"
+[1] "RateofDeath  vs  RateofDeath"
+                 
+                  On respirator Possible anoxia Sudden
+  On respirator               4               0      0
+  Possible anoxia             0               3      0
+  Sudden                      0               0     43
+[1] "p-value= 9.836624224616e-21"
+[1] "RateofDeath  vs  SmokingatTimeofDeath"
+                 
+                  No Unknown Yes
+  On respirator    1       1   2
+  Possible anoxia  2       1   0
+  Sudden          11      16  16
+[1] "p-value= 0.52854364268638"
+[1] "RateofDeath  vs  LifetimeAlcohol"
+                 
+                  Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  On respirator               0                0              1                1                1      1       0
+  Possible anoxia             0                0              0                0                1      2       0
+  Sudden                      3                4             13                3                4     15       1
+[1] "p-value= 0.866216737037687"
+[1] "RateofDeath  vs  LifetimeDrugs"
+                 
+                  Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  On respirator               1                0              2                0                   1      0
+  Possible anoxia             0                0              3                0                   0      0
+  Sudden                      3                3             30                2                   4      1
+[1] "p-value= 0.918939749979"
+[1] "RateofDeath  vs  ScanDateDayOnly"
+                 
+                  1 10 11 2 3 4 5 6 7 8 9
+  On respirator   0  0  1 0 1 0 1 0 0 1 0
+  Possible anoxia 0  0  0 0 1 0 0 0 2 0 0
+  Sudden          1  6  2 4 0 1 5 8 5 4 7
+[1] "p-value= 0.0976156493384525"
+[1] "SmokingatTimeofDeath  vs  Diagnosis"
+         
+          1 2 3 4
+  No      4 3 3 4
+  Unknown 8 3 4 3
+  Yes     3 5 4 6
+[1] "p-value= 0.696986765288381"
+[1] "SmokingatTimeofDeath  vs  Gender"
+         
+           F  M
+  No       4 10
+  Unknown  8 10
+  Yes      7 11
+[1] "p-value= 0.653249805727253"
+[1] "SmokingatTimeofDeath  vs  LeftBrainStatus"
+         
+          Fixed Frozen
+  No          5      9
+  Unknown     6     12
+  Yes        10      8
+[1] "p-value= 0.343032567390263"
+[1] "SmokingatTimeofDeath  vs  SuicideStatus"
+         
+          No Unknown Yes
+  No       9       1   4
+  Unknown 14       1   3
+  Yes      9       0   9
+[1] "p-value= 0.243593147948433"
+[1] "SmokingatTimeofDeath  vs  PsychoticFeature"
+         
+          No Yes
+  No       7   7
+  Unknown 14   4
+  Yes      7  11
+[1] "p-value= 0.0548013525348203"
+[1] "SmokingatTimeofDeath  vs  RateofDeath"
+         
+          On respirator Possible anoxia Sudden
+  No                  1               2     11
+  Unknown             1               1     16
+  Yes                 2               0     16
+[1] "p-value= 0.52854364268638"
+[1] "SmokingatTimeofDeath  vs  SmokingatTimeofDeath"
+         
+          No Unknown Yes
+  No      14       0   0
+  Unknown  0      18   0
+  Yes      0       0  18
+[1] "p-value= 9.836624224616e-21"
+[1] "SmokingatTimeofDeath  vs  LifetimeAlcohol"
+         
+          Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  No                  0                0              1                2                3      8       0
+  Unknown             0                1              9                0                0      7       1
+  Yes                 3                3              4                2                3      3       0
+[1] "p-value= 0.0144541482968691"
+[1] "SmokingatTimeofDeath  vs  LifetimeDrugs"
+         
+          Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  No                  1                0             11                1                   1      0
+  Unknown             1                1             15                0                   1      0
+  Yes                 2                2              9                1                   3      1
+[1] "p-value= 0.643526560426561"
+[1] "SmokingatTimeofDeath  vs  ScanDateDayOnly"
+         
+          1 10 11 2 3 4 5 6 7 8 9
+  No      1  3  1 1 1 1 2 2 2 0 0
+  Unknown 0  1  2 2 0 0 2 1 3 4 3
+  Yes     0  2  0 1 1 0 2 5 2 1 4
+[1] "p-value= 0.414287830067923"
+[1] "LifetimeAlcohol  vs  Diagnosis"
+                  
+                   1 2 3 4
+  Heavy in past    0 2 0 1
+  Heavy in present 0 2 1 1
+  Little or none   5 0 4 5
+  Moderate in past 2 0 0 2
+  Moderate present 2 2 1 1
+  Social           6 4 5 3
+  Unknown          0 1 0 0
+[1] "p-value= 0.372331172503753"
+[1] "LifetimeAlcohol  vs  Gender"
+                  
+                    F  M
+  Heavy in past     0  3
+  Heavy in present  1  3
+  Little or none    8  6
+  Moderate in past  1  3
+  Moderate present  1  5
+  Social            8 10
+  Unknown           0  1
+[1] "p-value= 0.351522609053362"
+[1] "LifetimeAlcohol  vs  LeftBrainStatus"
+                  
+                   Fixed Frozen
+  Heavy in past        1      2
+  Heavy in present     2      2
+  Little or none       4     10
+  Moderate in past     1      3
+  Moderate present     5      1
+  Social               8     10
+  Unknown              0      1
+[1] "p-value= 0.35098436004916"
+[1] "LifetimeAlcohol  vs  SuicideStatus"
+                  
+                   No Unknown Yes
+  Heavy in past     1       0   2
+  Heavy in present  2       0   2
+  Little or none   11       0   3
+  Moderate in past  3       0   1
+  Moderate present  4       0   2
+  Social           11       1   6
+  Unknown           0       1   0
+[1] "p-value= 0.0045500386087837"
+[1] "LifetimeAlcohol  vs  PsychoticFeature"
+                  
+                   No Yes
+  Heavy in past     0   3
+  Heavy in present  1   3
+  Little or none    9   5
+  Moderate in past  2   2
+  Moderate present  3   3
+  Social           12   6
+  Unknown           1   0
+[1] "p-value= 0.274489359864196"
+[1] "LifetimeAlcohol  vs  RateofDeath"
+                  
+                   On respirator Possible anoxia Sudden
+  Heavy in past                0               0      3
+  Heavy in present             0               0      4
+  Little or none               1               0     13
+  Moderate in past             1               0      3
+  Moderate present             1               1      4
+  Social                       1               2     15
+  Unknown                      0               0      1
+[1] "p-value= 0.866216737037687"
+[1] "LifetimeAlcohol  vs  SmokingatTimeofDeath"
+                  
+                   No Unknown Yes
+  Heavy in past     0       0   3
+  Heavy in present  0       1   3
+  Little or none    1       9   4
+  Moderate in past  2       0   2
+  Moderate present  3       0   3
+  Social            8       7   3
+  Unknown           0       1   0
+[1] "p-value= 0.0144541482968691"
+[1] "LifetimeAlcohol  vs  LifetimeAlcohol"
+                  
+                   Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  Heavy in past                3                0              0                0                0      0       0
+  Heavy in present             0                4              0                0                0      0       0
+  Little or none               0                0             14                0                0      0       0
+  Moderate in past             0                0              0                4                0      0       0
+  Moderate present             0                0              0                0                6      0       0
+  Social                       0                0              0                0                0     18       0
+  Unknown                      0                0              0                0                0      0       1
+[1] "p-value= 2.23944256626055e-43"
+[1] "LifetimeAlcohol  vs  LifetimeDrugs"
+                  
+                   Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  Heavy in past                0                1              2                0                   0      0
+  Heavy in present             0                2              0                0                   2      0
+  Little or none               1                0             11                1                   0      1
+  Moderate in past             2                0              1                1                   0      0
+  Moderate present             0                0              4                0                   2      0
+  Social                       1                0             17                0                   0      0
+  Unknown                      0                0              0                0                   1      0
+[1] "p-value= 0.000166167394925985"
+[1] "LifetimeAlcohol  vs  ScanDateDayOnly"
+                  
+                   1 10 11 2 3 4 5 6 7 8 9
+  Heavy in past    0  0  0 0 0 0 1 1 0 0 1
+  Heavy in present 0  0  0 1 0 0 0 0 0 1 2
+  Little or none   0  3  2 1 0 0 1 1 2 1 3
+  Moderate in past 0  1  0 1 0 0 1 1 0 0 0
+  Moderate present 0  1  0 0 1 0 0 2 2 0 0
+  Social           1  1  1 1 1 1 3 3 3 2 1
+  Unknown          0  0  0 0 0 0 0 0 0 1 0
+[1] "p-value= 0.921138386549795"
+[1] "LifetimeDrugs  vs  Diagnosis"
+                     
+                       1  2  3  4
+  Heavy in past        0  1  1  2
+  Heavy in present     0  1  1  1
+  Little or none      14  5  8  8
+  Moderate in past     1  0  0  1
+  Moderate in present  0  4  0  1
+  Social               0  0  1  0
+[1] "p-value= 0.13244066422609"
+[1] "LifetimeDrugs  vs  Gender"
+                     
+                       F  M
+  Heavy in past        3  1
+  Heavy in present     0  3
+  Little or none      14 21
+  Moderate in past     1  1
+  Moderate in present  1  4
+  Social               0  1
+[1] "p-value= 0.342290791279578"
+[1] "LifetimeDrugs  vs  LeftBrainStatus"
+                     
+                      Fixed Frozen
+  Heavy in past           2      2
+  Heavy in present        1      2
+  Little or none         13     22
+  Moderate in past        1      1
+  Moderate in present     4      1
+  Social                  0      1
+[1] "p-value= 0.510246483518489"
+[1] "LifetimeDrugs  vs  SuicideStatus"
+                     
+                      No Unknown Yes
+  Heavy in past        1       0   3
+  Heavy in present     2       0   1
+  Little or none      27       1   7
+  Moderate in past     1       0   1
+  Moderate in present  1       1   3
+  Social               0       0   1
+[1] "p-value= 0.147858037216428"
+[1] "LifetimeDrugs  vs  PsychoticFeature"
+                     
+                      No Yes
+  Heavy in past        1   3
+  Heavy in present     1   2
+  Little or none      23  12
+  Moderate in past     1   1
+  Moderate in present  1   4
+  Social               1   0
+[1] "p-value= 0.222816784596014"
+[1] "LifetimeDrugs  vs  RateofDeath"
+                     
+                      On respirator Possible anoxia Sudden
+  Heavy in past                   1               0      3
+  Heavy in present                0               0      3
+  Little or none                  2               3     30
+  Moderate in past                0               0      2
+  Moderate in present             1               0      4
+  Social                          0               0      1
+[1] "p-value= 0.918939749979"
+[1] "LifetimeDrugs  vs  SmokingatTimeofDeath"
+                     
+                      No Unknown Yes
+  Heavy in past        1       1   2
+  Heavy in present     0       1   2
+  Little or none      11      15   9
+  Moderate in past     1       0   1
+  Moderate in present  1       1   3
+  Social               0       0   1
+[1] "p-value= 0.643526560426561"
+[1] "LifetimeDrugs  vs  LifetimeAlcohol"
+                     
+                      Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  Heavy in past                   0                0              1                2                0      1       0
+  Heavy in present                1                2              0                0                0      0       0
+  Little or none                  2                0             11                1                4     17       0
+  Moderate in past                0                0              1                1                0      0       0
+  Moderate in present             0                2              0                0                2      0       1
+  Social                          0                0              1                0                0      0       0
+[1] "p-value= 0.000166167394925985"
+[1] "LifetimeDrugs  vs  LifetimeDrugs"
+                     
+                      Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  Heavy in past                   4                0              0                0                   0      0
+  Heavy in present                0                3              0                0                   0      0
+  Little or none                  0                0             35                0                   0      0
+  Moderate in past                0                0              0                2                   0      0
+  Moderate in present             0                0              0                0                   5      0
+  Social                          0                0              0                0                   0      1
+[1] "p-value= 5.40710855522958e-39"
+[1] "LifetimeDrugs  vs  ScanDateDayOnly"
+                     
+                      1 10 11 2 3 4 5 6 7 8 9
+  Heavy in past       0  0  1 1 0 0 2 0 0 0 0
+  Heavy in present    0  0  0 1 0 0 1 0 0 1 0
+  Little or none      1  4  2 2 1 1 3 7 6 3 5
+  Moderate in past    0  1  0 0 0 0 0 1 0 0 0
+  Moderate in present 0  0  0 0 1 0 0 0 1 1 2
+  Social              0  1  0 0 0 0 0 0 0 0 0
+[1] "p-value= 0.772192343715463"
+[1] "ScanDateDayOnly  vs  Diagnosis"
+    
+     1 2 3 4
+  1  1 0 0 0
+  10 1 0 4 1
+  11 0 0 1 2
+  2  1 0 2 1
+  3  0 1 0 1
+  4  0 0 1 0
+  5  1 3 0 2
+  6  4 0 1 3
+  7  1 3 1 2
+  8  3 1 0 1
+  9  3 3 1 0
+[1] "p-value= 0.162993695161553"
+[1] "ScanDateDayOnly  vs  Gender"
+    
+     F M
+  1  0 1
+  10 1 5
+  11 2 1
+  2  2 2
+  3  0 2
+  4  0 1
+  5  3 3
+  6  3 5
+  7  3 4
+  8  1 4
+  9  4 3
+[1] "p-value= 0.714491143567828"
+[1] "ScanDateDayOnly  vs  LeftBrainStatus"
+    
+     Fixed Frozen
+  1      0      1
+  10     1      5
+  11     0      3
+  2      0      4
+  3      1      1
+  4      1      0
+  5      5      1
+  6      4      4
+  7      4      3
+  8      2      3
+  9      3      4
+[1] "p-value= 0.177846594095444"
+[1] "ScanDateDayOnly  vs  SuicideStatus"
+    
+     No Unknown Yes
+  1   1       0   0
+  10  4       0   2
+  11  1       0   2
+  2   4       0   0
+  3   1       0   1
+  4   1       0   0
+  5   2       0   4
+  6   5       1   2
+  7   4       0   3
+  8   4       1   0
+  9   5       0   2
+[1] "p-value= 0.681528727739921"
+[1] "ScanDateDayOnly  vs  PsychoticFeature"
+    
+     No Yes
+  1   1   0
+  10  5   1
+  11  1   2
+  2   3   1
+  3   0   2
+  4   1   0
+  5   1   5
+  6   5   3
+  7   3   4
+  8   4   1
+  9   4   3
+[1] "p-value= 0.240017310686593"
+[1] "ScanDateDayOnly  vs  RateofDeath"
+    
+     On respirator Possible anoxia Sudden
+  1              0               0      1
+  10             0               0      6
+  11             1               0      2
+  2              0               0      4
+  3              1               1      0
+  4              0               0      1
+  5              1               0      5
+  6              0               0      8
+  7              0               2      5
+  8              1               0      4
+  9              0               0      7
+[1] "p-value= 0.0976156493384525"
+[1] "ScanDateDayOnly  vs  SmokingatTimeofDeath"
+    
+     No Unknown Yes
+  1   1       0   0
+  10  3       1   2
+  11  1       2   0
+  2   1       2   1
+  3   1       0   1
+  4   1       0   0
+  5   2       2   2
+  6   2       1   5
+  7   2       3   2
+  8   0       4   1
+  9   0       3   4
+[1] "p-value= 0.414287830067923"
+[1] "ScanDateDayOnly  vs  LifetimeAlcohol"
+    
+     Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  1              0                0              0                0                0      1       0
+  10             0                0              3                1                1      1       0
+  11             0                0              2                0                0      1       0
+  2              0                1              1                1                0      1       0
+  3              0                0              0                0                1      1       0
+  4              0                0              0                0                0      1       0
+  5              1                0              1                1                0      3       0
+  6              1                0              1                1                2      3       0
+  7              0                0              2                0                2      3       0
+  8              0                1              1                0                0      2       1
+  9              1                2              3                0                0      1       0
+[1] "p-value= 0.921138386549795"
+[1] "ScanDateDayOnly  vs  LifetimeDrugs"
+    
+     Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  1              0                0              1                0                   0      0
+  10             0                0              4                1                   0      1
+  11             1                0              2                0                   0      0
+  2              1                1              2                0                   0      0
+  3              0                0              1                0                   1      0
+  4              0                0              1                0                   0      0
+  5              2                1              3                0                   0      0
+  6              0                0              7                1                   0      0
+  7              0                0              6                0                   1      0
+  8              0                1              3                0                   1      0
+  9              0                0              5                0                   2      0
+[1] "p-value= 0.772192343715463"
+[1] "ScanDateDayOnly  vs  ScanDateDayOnly"
+    
+     1 10 11 2 3 4 5 6 7 8 9
+  1  1  0  0 0 0 0 0 0 0 0 0
+  10 0  6  0 0 0 0 0 0 0 0 0
+  11 0  0  3 0 0 0 0 0 0 0 0
+  2  0  0  0 4 0 0 0 0 0 0 0
+  3  0  0  0 0 2 0 0 0 0 0 0
+  4  0  0  0 0 0 1 0 0 0 0 0
+  5  0  0  0 0 0 0 6 0 0 0 0
+  6  0  0  0 0 0 0 0 8 0 0 0
+  7  0  0  0 0 0 0 0 0 7 0 0
+  8  0  0  0 0 0 0 0 0 0 5 0
+  9  0  0  0 0 0 0 0 0 0 0 7
+[1] "p-value= 1.72012100536953e-54"
+      Control       Bipolar    Depression Schizophrenia 
+           15            11            11            13 
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+08/24/01 01/09/02 10/16/01 10/18/01 11/08/01 11/20/01 11/27/01 11/29/01 12/06/01 12/19/01 12/20/01 
+       1        4        2        1        6        8        7        5        7        6        3 
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+[1] "Diagnosis  vs  Diagnosis"
+   
+     1  2  3  4
+  1 15  0  0  0
+  2  0 11  0  0
+  3  0  0 11  0
+  4  0  0  0 13
+[1] "p-value= 8.81962995480541e-28"
+[1] "Diagnosis  vs  Gender"
+   
+    F M
+  1 6 9
+  2 3 8
+  3 5 6
+  4 5 8
+[1] "p-value= 0.843869414477613"
+[1] "Diagnosis  vs  LeftBrainStatus"
+   
+    Fixed Frozen
+  1     7      8
+  2     7      4
+  3     3      8
+  4     4      9
+[1] "p-value= 0.272410088014135"
+[1] "Diagnosis  vs  SuicideStatus"
+   
+    No Unknown Yes
+  1 15       0   0
+  2  2       1   8
+  3  7       0   4
+  4  8       1   4
+[1] "p-value= 0.00349946341776937"
+[1] "Diagnosis  vs  PsychoticFeature"
+   
+    No Yes
+  1 15   0
+  2  2   9
+  3 11   0
+  4  0  13
+[1] "p-value= 2.06491164841599e-09"
+[1] "Diagnosis  vs  RateofDeath"
+   
+    On respirator Possible anoxia Sudden
+  1             1               0     14
+  2             1               2      8
+  3             0               0     11
+  4             2               1     10
+[1] "p-value= 0.33466784259411"
+[1] "Diagnosis  vs  SmokingatTimeofDeath"
+   
+    No Unknown Yes
+  1  4       8   3
+  2  3       3   5
+  3  3       4   4
+  4  4       3   6
+[1] "p-value= 0.696986765288381"
+[1] "Diagnosis  vs  LifetimeAlcohol"
+   
+    Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  1             0                0              5                2                2      6       0
+  2             2                2              0                0                2      4       1
+  3             0                1              4                0                1      5       0
+  4             1                1              5                2                1      3       0
+[1] "p-value= 0.372331172503753"
+[1] "Diagnosis  vs  LifetimeDrugs"
+   
+    Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  1             0                0             14                1                   0      0
+  2             1                1              5                0                   4      0
+  3             1                1              8                0                   0      1
+  4             2                1              8                1                   1      0
+[1] "p-value= 0.13244066422609"
+[1] "Diagnosis  vs  ScanDateDayOnly"
+   
+    1 10 11 2 3 4 5 6 7 8 9
+  1 1  1  0 1 0 0 1 4 1 3 3
+  2 0  0  0 0 1 0 3 0 3 1 3
+  3 0  4  1 2 0 1 0 1 1 0 1
+  4 0  1  2 1 1 0 2 3 2 1 0
+[1] "p-value= 0.162993695161553"
+[1] "Gender  vs  Diagnosis"
+   
+    1 2 3 4
+  F 6 3 5 5
+  M 9 8 6 8
+[1] "p-value= 0.843869414477613"
+[1] "Gender  vs  Gender"
+   
+     F  M
+  F 19  0
+  M  0 31
+[1] "p-value= 1.2795045613301e-11"
+[1] "Gender  vs  LeftBrainStatus"
+   
+    Fixed Frozen
+  F     8     11
+  M    13     18
+[1] "p-value= 1"
+[1] "Gender  vs  SuicideStatus"
+   
+    No Unknown Yes
+  F 10       1   8
+  M 22       1   8
+[1] "p-value= 0.423370481671397"
+[1] "Gender  vs  PsychoticFeature"
+   
+    No Yes
+  F 11   8
+  M 17  14
+[1] "p-value= 1"
+[1] "Gender  vs  RateofDeath"
+   
+    On respirator Possible anoxia Sudden
+  F             2               0     17
+  M             2               3     26
+[1] "p-value= 0.34538528358661"
+[1] "Gender  vs  SmokingatTimeofDeath"
+   
+    No Unknown Yes
+  F  4       8   7
+  M 10      10  11
+[1] "p-value= 0.653249805727253"
+[1] "Gender  vs  LifetimeAlcohol"
+   
+    Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  F             0                1              8                1                1      8       0
+  M             3                3              6                3                5     10       1
+[1] "p-value= 0.351522609053362"
+[1] "Gender  vs  LifetimeDrugs"
+   
+    Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  F             3                0             14                1                   1      0
+  M             1                3             21                1                   4      1
+[1] "p-value= 0.342290791279578"
+[1] "Gender  vs  ScanDateDayOnly"
+   
+    1 10 11 2 3 4 5 6 7 8 9
+  F 0  1  2 2 0 0 3 3 3 1 4
+  M 1  5  1 2 2 1 3 5 4 4 3
+[1] "p-value= 0.714491143567828"
+[1] "LeftBrainStatus  vs  Diagnosis"
+        
+         1 2 3 4
+  Fixed  7 7 3 4
+  Frozen 8 4 8 9
+[1] "p-value= 0.272410088014135"
+[1] "LeftBrainStatus  vs  Gender"
+        
+          F  M
+  Fixed   8 13
+  Frozen 11 18
+[1] "p-value= 1"
+[1] "LeftBrainStatus  vs  LeftBrainStatus"
+        
+         Fixed Frozen
+  Fixed     21      0
+  Frozen     0     29
+[1] "p-value= 1.19517116772538e-11"
+[1] "LeftBrainStatus  vs  SuicideStatus"
+        
+         No Unknown Yes
+  Fixed  13       0   8
+  Frozen 19       2   8
+[1] "p-value= 0.388005232664159"
+[1] "LeftBrainStatus  vs  PsychoticFeature"
+        
+         No Yes
+  Fixed  11  10
+  Frozen 17  12
+[1] "p-value= 0.880699718317488"
+[1] "LeftBrainStatus  vs  RateofDeath"
+        
+         On respirator Possible anoxia Sudden
+  Fixed              3               2     16
+  Frozen             1               1     27
+[1] "p-value= 0.229624728184559"
+[1] "LeftBrainStatus  vs  SmokingatTimeofDeath"
+        
+         No Unknown Yes
+  Fixed   5       6  10
+  Frozen  9      12   8
+[1] "p-value= 0.343032567390263"
+[1] "LeftBrainStatus  vs  LifetimeAlcohol"
+        
+         Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  Fixed              1                2              4                1                5      8       0
+  Frozen             2                2             10                3                1     10       1
+[1] "p-value= 0.35098436004916"
+[1] "LeftBrainStatus  vs  LifetimeDrugs"
+        
+         Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  Fixed              2                1             13                1                   4      0
+  Frozen             2                2             22                1                   1      1
+[1] "p-value= 0.510246483518489"
+[1] "LeftBrainStatus  vs  ScanDateDayOnly"
+        
+         1 10 11 2 3 4 5 6 7 8 9
+  Fixed  0  1  0 0 1 1 5 4 4 2 3
+  Frozen 1  5  3 4 1 0 1 4 3 3 4
+[1] "p-value= 0.177846594095444"
+[1] "SuicideStatus  vs  Diagnosis"
+         
+           1  2  3  4
+  No      15  2  7  8
+  Unknown  0  1  0  1
+  Yes      0  8  4  4
+[1] "p-value= 0.00349946341776937"
+[1] "SuicideStatus  vs  Gender"
+         
+           F  M
+  No      10 22
+  Unknown  1  1
+  Yes      8  8
+[1] "p-value= 0.423370481671397"
+[1] "SuicideStatus  vs  LeftBrainStatus"
+         
+          Fixed Frozen
+  No         13     19
+  Unknown     0      2
+  Yes         8      8
+[1] "p-value= 0.388005232664159"
+[1] "SuicideStatus  vs  SuicideStatus"
+         
+          No Unknown Yes
+  No      32       0   0
+  Unknown  0       2   0
+  Yes      0       0  16
+[1] "p-value= 9.83662422461607e-21"
+[1] "SuicideStatus  vs  PsychoticFeature"
+         
+          No Yes
+  No      22  10
+  Unknown  1   1
+  Yes      5  11
+[1] "p-value= 0.0469322444574774"
+[1] "SuicideStatus  vs  RateofDeath"
+         
+          On respirator Possible anoxia Sudden
+  No                  1               2     29
+  Unknown             0               0      2
+  Yes                 3               1     12
+[1] "p-value= 0.420101813437945"
+[1] "SuicideStatus  vs  SmokingatTimeofDeath"
+         
+          No Unknown Yes
+  No       9      14   9
+  Unknown  1       1   0
+  Yes      4       3   9
+[1] "p-value= 0.243593147948433"
+[1] "SuicideStatus  vs  LifetimeAlcohol"
+         
+          Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  No                  1                2             11                3                4     11       0
+  Unknown             0                0              0                0                0      1       1
+  Yes                 2                2              3                1                2      6       0
+[1] "p-value= 0.0045500386087837"
+[1] "SuicideStatus  vs  LifetimeDrugs"
+         
+          Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  No                  1                2             27                1                   1      0
+  Unknown             0                0              1                0                   1      0
+  Yes                 3                1              7                1                   3      1
+[1] "p-value= 0.147858037216428"
+[1] "SuicideStatus  vs  ScanDateDayOnly"
+         
+          1 10 11 2 3 4 5 6 7 8 9
+  No      1  4  1 4 1 1 2 5 4 4 5
+  Unknown 0  0  0 0 0 0 0 1 0 1 0
+  Yes     0  2  2 0 1 0 4 2 3 0 2
+[1] "p-value= 0.681528727739921"
+[1] "PsychoticFeature  vs  Diagnosis"
+     
+       1  2  3  4
+  No  15  2 11  0
+  Yes  0  9  0 13
+[1] "p-value= 2.06491164841599e-09"
+[1] "PsychoticFeature  vs  Gender"
+     
+       F  M
+  No  11 17
+  Yes  8 14
+[1] "p-value= 1"
+[1] "PsychoticFeature  vs  LeftBrainStatus"
+     
+      Fixed Frozen
+  No     11     17
+  Yes    10     12
+[1] "p-value= 0.880699718317488"
+[1] "PsychoticFeature  vs  SuicideStatus"
+     
+      No Unknown Yes
+  No  22       1   5
+  Yes 10       1  11
+[1] "p-value= 0.0469322444574774"
+[1] "PsychoticFeature  vs  PsychoticFeature"
+     
+      No Yes
+  No  28   0
+  Yes  0  22
+[1] "p-value= 1.16818340499656e-11"
+[1] "PsychoticFeature  vs  RateofDeath"
+     
+      On respirator Possible anoxia Sudden
+  No              1               1     26
+  Yes             3               2     17
+[1] "p-value= 0.281740568983672"
+[1] "PsychoticFeature  vs  SmokingatTimeofDeath"
+     
+      No Unknown Yes
+  No   7      14   7
+  Yes  7       4  11
+[1] "p-value= 0.0548013525348203"
+[1] "PsychoticFeature  vs  LifetimeAlcohol"
+     
+      Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  No              0                1              9                2                3     12       1
+  Yes             3                3              5                2                3      6       0
+[1] "p-value= 0.274489359864196"
+[1] "PsychoticFeature  vs  LifetimeDrugs"
+     
+      Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  No              1                1             23                1                   1      1
+  Yes             3                2             12                1                   4      0
+[1] "p-value= 0.222816784596014"
+[1] "PsychoticFeature  vs  ScanDateDayOnly"
+     
+      1 10 11 2 3 4 5 6 7 8 9
+  No  1  5  1 3 0 1 1 5 3 4 4
+  Yes 0  1  2 1 2 0 5 3 4 1 3
+[1] "p-value= 0.240017310686593"
+[1] "RateofDeath  vs  Diagnosis"
+                 
+                   1  2  3  4
+  On respirator    1  1  0  2
+  Possible anoxia  0  2  0  1
+  Sudden          14  8 11 10
+[1] "p-value= 0.33466784259411"
+[1] "RateofDeath  vs  Gender"
+                 
+                   F  M
+  On respirator    2  2
+  Possible anoxia  0  3
+  Sudden          17 26
+[1] "p-value= 0.34538528358661"
+[1] "RateofDeath  vs  LeftBrainStatus"
+                 
+                  Fixed Frozen
+  On respirator       3      1
+  Possible anoxia     2      1
+  Sudden             16     27
+[1] "p-value= 0.229624728184559"
+[1] "RateofDeath  vs  SuicideStatus"
+                 
+                  No Unknown Yes
+  On respirator    1       0   3
+  Possible anoxia  2       0   1
+  Sudden          29       2  12
+[1] "p-value= 0.420101813437945"
+[1] "RateofDeath  vs  PsychoticFeature"
+                 
+                  No Yes
+  On respirator    1   3
+  Possible anoxia  1   2
+  Sudden          26  17
+[1] "p-value= 0.281740568983672"
+[1] "RateofDeath  vs  RateofDeath"
+                 
+                  On respirator Possible anoxia Sudden
+  On respirator               4               0      0
+  Possible anoxia             0               3      0
+  Sudden                      0               0     43
+[1] "p-value= 9.836624224616e-21"
+[1] "RateofDeath  vs  SmokingatTimeofDeath"
+                 
+                  No Unknown Yes
+  On respirator    1       1   2
+  Possible anoxia  2       1   0
+  Sudden          11      16  16
+[1] "p-value= 0.52854364268638"
+[1] "RateofDeath  vs  LifetimeAlcohol"
+                 
+                  Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  On respirator               0                0              1                1                1      1       0
+  Possible anoxia             0                0              0                0                1      2       0
+  Sudden                      3                4             13                3                4     15       1
+[1] "p-value= 0.866216737037687"
+[1] "RateofDeath  vs  LifetimeDrugs"
+                 
+                  Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  On respirator               1                0              2                0                   1      0
+  Possible anoxia             0                0              3                0                   0      0
+  Sudden                      3                3             30                2                   4      1
+[1] "p-value= 0.918939749979"
+[1] "RateofDeath  vs  ScanDateDayOnly"
+                 
+                  1 10 11 2 3 4 5 6 7 8 9
+  On respirator   0  0  1 0 1 0 1 0 0 1 0
+  Possible anoxia 0  0  0 0 1 0 0 0 2 0 0
+  Sudden          1  6  2 4 0 1 5 8 5 4 7
+[1] "p-value= 0.0976156493384525"
+[1] "SmokingatTimeofDeath  vs  Diagnosis"
+         
+          1 2 3 4
+  No      4 3 3 4
+  Unknown 8 3 4 3
+  Yes     3 5 4 6
+[1] "p-value= 0.696986765288381"
+[1] "SmokingatTimeofDeath  vs  Gender"
+         
+           F  M
+  No       4 10
+  Unknown  8 10
+  Yes      7 11
+[1] "p-value= 0.653249805727253"
+[1] "SmokingatTimeofDeath  vs  LeftBrainStatus"
+         
+          Fixed Frozen
+  No          5      9
+  Unknown     6     12
+  Yes        10      8
+[1] "p-value= 0.343032567390263"
+[1] "SmokingatTimeofDeath  vs  SuicideStatus"
+         
+          No Unknown Yes
+  No       9       1   4
+  Unknown 14       1   3
+  Yes      9       0   9
+[1] "p-value= 0.243593147948433"
+[1] "SmokingatTimeofDeath  vs  PsychoticFeature"
+         
+          No Yes
+  No       7   7
+  Unknown 14   4
+  Yes      7  11
+[1] "p-value= 0.0548013525348203"
+[1] "SmokingatTimeofDeath  vs  RateofDeath"
+         
+          On respirator Possible anoxia Sudden
+  No                  1               2     11
+  Unknown             1               1     16
+  Yes                 2               0     16
+[1] "p-value= 0.52854364268638"
+[1] "SmokingatTimeofDeath  vs  SmokingatTimeofDeath"
+         
+          No Unknown Yes
+  No      14       0   0
+  Unknown  0      18   0
+  Yes      0       0  18
+[1] "p-value= 9.836624224616e-21"
+[1] "SmokingatTimeofDeath  vs  LifetimeAlcohol"
+         
+          Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  No                  0                0              1                2                3      8       0
+  Unknown             0                1              9                0                0      7       1
+  Yes                 3                3              4                2                3      3       0
+[1] "p-value= 0.0144541482968691"
+[1] "SmokingatTimeofDeath  vs  LifetimeDrugs"
+         
+          Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  No                  1                0             11                1                   1      0
+  Unknown             1                1             15                0                   1      0
+  Yes                 2                2              9                1                   3      1
+[1] "p-value= 0.643526560426561"
+[1] "SmokingatTimeofDeath  vs  ScanDateDayOnly"
+         
+          1 10 11 2 3 4 5 6 7 8 9
+  No      1  3  1 1 1 1 2 2 2 0 0
+  Unknown 0  1  2 2 0 0 2 1 3 4 3
+  Yes     0  2  0 1 1 0 2 5 2 1 4
+[1] "p-value= 0.414287830067923"
+[1] "LifetimeAlcohol  vs  Diagnosis"
+                  
+                   1 2 3 4
+  Heavy in past    0 2 0 1
+  Heavy in present 0 2 1 1
+  Little or none   5 0 4 5
+  Moderate in past 2 0 0 2
+  Moderate present 2 2 1 1
+  Social           6 4 5 3
+  Unknown          0 1 0 0
+[1] "p-value= 0.372331172503753"
+[1] "LifetimeAlcohol  vs  Gender"
+                  
+                    F  M
+  Heavy in past     0  3
+  Heavy in present  1  3
+  Little or none    8  6
+  Moderate in past  1  3
+  Moderate present  1  5
+  Social            8 10
+  Unknown           0  1
+[1] "p-value= 0.351522609053362"
+[1] "LifetimeAlcohol  vs  LeftBrainStatus"
+                  
+                   Fixed Frozen
+  Heavy in past        1      2
+  Heavy in present     2      2
+  Little or none       4     10
+  Moderate in past     1      3
+  Moderate present     5      1
+  Social               8     10
+  Unknown              0      1
+[1] "p-value= 0.35098436004916"
+[1] "LifetimeAlcohol  vs  SuicideStatus"
+                  
+                   No Unknown Yes
+  Heavy in past     1       0   2
+  Heavy in present  2       0   2
+  Little or none   11       0   3
+  Moderate in past  3       0   1
+  Moderate present  4       0   2
+  Social           11       1   6
+  Unknown           0       1   0
+[1] "p-value= 0.0045500386087837"
+[1] "LifetimeAlcohol  vs  PsychoticFeature"
+                  
+                   No Yes
+  Heavy in past     0   3
+  Heavy in present  1   3
+  Little or none    9   5
+  Moderate in past  2   2
+  Moderate present  3   3
+  Social           12   6
+  Unknown           1   0
+[1] "p-value= 0.274489359864196"
+[1] "LifetimeAlcohol  vs  RateofDeath"
+                  
+                   On respirator Possible anoxia Sudden
+  Heavy in past                0               0      3
+  Heavy in present             0               0      4
+  Little or none               1               0     13
+  Moderate in past             1               0      3
+  Moderate present             1               1      4
+  Social                       1               2     15
+  Unknown                      0               0      1
+[1] "p-value= 0.866216737037687"
+[1] "LifetimeAlcohol  vs  SmokingatTimeofDeath"
+                  
+                   No Unknown Yes
+  Heavy in past     0       0   3
+  Heavy in present  0       1   3
+  Little or none    1       9   4
+  Moderate in past  2       0   2
+  Moderate present  3       0   3
+  Social            8       7   3
+  Unknown           0       1   0
+[1] "p-value= 0.0144541482968691"
+[1] "LifetimeAlcohol  vs  LifetimeAlcohol"
+                  
+                   Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  Heavy in past                3                0              0                0                0      0       0
+  Heavy in present             0                4              0                0                0      0       0
+  Little or none               0                0             14                0                0      0       0
+  Moderate in past             0                0              0                4                0      0       0
+  Moderate present             0                0              0                0                6      0       0
+  Social                       0                0              0                0                0     18       0
+  Unknown                      0                0              0                0                0      0       1
+[1] "p-value= 2.23944256626055e-43"
+[1] "LifetimeAlcohol  vs  LifetimeDrugs"
+                  
+                   Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  Heavy in past                0                1              2                0                   0      0
+  Heavy in present             0                2              0                0                   2      0
+  Little or none               1                0             11                1                   0      1
+  Moderate in past             2                0              1                1                   0      0
+  Moderate present             0                0              4                0                   2      0
+  Social                       1                0             17                0                   0      0
+  Unknown                      0                0              0                0                   1      0
+[1] "p-value= 0.000166167394925985"
+[1] "LifetimeAlcohol  vs  ScanDateDayOnly"
+                  
+                   1 10 11 2 3 4 5 6 7 8 9
+  Heavy in past    0  0  0 0 0 0 1 1 0 0 1
+  Heavy in present 0  0  0 1 0 0 0 0 0 1 2
+  Little or none   0  3  2 1 0 0 1 1 2 1 3
+  Moderate in past 0  1  0 1 0 0 1 1 0 0 0
+  Moderate present 0  1  0 0 1 0 0 2 2 0 0
+  Social           1  1  1 1 1 1 3 3 3 2 1
+  Unknown          0  0  0 0 0 0 0 0 0 1 0
+[1] "p-value= 0.921138386549795"
+[1] "LifetimeDrugs  vs  Diagnosis"
+                     
+                       1  2  3  4
+  Heavy in past        0  1  1  2
+  Heavy in present     0  1  1  1
+  Little or none      14  5  8  8
+  Moderate in past     1  0  0  1
+  Moderate in present  0  4  0  1
+  Social               0  0  1  0
+[1] "p-value= 0.13244066422609"
+[1] "LifetimeDrugs  vs  Gender"
+                     
+                       F  M
+  Heavy in past        3  1
+  Heavy in present     0  3
+  Little or none      14 21
+  Moderate in past     1  1
+  Moderate in present  1  4
+  Social               0  1
+[1] "p-value= 0.342290791279578"
+[1] "LifetimeDrugs  vs  LeftBrainStatus"
+                     
+                      Fixed Frozen
+  Heavy in past           2      2
+  Heavy in present        1      2
+  Little or none         13     22
+  Moderate in past        1      1
+  Moderate in present     4      1
+  Social                  0      1
+[1] "p-value= 0.510246483518489"
+[1] "LifetimeDrugs  vs  SuicideStatus"
+                     
+                      No Unknown Yes
+  Heavy in past        1       0   3
+  Heavy in present     2       0   1
+  Little or none      27       1   7
+  Moderate in past     1       0   1
+  Moderate in present  1       1   3
+  Social               0       0   1
+[1] "p-value= 0.147858037216428"
+[1] "LifetimeDrugs  vs  PsychoticFeature"
+                     
+                      No Yes
+  Heavy in past        1   3
+  Heavy in present     1   2
+  Little or none      23  12
+  Moderate in past     1   1
+  Moderate in present  1   4
+  Social               1   0
+[1] "p-value= 0.222816784596014"
+[1] "LifetimeDrugs  vs  RateofDeath"
+                     
+                      On respirator Possible anoxia Sudden
+  Heavy in past                   1               0      3
+  Heavy in present                0               0      3
+  Little or none                  2               3     30
+  Moderate in past                0               0      2
+  Moderate in present             1               0      4
+  Social                          0               0      1
+[1] "p-value= 0.918939749979"
+[1] "LifetimeDrugs  vs  SmokingatTimeofDeath"
+                     
+                      No Unknown Yes
+  Heavy in past        1       1   2
+  Heavy in present     0       1   2
+  Little or none      11      15   9
+  Moderate in past     1       0   1
+  Moderate in present  1       1   3
+  Social               0       0   1
+[1] "p-value= 0.643526560426561"
+[1] "LifetimeDrugs  vs  LifetimeAlcohol"
+                     
+                      Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  Heavy in past                   0                0              1                2                0      1       0
+  Heavy in present                1                2              0                0                0      0       0
+  Little or none                  2                0             11                1                4     17       0
+  Moderate in past                0                0              1                1                0      0       0
+  Moderate in present             0                2              0                0                2      0       1
+  Social                          0                0              1                0                0      0       0
+[1] "p-value= 0.000166167394925985"
+[1] "LifetimeDrugs  vs  LifetimeDrugs"
+                     
+                      Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  Heavy in past                   4                0              0                0                   0      0
+  Heavy in present                0                3              0                0                   0      0
+  Little or none                  0                0             35                0                   0      0
+  Moderate in past                0                0              0                2                   0      0
+  Moderate in present             0                0              0                0                   5      0
+  Social                          0                0              0                0                   0      1
+[1] "p-value= 5.40710855522958e-39"
+[1] "LifetimeDrugs  vs  ScanDateDayOnly"
+                     
+                      1 10 11 2 3 4 5 6 7 8 9
+  Heavy in past       0  0  1 1 0 0 2 0 0 0 0
+  Heavy in present    0  0  0 1 0 0 1 0 0 1 0
+  Little or none      1  4  2 2 1 1 3 7 6 3 5
+  Moderate in past    0  1  0 0 0 0 0 1 0 0 0
+  Moderate in present 0  0  0 0 1 0 0 0 1 1 2
+  Social              0  1  0 0 0 0 0 0 0 0 0
+[1] "p-value= 0.772192343715463"
+[1] "ScanDateDayOnly  vs  Diagnosis"
+    
+     1 2 3 4
+  1  1 0 0 0
+  10 1 0 4 1
+  11 0 0 1 2
+  2  1 0 2 1
+  3  0 1 0 1
+  4  0 0 1 0
+  5  1 3 0 2
+  6  4 0 1 3
+  7  1 3 1 2
+  8  3 1 0 1
+  9  3 3 1 0
+[1] "p-value= 0.162993695161553"
+[1] "ScanDateDayOnly  vs  Gender"
+    
+     F M
+  1  0 1
+  10 1 5
+  11 2 1
+  2  2 2
+  3  0 2
+  4  0 1
+  5  3 3
+  6  3 5
+  7  3 4
+  8  1 4
+  9  4 3
+[1] "p-value= 0.714491143567828"
+[1] "ScanDateDayOnly  vs  LeftBrainStatus"
+    
+     Fixed Frozen
+  1      0      1
+  10     1      5
+  11     0      3
+  2      0      4
+  3      1      1
+  4      1      0
+  5      5      1
+  6      4      4
+  7      4      3
+  8      2      3
+  9      3      4
+[1] "p-value= 0.177846594095444"
+[1] "ScanDateDayOnly  vs  SuicideStatus"
+    
+     No Unknown Yes
+  1   1       0   0
+  10  4       0   2
+  11  1       0   2
+  2   4       0   0
+  3   1       0   1
+  4   1       0   0
+  5   2       0   4
+  6   5       1   2
+  7   4       0   3
+  8   4       1   0
+  9   5       0   2
+[1] "p-value= 0.681528727739921"
+[1] "ScanDateDayOnly  vs  PsychoticFeature"
+    
+     No Yes
+  1   1   0
+  10  5   1
+  11  1   2
+  2   3   1
+  3   0   2
+  4   1   0
+  5   1   5
+  6   5   3
+  7   3   4
+  8   4   1
+  9   4   3
+[1] "p-value= 0.240017310686593"
+[1] "ScanDateDayOnly  vs  RateofDeath"
+    
+     On respirator Possible anoxia Sudden
+  1              0               0      1
+  10             0               0      6
+  11             1               0      2
+  2              0               0      4
+  3              1               1      0
+  4              0               0      1
+  5              1               0      5
+  6              0               0      8
+  7              0               2      5
+  8              1               0      4
+  9              0               0      7
+[1] "p-value= 0.0976156493384525"
+[1] "ScanDateDayOnly  vs  SmokingatTimeofDeath"
+    
+     No Unknown Yes
+  1   1       0   0
+  10  3       1   2
+  11  1       2   0
+  2   1       2   1
+  3   1       0   1
+  4   1       0   0
+  5   2       2   2
+  6   2       1   5
+  7   2       3   2
+  8   0       4   1
+  9   0       3   4
+[1] "p-value= 0.414287830067923"
+[1] "ScanDateDayOnly  vs  LifetimeAlcohol"
+    
+     Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  1              0                0              0                0                0      1       0
+  10             0                0              3                1                1      1       0
+  11             0                0              2                0                0      1       0
+  2              0                1              1                1                0      1       0
+  3              0                0              0                0                1      1       0
+  4              0                0              0                0                0      1       0
+  5              1                0              1                1                0      3       0
+  6              1                0              1                1                2      3       0
+  7              0                0              2                0                2      3       0
+  8              0                1              1                0                0      2       1
+  9              1                2              3                0                0      1       0
+[1] "p-value= 0.921138386549795"
+[1] "ScanDateDayOnly  vs  LifetimeDrugs"
+    
+     Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  1              0                0              1                0                   0      0
+  10             0                0              4                1                   0      1
+  11             1                0              2                0                   0      0
+  2              1                1              2                0                   0      0
+  3              0                0              1                0                   1      0
+  4              0                0              1                0                   0      0
+  5              2                1              3                0                   0      0
+  6              0                0              7                1                   0      0
+  7              0                0              6                0                   1      0
+  8              0                1              3                0                   1      0
+  9              0                0              5                0                   2      0
+[1] "p-value= 0.772192343715463"
+[1] "ScanDateDayOnly  vs  ScanDateDayOnly"
+    
+     1 10 11 2 3 4 5 6 7 8 9
+  1  1  0  0 0 0 0 0 0 0 0 0
+  10 0  6  0 0 0 0 0 0 0 0 0
+  11 0  0  3 0 0 0 0 0 0 0 0
+  2  0  0  0 4 0 0 0 0 0 0 0
+  3  0  0  0 0 2 0 0 0 0 0 0
+  4  0  0  0 0 0 1 0 0 0 0 0
+  5  0  0  0 0 0 0 6 0 0 0 0
+  6  0  0  0 0 0 0 0 8 0 0 0
+  7  0  0  0 0 0 0 0 0 7 0 0
+  8  0  0  0 0 0 0 0 0 0 5 0
+  9  0  0  0 0 0 0 0 0 0 0 7
+[1] "p-value= 1.72012100536953e-54"
+      Control       Bipolar    Depression Schizophrenia 
+           15            11            11            13 
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+08/24/01 01/09/02 10/16/01 10/18/01 11/08/01 11/20/01 11/27/01 11/29/01 12/06/01 12/19/01 12/20/01 
+       1        4        2        1        6        8        7        5        7        6        3 
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+      V1           
+ Length:50         
+ Class :character  
+ Mode  :character  
+[1] "Diagnosis  vs  Diagnosis"
+   
+     1  2  3  4
+  1 15  0  0  0
+  2  0 11  0  0
+  3  0  0 11  0
+  4  0  0  0 13
+[1] "p-value= 8.81962995480541e-28"
+[1] "Diagnosis  vs  Gender"
+   
+    F M
+  1 6 9
+  2 3 8
+  3 5 6
+  4 5 8
+[1] "p-value= 0.843869414477613"
+[1] "Diagnosis  vs  LeftBrainStatus"
+   
+    Fixed Frozen
+  1     7      8
+  2     7      4
+  3     3      8
+  4     4      9
+[1] "p-value= 0.272410088014135"
+[1] "Diagnosis  vs  SuicideStatus"
+   
+    No Unknown Yes
+  1 15       0   0
+  2  2       1   8
+  3  7       0   4
+  4  8       1   4
+[1] "p-value= 0.00349946341776937"
+[1] "Diagnosis  vs  PsychoticFeature"
+   
+    No Yes
+  1 15   0
+  2  2   9
+  3 11   0
+  4  0  13
+[1] "p-value= 2.06491164841599e-09"
+[1] "Diagnosis  vs  RateofDeath"
+   
+    On respirator Possible anoxia Sudden
+  1             1               0     14
+  2             1               2      8
+  3             0               0     11
+  4             2               1     10
+[1] "p-value= 0.33466784259411"
+[1] "Diagnosis  vs  SmokingatTimeofDeath"
+   
+    No Unknown Yes
+  1  4       8   3
+  2  3       3   5
+  3  3       4   4
+  4  4       3   6
+[1] "p-value= 0.696986765288381"
+[1] "Diagnosis  vs  LifetimeAlcohol"
+   
+    Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  1             0                0              5                2                2      6       0
+  2             2                2              0                0                2      4       1
+  3             0                1              4                0                1      5       0
+  4             1                1              5                2                1      3       0
+[1] "p-value= 0.372331172503753"
+[1] "Diagnosis  vs  LifetimeDrugs"
+   
+    Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  1             0                0             14                1                   0      0
+  2             1                1              5                0                   4      0
+  3             1                1              8                0                   0      1
+  4             2                1              8                1                   1      0
+[1] "p-value= 0.13244066422609"
+[1] "Diagnosis  vs  ScanDateDayOnly"
+   
+    1 10 11 2 3 4 5 6 7 8 9
+  1 1  1  0 1 0 0 1 4 1 3 3
+  2 0  0  0 0 1 0 3 0 3 1 3
+  3 0  4  1 2 0 1 0 1 1 0 1
+  4 0  1  2 1 1 0 2 3 2 1 0
+[1] "p-value= 0.162993695161553"
+[1] "Gender  vs  Diagnosis"
+   
+    1 2 3 4
+  F 6 3 5 5
+  M 9 8 6 8
+[1] "p-value= 0.843869414477613"
+[1] "Gender  vs  Gender"
+   
+     F  M
+  F 19  0
+  M  0 31
+[1] "p-value= 1.2795045613301e-11"
+[1] "Gender  vs  LeftBrainStatus"
+   
+    Fixed Frozen
+  F     8     11
+  M    13     18
+[1] "p-value= 1"
+[1] "Gender  vs  SuicideStatus"
+   
+    No Unknown Yes
+  F 10       1   8
+  M 22       1   8
+[1] "p-value= 0.423370481671397"
+[1] "Gender  vs  PsychoticFeature"
+   
+    No Yes
+  F 11   8
+  M 17  14
+[1] "p-value= 1"
+[1] "Gender  vs  RateofDeath"
+   
+    On respirator Possible anoxia Sudden
+  F             2               0     17
+  M             2               3     26
+[1] "p-value= 0.34538528358661"
+[1] "Gender  vs  SmokingatTimeofDeath"
+   
+    No Unknown Yes
+  F  4       8   7
+  M 10      10  11
+[1] "p-value= 0.653249805727253"
+[1] "Gender  vs  LifetimeAlcohol"
+   
+    Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  F             0                1              8                1                1      8       0
+  M             3                3              6                3                5     10       1
+[1] "p-value= 0.351522609053362"
+[1] "Gender  vs  LifetimeDrugs"
+   
+    Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  F             3                0             14                1                   1      0
+  M             1                3             21                1                   4      1
+[1] "p-value= 0.342290791279578"
+[1] "Gender  vs  ScanDateDayOnly"
+   
+    1 10 11 2 3 4 5 6 7 8 9
+  F 0  1  2 2 0 0 3 3 3 1 4
+  M 1  5  1 2 2 1 3 5 4 4 3
+[1] "p-value= 0.714491143567828"
+[1] "LeftBrainStatus  vs  Diagnosis"
+        
+         1 2 3 4
+  Fixed  7 7 3 4
+  Frozen 8 4 8 9
+[1] "p-value= 0.272410088014135"
+[1] "LeftBrainStatus  vs  Gender"
+        
+          F  M
+  Fixed   8 13
+  Frozen 11 18
+[1] "p-value= 1"
+[1] "LeftBrainStatus  vs  LeftBrainStatus"
+        
+         Fixed Frozen
+  Fixed     21      0
+  Frozen     0     29
+[1] "p-value= 1.19517116772538e-11"
+[1] "LeftBrainStatus  vs  SuicideStatus"
+        
+         No Unknown Yes
+  Fixed  13       0   8
+  Frozen 19       2   8
+[1] "p-value= 0.388005232664159"
+[1] "LeftBrainStatus  vs  PsychoticFeature"
+        
+         No Yes
+  Fixed  11  10
+  Frozen 17  12
+[1] "p-value= 0.880699718317488"
+[1] "LeftBrainStatus  vs  RateofDeath"
+        
+         On respirator Possible anoxia Sudden
+  Fixed              3               2     16
+  Frozen             1               1     27
+[1] "p-value= 0.229624728184559"
+[1] "LeftBrainStatus  vs  SmokingatTimeofDeath"
+        
+         No Unknown Yes
+  Fixed   5       6  10
+  Frozen  9      12   8
+[1] "p-value= 0.343032567390263"
+[1] "LeftBrainStatus  vs  LifetimeAlcohol"
+        
+         Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  Fixed              1                2              4                1                5      8       0
+  Frozen             2                2             10                3                1     10       1
+[1] "p-value= 0.35098436004916"
+[1] "LeftBrainStatus  vs  LifetimeDrugs"
+        
+         Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  Fixed              2                1             13                1                   4      0
+  Frozen             2                2             22                1                   1      1
+[1] "p-value= 0.510246483518489"
+[1] "LeftBrainStatus  vs  ScanDateDayOnly"
+        
+         1 10 11 2 3 4 5 6 7 8 9
+  Fixed  0  1  0 0 1 1 5 4 4 2 3
+  Frozen 1  5  3 4 1 0 1 4 3 3 4
+[1] "p-value= 0.177846594095444"
+[1] "SuicideStatus  vs  Diagnosis"
+         
+           1  2  3  4
+  No      15  2  7  8
+  Unknown  0  1  0  1
+  Yes      0  8  4  4
+[1] "p-value= 0.00349946341776937"
+[1] "SuicideStatus  vs  Gender"
+         
+           F  M
+  No      10 22
+  Unknown  1  1
+  Yes      8  8
+[1] "p-value= 0.423370481671397"
+[1] "SuicideStatus  vs  LeftBrainStatus"
+         
+          Fixed Frozen
+  No         13     19
+  Unknown     0      2
+  Yes         8      8
+[1] "p-value= 0.388005232664159"
+[1] "SuicideStatus  vs  SuicideStatus"
+         
+          No Unknown Yes
+  No      32       0   0
+  Unknown  0       2   0
+  Yes      0       0  16
+[1] "p-value= 9.83662422461607e-21"
+[1] "SuicideStatus  vs  PsychoticFeature"
+         
+          No Yes
+  No      22  10
+  Unknown  1   1
+  Yes      5  11
+[1] "p-value= 0.0469322444574774"
+[1] "SuicideStatus  vs  RateofDeath"
+         
+          On respirator Possible anoxia Sudden
+  No                  1               2     29
+  Unknown             0               0      2
+  Yes                 3               1     12
+[1] "p-value= 0.420101813437945"
+[1] "SuicideStatus  vs  SmokingatTimeofDeath"
+         
+          No Unknown Yes
+  No       9      14   9
+  Unknown  1       1   0
+  Yes      4       3   9
+[1] "p-value= 0.243593147948433"
+[1] "SuicideStatus  vs  LifetimeAlcohol"
+         
+          Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  No                  1                2             11                3                4     11       0
+  Unknown             0                0              0                0                0      1       1
+  Yes                 2                2              3                1                2      6       0
+[1] "p-value= 0.0045500386087837"
+[1] "SuicideStatus  vs  LifetimeDrugs"
+         
+          Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  No                  1                2             27                1                   1      0
+  Unknown             0                0              1                0                   1      0
+  Yes                 3                1              7                1                   3      1
+[1] "p-value= 0.147858037216428"
+[1] "SuicideStatus  vs  ScanDateDayOnly"
+         
+          1 10 11 2 3 4 5 6 7 8 9
+  No      1  4  1 4 1 1 2 5 4 4 5
+  Unknown 0  0  0 0 0 0 0 1 0 1 0
+  Yes     0  2  2 0 1 0 4 2 3 0 2
+[1] "p-value= 0.681528727739921"
+[1] "PsychoticFeature  vs  Diagnosis"
+     
+       1  2  3  4
+  No  15  2 11  0
+  Yes  0  9  0 13
+[1] "p-value= 2.06491164841599e-09"
+[1] "PsychoticFeature  vs  Gender"
+     
+       F  M
+  No  11 17
+  Yes  8 14
+[1] "p-value= 1"
+[1] "PsychoticFeature  vs  LeftBrainStatus"
+     
+      Fixed Frozen
+  No     11     17
+  Yes    10     12
+[1] "p-value= 0.880699718317488"
+[1] "PsychoticFeature  vs  SuicideStatus"
+     
+      No Unknown Yes
+  No  22       1   5
+  Yes 10       1  11
+[1] "p-value= 0.0469322444574774"
+[1] "PsychoticFeature  vs  PsychoticFeature"
+     
+      No Yes
+  No  28   0
+  Yes  0  22
+[1] "p-value= 1.16818340499656e-11"
+[1] "PsychoticFeature  vs  RateofDeath"
+     
+      On respirator Possible anoxia Sudden
+  No              1               1     26
+  Yes             3               2     17
+[1] "p-value= 0.281740568983672"
+[1] "PsychoticFeature  vs  SmokingatTimeofDeath"
+     
+      No Unknown Yes
+  No   7      14   7
+  Yes  7       4  11
+[1] "p-value= 0.0548013525348203"
+[1] "PsychoticFeature  vs  LifetimeAlcohol"
+     
+      Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  No              0                1              9                2                3     12       1
+  Yes             3                3              5                2                3      6       0
+[1] "p-value= 0.274489359864196"
+[1] "PsychoticFeature  vs  LifetimeDrugs"
+     
+      Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  No              1                1             23                1                   1      1
+  Yes             3                2             12                1                   4      0
+[1] "p-value= 0.222816784596014"
+[1] "PsychoticFeature  vs  ScanDateDayOnly"
+     
+      1 10 11 2 3 4 5 6 7 8 9
+  No  1  5  1 3 0 1 1 5 3 4 4
+  Yes 0  1  2 1 2 0 5 3 4 1 3
+[1] "p-value= 0.240017310686593"
+[1] "RateofDeath  vs  Diagnosis"
+                 
+                   1  2  3  4
+  On respirator    1  1  0  2
+  Possible anoxia  0  2  0  1
+  Sudden          14  8 11 10
+[1] "p-value= 0.33466784259411"
+[1] "RateofDeath  vs  Gender"
+                 
+                   F  M
+  On respirator    2  2
+  Possible anoxia  0  3
+  Sudden          17 26
+[1] "p-value= 0.34538528358661"
+[1] "RateofDeath  vs  LeftBrainStatus"
+                 
+                  Fixed Frozen
+  On respirator       3      1
+  Possible anoxia     2      1
+  Sudden             16     27
+[1] "p-value= 0.229624728184559"
+[1] "RateofDeath  vs  SuicideStatus"
+                 
+                  No Unknown Yes
+  On respirator    1       0   3
+  Possible anoxia  2       0   1
+  Sudden          29       2  12
+[1] "p-value= 0.420101813437945"
+[1] "RateofDeath  vs  PsychoticFeature"
+                 
+                  No Yes
+  On respirator    1   3
+  Possible anoxia  1   2
+  Sudden          26  17
+[1] "p-value= 0.281740568983672"
+[1] "RateofDeath  vs  RateofDeath"
+                 
+                  On respirator Possible anoxia Sudden
+  On respirator               4               0      0
+  Possible anoxia             0               3      0
+  Sudden                      0               0     43
+[1] "p-value= 9.836624224616e-21"
+[1] "RateofDeath  vs  SmokingatTimeofDeath"
+                 
+                  No Unknown Yes
+  On respirator    1       1   2
+  Possible anoxia  2       1   0
+  Sudden          11      16  16
+[1] "p-value= 0.52854364268638"
+[1] "RateofDeath  vs  LifetimeAlcohol"
+                 
+                  Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  On respirator               0                0              1                1                1      1       0
+  Possible anoxia             0                0              0                0                1      2       0
+  Sudden                      3                4             13                3                4     15       1
+[1] "p-value= 0.866216737037687"
+[1] "RateofDeath  vs  LifetimeDrugs"
+                 
+                  Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  On respirator               1                0              2                0                   1      0
+  Possible anoxia             0                0              3                0                   0      0
+  Sudden                      3                3             30                2                   4      1
+[1] "p-value= 0.918939749979"
+[1] "RateofDeath  vs  ScanDateDayOnly"
+                 
+                  1 10 11 2 3 4 5 6 7 8 9
+  On respirator   0  0  1 0 1 0 1 0 0 1 0
+  Possible anoxia 0  0  0 0 1 0 0 0 2 0 0
+  Sudden          1  6  2 4 0 1 5 8 5 4 7
+[1] "p-value= 0.0976156493384525"
+[1] "SmokingatTimeofDeath  vs  Diagnosis"
+         
+          1 2 3 4
+  No      4 3 3 4
+  Unknown 8 3 4 3
+  Yes     3 5 4 6
+[1] "p-value= 0.696986765288381"
+[1] "SmokingatTimeofDeath  vs  Gender"
+         
+           F  M
+  No       4 10
+  Unknown  8 10
+  Yes      7 11
+[1] "p-value= 0.653249805727253"
+[1] "SmokingatTimeofDeath  vs  LeftBrainStatus"
+         
+          Fixed Frozen
+  No          5      9
+  Unknown     6     12
+  Yes        10      8
+[1] "p-value= 0.343032567390263"
+[1] "SmokingatTimeofDeath  vs  SuicideStatus"
+         
+          No Unknown Yes
+  No       9       1   4
+  Unknown 14       1   3
+  Yes      9       0   9
+[1] "p-value= 0.243593147948433"
+[1] "SmokingatTimeofDeath  vs  PsychoticFeature"
+         
+          No Yes
+  No       7   7
+  Unknown 14   4
+  Yes      7  11
+[1] "p-value= 0.0548013525348203"
+[1] "SmokingatTimeofDeath  vs  RateofDeath"
+         
+          On respirator Possible anoxia Sudden
+  No                  1               2     11
+  Unknown             1               1     16
+  Yes                 2               0     16
+[1] "p-value= 0.52854364268638"
+[1] "SmokingatTimeofDeath  vs  SmokingatTimeofDeath"
+         
+          No Unknown Yes
+  No      14       0   0
+  Unknown  0      18   0
+  Yes      0       0  18
+[1] "p-value= 9.836624224616e-21"
+[1] "SmokingatTimeofDeath  vs  LifetimeAlcohol"
+         
+          Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  No                  0                0              1                2                3      8       0
+  Unknown             0                1              9                0                0      7       1
+  Yes                 3                3              4                2                3      3       0
+[1] "p-value= 0.0144541482968691"
+[1] "SmokingatTimeofDeath  vs  LifetimeDrugs"
+         
+          Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  No                  1                0             11                1                   1      0
+  Unknown             1                1             15                0                   1      0
+  Yes                 2                2              9                1                   3      1
+[1] "p-value= 0.643526560426561"
+[1] "SmokingatTimeofDeath  vs  ScanDateDayOnly"
+         
+          1 10 11 2 3 4 5 6 7 8 9
+  No      1  3  1 1 1 1 2 2 2 0 0
+  Unknown 0  1  2 2 0 0 2 1 3 4 3
+  Yes     0  2  0 1 1 0 2 5 2 1 4
+[1] "p-value= 0.414287830067923"
+[1] "LifetimeAlcohol  vs  Diagnosis"
+                  
+                   1 2 3 4
+  Heavy in past    0 2 0 1
+  Heavy in present 0 2 1 1
+  Little or none   5 0 4 5
+  Moderate in past 2 0 0 2
+  Moderate present 2 2 1 1
+  Social           6 4 5 3
+  Unknown          0 1 0 0
+[1] "p-value= 0.372331172503753"
+[1] "LifetimeAlcohol  vs  Gender"
+                  
+                    F  M
+  Heavy in past     0  3
+  Heavy in present  1  3
+  Little or none    8  6
+  Moderate in past  1  3
+  Moderate present  1  5
+  Social            8 10
+  Unknown           0  1
+[1] "p-value= 0.351522609053362"
+[1] "LifetimeAlcohol  vs  LeftBrainStatus"
+                  
+                   Fixed Frozen
+  Heavy in past        1      2
+  Heavy in present     2      2
+  Little or none       4     10
+  Moderate in past     1      3
+  Moderate present     5      1
+  Social               8     10
+  Unknown              0      1
+[1] "p-value= 0.35098436004916"
+[1] "LifetimeAlcohol  vs  SuicideStatus"
+                  
+                   No Unknown Yes
+  Heavy in past     1       0   2
+  Heavy in present  2       0   2
+  Little or none   11       0   3
+  Moderate in past  3       0   1
+  Moderate present  4       0   2
+  Social           11       1   6
+  Unknown           0       1   0
+[1] "p-value= 0.0045500386087837"
+[1] "LifetimeAlcohol  vs  PsychoticFeature"
+                  
+                   No Yes
+  Heavy in past     0   3
+  Heavy in present  1   3
+  Little or none    9   5
+  Moderate in past  2   2
+  Moderate present  3   3
+  Social           12   6
+  Unknown           1   0
+[1] "p-value= 0.274489359864196"
+[1] "LifetimeAlcohol  vs  RateofDeath"
+                  
+                   On respirator Possible anoxia Sudden
+  Heavy in past                0               0      3
+  Heavy in present             0               0      4
+  Little or none               1               0     13
+  Moderate in past             1               0      3
+  Moderate present             1               1      4
+  Social                       1               2     15
+  Unknown                      0               0      1
+[1] "p-value= 0.866216737037687"
+[1] "LifetimeAlcohol  vs  SmokingatTimeofDeath"
+                  
+                   No Unknown Yes
+  Heavy in past     0       0   3
+  Heavy in present  0       1   3
+  Little or none    1       9   4
+  Moderate in past  2       0   2
+  Moderate present  3       0   3
+  Social            8       7   3
+  Unknown           0       1   0
+[1] "p-value= 0.0144541482968691"
+[1] "LifetimeAlcohol  vs  LifetimeAlcohol"
+                  
+                   Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  Heavy in past                3                0              0                0                0      0       0
+  Heavy in present             0                4              0                0                0      0       0
+  Little or none               0                0             14                0                0      0       0
+  Moderate in past             0                0              0                4                0      0       0
+  Moderate present             0                0              0                0                6      0       0
+  Social                       0                0              0                0                0     18       0
+  Unknown                      0                0              0                0                0      0       1
+[1] "p-value= 2.23944256626055e-43"
+[1] "LifetimeAlcohol  vs  LifetimeDrugs"
+                  
+                   Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  Heavy in past                0                1              2                0                   0      0
+  Heavy in present             0                2              0                0                   2      0
+  Little or none               1                0             11                1                   0      1
+  Moderate in past             2                0              1                1                   0      0
+  Moderate present             0                0              4                0                   2      0
+  Social                       1                0             17                0                   0      0
+  Unknown                      0                0              0                0                   1      0
+[1] "p-value= 0.000166167394925985"
+[1] "LifetimeAlcohol  vs  ScanDateDayOnly"
+                  
+                   1 10 11 2 3 4 5 6 7 8 9
+  Heavy in past    0  0  0 0 0 0 1 1 0 0 1
+  Heavy in present 0  0  0 1 0 0 0 0 0 1 2
+  Little or none   0  3  2 1 0 0 1 1 2 1 3
+  Moderate in past 0  1  0 1 0 0 1 1 0 0 0
+  Moderate present 0  1  0 0 1 0 0 2 2 0 0
+  Social           1  1  1 1 1 1 3 3 3 2 1
+  Unknown          0  0  0 0 0 0 0 0 0 1 0
+[1] "p-value= 0.921138386549795"
+[1] "LifetimeDrugs  vs  Diagnosis"
+                     
+                       1  2  3  4
+  Heavy in past        0  1  1  2
+  Heavy in present     0  1  1  1
+  Little or none      14  5  8  8
+  Moderate in past     1  0  0  1
+  Moderate in present  0  4  0  1
+  Social               0  0  1  0
+[1] "p-value= 0.13244066422609"
+[1] "LifetimeDrugs  vs  Gender"
+                     
+                       F  M
+  Heavy in past        3  1
+  Heavy in present     0  3
+  Little or none      14 21
+  Moderate in past     1  1
+  Moderate in present  1  4
+  Social               0  1
+[1] "p-value= 0.342290791279578"
+[1] "LifetimeDrugs  vs  LeftBrainStatus"
+                     
+                      Fixed Frozen
+  Heavy in past           2      2
+  Heavy in present        1      2
+  Little or none         13     22
+  Moderate in past        1      1
+  Moderate in present     4      1
+  Social                  0      1
+[1] "p-value= 0.510246483518489"
+[1] "LifetimeDrugs  vs  SuicideStatus"
+                     
+                      No Unknown Yes
+  Heavy in past        1       0   3
+  Heavy in present     2       0   1
+  Little or none      27       1   7
+  Moderate in past     1       0   1
+  Moderate in present  1       1   3
+  Social               0       0   1
+[1] "p-value= 0.147858037216428"
+[1] "LifetimeDrugs  vs  PsychoticFeature"
+                     
+                      No Yes
+  Heavy in past        1   3
+  Heavy in present     1   2
+  Little or none      23  12
+  Moderate in past     1   1
+  Moderate in present  1   4
+  Social               1   0
+[1] "p-value= 0.222816784596014"
+[1] "LifetimeDrugs  vs  RateofDeath"
+                     
+                      On respirator Possible anoxia Sudden
+  Heavy in past                   1               0      3
+  Heavy in present                0               0      3
+  Little or none                  2               3     30
+  Moderate in past                0               0      2
+  Moderate in present             1               0      4
+  Social                          0               0      1
+[1] "p-value= 0.918939749979"
+[1] "LifetimeDrugs  vs  SmokingatTimeofDeath"
+                     
+                      No Unknown Yes
+  Heavy in past        1       1   2
+  Heavy in present     0       1   2
+  Little or none      11      15   9
+  Moderate in past     1       0   1
+  Moderate in present  1       1   3
+  Social               0       0   1
+[1] "p-value= 0.643526560426561"
+[1] "LifetimeDrugs  vs  LifetimeAlcohol"
+                     
+                      Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  Heavy in past                   0                0              1                2                0      1       0
+  Heavy in present                1                2              0                0                0      0       0
+  Little or none                  2                0             11                1                4     17       0
+  Moderate in past                0                0              1                1                0      0       0
+  Moderate in present             0                2              0                0                2      0       1
+  Social                          0                0              1                0                0      0       0
+[1] "p-value= 0.000166167394925985"
+[1] "LifetimeDrugs  vs  LifetimeDrugs"
+                     
+                      Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  Heavy in past                   4                0              0                0                   0      0
+  Heavy in present                0                3              0                0                   0      0
+  Little or none                  0                0             35                0                   0      0
+  Moderate in past                0                0              0                2                   0      0
+  Moderate in present             0                0              0                0                   5      0
+  Social                          0                0              0                0                   0      1
+[1] "p-value= 5.40710855522958e-39"
+[1] "LifetimeDrugs  vs  ScanDateDayOnly"
+                     
+                      1 10 11 2 3 4 5 6 7 8 9
+  Heavy in past       0  0  1 1 0 0 2 0 0 0 0
+  Heavy in present    0  0  0 1 0 0 1 0 0 1 0
+  Little or none      1  4  2 2 1 1 3 7 6 3 5
+  Moderate in past    0  1  0 0 0 0 0 1 0 0 0
+  Moderate in present 0  0  0 0 1 0 0 0 1 1 2
+  Social              0  1  0 0 0 0 0 0 0 0 0
+[1] "p-value= 0.772192343715463"
+[1] "ScanDateDayOnly  vs  Diagnosis"
+    
+     1 2 3 4
+  1  1 0 0 0
+  10 1 0 4 1
+  11 0 0 1 2
+  2  1 0 2 1
+  3  0 1 0 1
+  4  0 0 1 0
+  5  1 3 0 2
+  6  4 0 1 3
+  7  1 3 1 2
+  8  3 1 0 1
+  9  3 3 1 0
+[1] "p-value= 0.162993695161553"
+[1] "ScanDateDayOnly  vs  Gender"
+    
+     F M
+  1  0 1
+  10 1 5
+  11 2 1
+  2  2 2
+  3  0 2
+  4  0 1
+  5  3 3
+  6  3 5
+  7  3 4
+  8  1 4
+  9  4 3
+[1] "p-value= 0.714491143567828"
+[1] "ScanDateDayOnly  vs  LeftBrainStatus"
+    
+     Fixed Frozen
+  1      0      1
+  10     1      5
+  11     0      3
+  2      0      4
+  3      1      1
+  4      1      0
+  5      5      1
+  6      4      4
+  7      4      3
+  8      2      3
+  9      3      4
+[1] "p-value= 0.177846594095444"
+[1] "ScanDateDayOnly  vs  SuicideStatus"
+    
+     No Unknown Yes
+  1   1       0   0
+  10  4       0   2
+  11  1       0   2
+  2   4       0   0
+  3   1       0   1
+  4   1       0   0
+  5   2       0   4
+  6   5       1   2
+  7   4       0   3
+  8   4       1   0
+  9   5       0   2
+[1] "p-value= 0.681528727739921"
+[1] "ScanDateDayOnly  vs  PsychoticFeature"
+    
+     No Yes
+  1   1   0
+  10  5   1
+  11  1   2
+  2   3   1
+  3   0   2
+  4   1   0
+  5   1   5
+  6   5   3
+  7   3   4
+  8   4   1
+  9   4   3
+[1] "p-value= 0.240017310686593"
+[1] "ScanDateDayOnly  vs  RateofDeath"
+    
+     On respirator Possible anoxia Sudden
+  1              0               0      1
+  10             0               0      6
+  11             1               0      2
+  2              0               0      4
+  3              1               1      0
+  4              0               0      1
+  5              1               0      5
+  6              0               0      8
+  7              0               2      5
+  8              1               0      4
+  9              0               0      7
+[1] "p-value= 0.0976156493384525"
+[1] "ScanDateDayOnly  vs  SmokingatTimeofDeath"
+    
+     No Unknown Yes
+  1   1       0   0
+  10  3       1   2
+  11  1       2   0
+  2   1       2   1
+  3   1       0   1
+  4   1       0   0
+  5   2       2   2
+  6   2       1   5
+  7   2       3   2
+  8   0       4   1
+  9   0       3   4
+[1] "p-value= 0.414287830067923"
+[1] "ScanDateDayOnly  vs  LifetimeAlcohol"
+    
+     Heavy in past Heavy in present Little or none Moderate in past Moderate present Social Unknown
+  1              0                0              0                0                0      1       0
+  10             0                0              3                1                1      1       0
+  11             0                0              2                0                0      1       0
+  2              0                1              1                1                0      1       0
+  3              0                0              0                0                1      1       0
+  4              0                0              0                0                0      1       0
+  5              1                0              1                1                0      3       0
+  6              1                0              1                1                2      3       0
+  7              0                0              2                0                2      3       0
+  8              0                1              1                0                0      2       1
+  9              1                2              3                0                0      1       0
+[1] "p-value= 0.921138386549795"
+[1] "ScanDateDayOnly  vs  LifetimeDrugs"
+    
+     Heavy in past Heavy in present Little or none Moderate in past Moderate in present Social
+  1              0                0              1                0                   0      0
+  10             0                0              4                1                   0      1
+  11             1                0              2                0                   0      0
+  2              1                1              2                0                   0      0
+  3              0                0              1                0                   1      0
+  4              0                0              1                0                   0      0
+  5              2                1              3                0                   0      0
+  6              0                0              7                1                   0      0
+  7              0                0              6                0                   1      0
+  8              0                1              3                0                   1      0
+  9              0                0              5                0                   2      0
+[1] "p-value= 0.772192343715463"
+[1] "ScanDateDayOnly  vs  ScanDateDayOnly"
+    
+     1 10 11 2 3 4 5 6 7 8 9
+  1  1  0  0 0 0 0 0 0 0 0 0
+  10 0  6  0 0 0 0 0 0 0 0 0
+  11 0  0  3 0 0 0 0 0 0 0 0
+  2  0  0  0 4 0 0 0 0 0 0 0
+  3  0  0  0 0 2 0 0 0 0 0 0
+  4  0  0  0 0 0 1 0 0 0 0 0
+  5  0  0  0 0 0 0 6 0 0 0 0
+  6  0  0  0 0 0 0 0 8 0 0 0
+  7  0  0  0 0 0 0 0 0 7 0 0
+  8  0  0  0 0 0 0 0 0 0 5 0
+  9  0  0  0 0 0 0 0 0 0 0 7
+[1] "p-value= 1.72012100536953e-54"

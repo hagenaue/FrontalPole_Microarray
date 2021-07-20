@@ -1,0 +1,65 @@
+Control     Scz 
+     23      28 
+      V1           
+ Length:51         
+ Class :character  
+ Mode  :character  
+01/21/04 01/22/04 01/29/04 
+      12       22       17 
+[1] "Diagnosis  vs  Diagnosis"
+   
+     1  2
+  1 23  0
+  2  0 28
+[1] "p-value= 6.95121384138667e-12"
+[1] "Diagnosis  vs  Gender"
+   
+    Female Male
+  1     11   11
+  2      9   19
+[1] "p-value= 0.322839565941973"
+[1] "Diagnosis  vs  ScanDateDayOnly"
+   
+     1  2  3
+  1  7 10  6
+  2  5 12 11
+[1] "p-value= 0.469997013547324"
+[1] "Gender  vs  Diagnosis"
+        
+          1  2
+  Female 11  9
+  Male   11 19
+[1] "p-value= 0.322839565941973"
+[1] "Gender  vs  Gender"
+        
+         Female Male
+  Female     20    0
+  Male        0   30
+[1] "p-value= 1.23173190656586e-11"
+[1] "Gender  vs  ScanDateDayOnly"
+        
+          1  2  3
+  Female  4  9  7
+  Male    7 13 10
+[1] "p-value= 0.961757566573375"
+[1] "ScanDateDayOnly  vs  Diagnosis"
+   
+     1  2
+  1  7  5
+  2 10 12
+  3  6 11
+[1] "p-value= 0.469997013547324"
+[1] "ScanDateDayOnly  vs  Gender"
+   
+    Female Male
+  1      4    7
+  2      9   13
+  3      7   10
+[1] "p-value= 0.961757566573375"
+[1] "ScanDateDayOnly  vs  ScanDateDayOnly"
+   
+     1  2  3
+  1 12  0  0
+  2  0 22  0
+  3  0  0 17
+[1] "p-value= 3.68964656438805e-21"

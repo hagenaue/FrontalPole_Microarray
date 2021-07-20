@@ -1,0 +1,7 @@
+The Iwamoto Models appear to vary a bit in their top results.
+
+Iwamoto Model 2's FDR for the Bipolar Diagnosis Factor surpasses traditional thresholds (0.049043423<0.1) for the gene with GeneSymbol "GIT2" and EntrezGeneID "9815"
+
+Iwamoto Model 3's FDR for the Bipolar Diagnosis Factor surpasses traditional thresholds (0.018196276<0.1) for the gene with GeneSymbol "GIT2" and EntrezGeneID "9815"
+
+Iwamoto Model 3's FDR for the Bipolar Diagnosis Factor surpasses traditional thresholds (0.086532719<0.1) for the gene with GeneSymbol "MINK1" and EntrezGeneID "50488"

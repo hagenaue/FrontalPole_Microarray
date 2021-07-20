@@ -1,0 +1,1852 @@
+                       GVIF Df GVIF^(1/(2*Df))
+BrainpH            2.240556  1        1.496849
+PMD                1.514246  1        1.230547
+Diagnosis          1.913205  1        1.383186
+Gender             1.391445  1        1.179595
+Age                1.732287  1        1.316164
+RNADegradPerSample 1.795086  1        1.339808
+ScanDateDayOnly    1.273956  2        1.062401
+[1] "BrainpH  vs  BrainpH"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-1.622e-16 -4.635e-17 -1.616e-17  1.403e-17  1.232e-15 
+
+Coefficients:
+                                  Estimate Std. Error    t value Pr(>|t|)    
+(Intercept)                     -6.090e-15  5.662e-16 -1.076e+01 2.88e-14 ***
+SubjectContinuousVariables[, j]  1.000e+00  8.957e-17  1.117e+16  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.887e-16 on 47 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 1.247e+32 on 1 and 47 DF,  p-value: < 2.2e-16
+
+[1] "BrainpH  vs  PMD"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.65645 -0.15673 -0.01906  0.15007  0.62457 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                     6.200646   0.081212  76.352   <2e-16 ***
+SubjectContinuousVariables[, j] 0.012464   0.007577   1.645    0.107    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2989 on 47 degrees of freedom
+Multiple R-squared:  0.05444,	Adjusted R-squared:  0.03432 
+F-statistic: 2.706 on 1 and 47 DF,  p-value: 0.1066
+
+[1] "BrainpH  vs  Age"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.4848 -0.2307  0.0157  0.1550  0.6152 
+
+Coefficients:
+                                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      6.858253   0.155008  44.244  < 2e-16 ***
+SubjectContinuousVariables[, j] -0.007653   0.002111  -3.625 0.000709 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2717 on 47 degrees of freedom
+Multiple R-squared:  0.2185,	Adjusted R-squared:  0.2018 
+F-statistic: 13.14 on 1 and 47 DF,  p-value: 0.0007088
+
+[1] "BrainpH  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.57009 -0.26559 -0.00985  0.19207  0.57899 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                       5.0806     0.6194   8.203 1.27e-10 ***
+SubjectContinuousVariables[, j]   2.3782     1.1912   1.996   0.0517 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2951 on 47 degrees of freedom
+Multiple R-squared:  0.07818,	Adjusted R-squared:  0.05856 
+F-statistic: 3.986 on 1 and 47 DF,  p-value: 0.05169
+
+[1] "PMD  vs  BrainpH"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-6.365 -4.618 -1.055  3.319 20.072 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      -18.462     16.785  -1.100    0.277
+SubjectContinuousVariables[, j]    4.368      2.655   1.645    0.107
+
+Residual standard error: 5.595 on 47 degrees of freedom
+Multiple R-squared:  0.05444,	Adjusted R-squared:  0.03432 
+F-statistic: 2.706 on 1 and 47 DF,  p-value: 0.1066
+
+[1] "PMD  vs  PMD"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-1.264e-15 -3.102e-16 -8.235e-17  2.690e-16  2.239e-15 
+
+Coefficients:
+                                 Estimate Std. Error   t value Pr(>|t|)    
+(Intercept)                     0.000e+00  1.527e-16 0.000e+00        1    
+SubjectContinuousVariables[, j] 1.000e+00  1.425e-17 7.019e+16   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.62e-16 on 47 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 4.927e+33 on 1 and 47 DF,  p-value: < 2.2e-16
+
+[1] "PMD  vs  Age"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-6.749 -4.140 -1.098  3.101 20.396 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                     13.40112    3.21825   4.164 0.000132 ***
+SubjectContinuousVariables[, j] -0.06027    0.04383  -1.375 0.175683    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.641 on 47 degrees of freedom
+Multiple R-squared:  0.03866,	Adjusted R-squared:  0.01821 
+F-statistic:  1.89 on 1 and 47 DF,  p-value: 0.1757
+
+[1] "PMD  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.9106 -4.2180 -0.9924  3.2766 20.3595 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                        26.86      11.79   2.278   0.0273 *
+SubjectContinuousVariables[, j]   -34.21      22.68  -1.508   0.1382  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.619 on 47 degrees of freedom
+Multiple R-squared:  0.04615,	Adjusted R-squared:  0.02586 
+F-statistic: 2.274 on 1 and 47 DF,  p-value: 0.1382
+
+[1] "Age  vs  BrainpH"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-43.489  -9.054   1.801   9.075  30.785 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      251.348     49.788   5.048 7.14e-06 ***
+SubjectContinuousVariables[, j]  -28.549      7.876  -3.625 0.000709 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 16.6 on 47 degrees of freedom
+Multiple R-squared:  0.2185,	Adjusted R-squared:  0.2018 
+F-statistic: 13.14 on 1 and 47 DF,  p-value: 0.0007088
+
+[1] "Age  vs  PMD"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-44.232  -7.686   4.635  13.447  23.164 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      76.9311     5.0015  15.382   <2e-16 ***
+SubjectContinuousVariables[, j]  -0.6416     0.4666  -1.375    0.176    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 18.41 on 47 degrees of freedom
+Multiple R-squared:  0.03866,	Adjusted R-squared:  0.01821 
+F-statistic:  1.89 on 1 and 47 DF,  p-value: 0.1757
+
+[1] "Age  vs  Age"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-6.931e-15 -1.481e-15 -1.042e-15 -2.290e-16  5.308e-14 
+
+Coefficients:
+                                  Estimate Std. Error    t value Pr(>|t|)    
+(Intercept)                     -3.248e-14  4.526e-15 -7.176e+00 4.42e-09 ***
+SubjectContinuousVariables[, j]  1.000e+00  6.165e-17  1.622e+16  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.934e-15 on 47 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 2.631e+32 on 1 and 47 DF,  p-value: < 2.2e-16
+
+[1] "Age  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-48.364  -9.069   3.491  11.338  22.478 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                       193.31      35.12   5.505  1.5e-06 ***
+SubjectContinuousVariables[, j]  -235.63      67.54  -3.489  0.00106 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 16.73 on 47 degrees of freedom
+Multiple R-squared:  0.2057,	Adjusted R-squared:  0.1888 
+F-statistic: 12.17 on 1 and 47 DF,  p-value: 0.001064
+
+[1] "RNADegradPerSample  vs  BrainpH"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.063594 -0.021398 -0.001397  0.025789  0.066755 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                      0.31119    0.10408   2.990  0.00443 **
+SubjectContinuousVariables[, j]  0.03287    0.01646   1.996  0.05169 . 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03469 on 47 degrees of freedom
+Multiple R-squared:  0.07818,	Adjusted R-squared:  0.05856 
+F-statistic: 3.986 on 1 and 47 DF,  p-value: 0.05169
+
+[1] "RNADegradPerSample  vs  PMD"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.074622 -0.021510  0.002145  0.024559  0.078145 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      0.5310546  0.0095896  55.378   <2e-16 ***
+SubjectContinuousVariables[, j] -0.0013492  0.0008947  -1.508    0.138    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03529 on 47 degrees of freedom
+Multiple R-squared:  0.04615,	Adjusted R-squared:  0.02586 
+F-statistic: 2.274 on 1 and 47 DF,  p-value: 0.1382
+
+[1] "RNADegradPerSample  vs  Age"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.073018 -0.022495  0.003425  0.024415  0.053470 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      0.5808096  0.0183721  31.614  < 2e-16 ***
+SubjectContinuousVariables[, j] -0.0008730  0.0002502  -3.489  0.00106 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.0322 on 47 degrees of freedom
+Multiple R-squared:  0.2057,	Adjusted R-squared:  0.1888 
+F-statistic: 12.17 on 1 and 47 DF,  p-value: 0.001064
+
+[1] "RNADegradPerSample  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-1.453e-17 -1.818e-18 -9.600e-19 -3.680e-19  5.893e-17 
+
+Coefficients:
+                                 Estimate Std. Error   t value Pr(>|t|)    
+(Intercept)                     1.903e-16  1.929e-17 9.866e+00 4.94e-13 ***
+SubjectContinuousVariables[, j] 1.000e+00  3.710e-17 2.695e+16  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 9.191e-18 on 47 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 7.265e+32 on 1 and 47 DF,  p-value: < 2.2e-16
+
+[1] "BrainpH  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value   Pr(>F)    
+SubjectFactorVariables[, j]  1  1.495  1.4950   23.86 1.24e-05 ***
+Residuals                   47  2.945  0.0627                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "BrainpH  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1  0.053 0.05260   0.552  0.461
+Residuals                   46  4.387 0.09537               
+1 observation deleted due to missingness
+[1] "BrainpH  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2  0.029 0.01466   0.153  0.859
+Residuals                   46  4.411 0.09588               
+[1] "PMD  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1   26.7   26.70   0.821   0.37
+Residuals                   47 1529.2   32.54               
+[1] "PMD  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  1    173  172.95   5.845 0.0196 *
+Residuals                   46   1361   29.59                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+1 observation deleted due to missingness
+[1] "PMD  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2   35.9   17.96   0.544  0.584
+Residuals                   46 1520.0   33.04               
+[1] "Age  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    180   180.1   0.517  0.476
+Residuals                   47  16384   348.6               
+[1] "Age  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    508   507.6   1.492  0.228
+Residuals                   46  15651   340.2               
+1 observation deleted due to missingness
+[1] "Age  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2     32    16.2   0.045  0.956
+Residuals                   46  16531   359.4               
+[1] "RNADegradPerSample  vs  Diagnosis"
+                            Df  Sum Sq   Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1 0.00000 0.0000025   0.002  0.966
+Residuals                   47 0.06137 0.0013057               
+[1] "RNADegradPerSample  vs  Gender"
+                            Df  Sum Sq  Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1 0.00201 0.002012   1.569  0.217
+Residuals                   46 0.05899 0.001282               
+1 observation deleted due to missingness
+[1] "RNADegradPerSample  vs  ScanDateDayOnly"
+                            Df  Sum Sq  Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2 0.00622 0.003109   2.593 0.0857 .
+Residuals                   46 0.05515 0.001199                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "Diagnosis  vs  Diagnosis"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Diagnosis  vs  Gender"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Diagnosis  vs  ScanDateDayOnly"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Gender  vs  Diagnosis"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Gender  vs  Gender"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Gender  vs  ScanDateDayOnly"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "ScanDateDayOnly  vs  Diagnosis"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "ScanDateDayOnly  vs  Gender"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "ScanDateDayOnly  vs  ScanDateDayOnly"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+                       GVIF Df GVIF^(1/(2*Df))
+BrainpH            2.240556  1        1.496849
+PMD                1.514246  1        1.230547
+Diagnosis          1.913205  1        1.383186
+Gender             1.391445  1        1.179595
+Age                1.732287  1        1.316164
+RNADegradPerSample 1.795086  1        1.339808
+ScanDateDayOnly    1.273956  2        1.062401
+[1] "BrainpH  vs  BrainpH"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-1.622e-16 -4.635e-17 -1.616e-17  1.403e-17  1.232e-15 
+
+Coefficients:
+                                  Estimate Std. Error    t value Pr(>|t|)    
+(Intercept)                     -6.090e-15  5.662e-16 -1.076e+01 2.88e-14 ***
+SubjectContinuousVariables[, j]  1.000e+00  8.957e-17  1.117e+16  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.887e-16 on 47 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 1.247e+32 on 1 and 47 DF,  p-value: < 2.2e-16
+
+[1] "BrainpH  vs  PMD"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.65645 -0.15673 -0.01906  0.15007  0.62457 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                     6.200646   0.081212  76.352   <2e-16 ***
+SubjectContinuousVariables[, j] 0.012464   0.007577   1.645    0.107    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2989 on 47 degrees of freedom
+Multiple R-squared:  0.05444,	Adjusted R-squared:  0.03432 
+F-statistic: 2.706 on 1 and 47 DF,  p-value: 0.1066
+
+[1] "BrainpH  vs  Age"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.4848 -0.2307  0.0157  0.1550  0.6152 
+
+Coefficients:
+                                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      6.858253   0.155008  44.244  < 2e-16 ***
+SubjectContinuousVariables[, j] -0.007653   0.002111  -3.625 0.000709 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2717 on 47 degrees of freedom
+Multiple R-squared:  0.2185,	Adjusted R-squared:  0.2018 
+F-statistic: 13.14 on 1 and 47 DF,  p-value: 0.0007088
+
+[1] "BrainpH  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.57009 -0.26559 -0.00985  0.19207  0.57899 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                       5.0806     0.6194   8.203 1.27e-10 ***
+SubjectContinuousVariables[, j]   2.3782     1.1912   1.996   0.0517 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2951 on 47 degrees of freedom
+Multiple R-squared:  0.07818,	Adjusted R-squared:  0.05856 
+F-statistic: 3.986 on 1 and 47 DF,  p-value: 0.05169
+
+[1] "PMD  vs  BrainpH"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-6.365 -4.618 -1.055  3.319 20.072 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      -18.462     16.785  -1.100    0.277
+SubjectContinuousVariables[, j]    4.368      2.655   1.645    0.107
+
+Residual standard error: 5.595 on 47 degrees of freedom
+Multiple R-squared:  0.05444,	Adjusted R-squared:  0.03432 
+F-statistic: 2.706 on 1 and 47 DF,  p-value: 0.1066
+
+[1] "PMD  vs  PMD"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-1.264e-15 -3.102e-16 -8.235e-17  2.690e-16  2.239e-15 
+
+Coefficients:
+                                 Estimate Std. Error   t value Pr(>|t|)    
+(Intercept)                     0.000e+00  1.527e-16 0.000e+00        1    
+SubjectContinuousVariables[, j] 1.000e+00  1.425e-17 7.019e+16   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.62e-16 on 47 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 4.927e+33 on 1 and 47 DF,  p-value: < 2.2e-16
+
+[1] "PMD  vs  Age"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-6.749 -4.140 -1.098  3.101 20.396 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                     13.40112    3.21825   4.164 0.000132 ***
+SubjectContinuousVariables[, j] -0.06027    0.04383  -1.375 0.175683    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.641 on 47 degrees of freedom
+Multiple R-squared:  0.03866,	Adjusted R-squared:  0.01821 
+F-statistic:  1.89 on 1 and 47 DF,  p-value: 0.1757
+
+[1] "PMD  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.9106 -4.2180 -0.9924  3.2766 20.3595 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                        26.86      11.79   2.278   0.0273 *
+SubjectContinuousVariables[, j]   -34.21      22.68  -1.508   0.1382  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.619 on 47 degrees of freedom
+Multiple R-squared:  0.04615,	Adjusted R-squared:  0.02586 
+F-statistic: 2.274 on 1 and 47 DF,  p-value: 0.1382
+
+[1] "Age  vs  BrainpH"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-43.489  -9.054   1.801   9.075  30.785 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      251.348     49.788   5.048 7.14e-06 ***
+SubjectContinuousVariables[, j]  -28.549      7.876  -3.625 0.000709 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 16.6 on 47 degrees of freedom
+Multiple R-squared:  0.2185,	Adjusted R-squared:  0.2018 
+F-statistic: 13.14 on 1 and 47 DF,  p-value: 0.0007088
+
+[1] "Age  vs  PMD"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-44.232  -7.686   4.635  13.447  23.164 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      76.9311     5.0015  15.382   <2e-16 ***
+SubjectContinuousVariables[, j]  -0.6416     0.4666  -1.375    0.176    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 18.41 on 47 degrees of freedom
+Multiple R-squared:  0.03866,	Adjusted R-squared:  0.01821 
+F-statistic:  1.89 on 1 and 47 DF,  p-value: 0.1757
+
+[1] "Age  vs  Age"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-6.931e-15 -1.481e-15 -1.042e-15 -2.290e-16  5.308e-14 
+
+Coefficients:
+                                  Estimate Std. Error    t value Pr(>|t|)    
+(Intercept)                     -3.248e-14  4.526e-15 -7.176e+00 4.42e-09 ***
+SubjectContinuousVariables[, j]  1.000e+00  6.165e-17  1.622e+16  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.934e-15 on 47 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 2.631e+32 on 1 and 47 DF,  p-value: < 2.2e-16
+
+[1] "Age  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-48.364  -9.069   3.491  11.338  22.478 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                       193.31      35.12   5.505  1.5e-06 ***
+SubjectContinuousVariables[, j]  -235.63      67.54  -3.489  0.00106 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 16.73 on 47 degrees of freedom
+Multiple R-squared:  0.2057,	Adjusted R-squared:  0.1888 
+F-statistic: 12.17 on 1 and 47 DF,  p-value: 0.001064
+
+[1] "RNADegradPerSample  vs  BrainpH"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.063594 -0.021398 -0.001397  0.025789  0.066755 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                      0.31119    0.10408   2.990  0.00443 **
+SubjectContinuousVariables[, j]  0.03287    0.01646   1.996  0.05169 . 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03469 on 47 degrees of freedom
+Multiple R-squared:  0.07818,	Adjusted R-squared:  0.05856 
+F-statistic: 3.986 on 1 and 47 DF,  p-value: 0.05169
+
+[1] "RNADegradPerSample  vs  PMD"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.074622 -0.021510  0.002145  0.024559  0.078145 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      0.5310546  0.0095896  55.378   <2e-16 ***
+SubjectContinuousVariables[, j] -0.0013492  0.0008947  -1.508    0.138    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03529 on 47 degrees of freedom
+Multiple R-squared:  0.04615,	Adjusted R-squared:  0.02586 
+F-statistic: 2.274 on 1 and 47 DF,  p-value: 0.1382
+
+[1] "RNADegradPerSample  vs  Age"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.073018 -0.022495  0.003425  0.024415  0.053470 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      0.5808096  0.0183721  31.614  < 2e-16 ***
+SubjectContinuousVariables[, j] -0.0008730  0.0002502  -3.489  0.00106 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.0322 on 47 degrees of freedom
+Multiple R-squared:  0.2057,	Adjusted R-squared:  0.1888 
+F-statistic: 12.17 on 1 and 47 DF,  p-value: 0.001064
+
+[1] "RNADegradPerSample  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-1.453e-17 -1.818e-18 -9.600e-19 -3.680e-19  5.893e-17 
+
+Coefficients:
+                                 Estimate Std. Error   t value Pr(>|t|)    
+(Intercept)                     1.903e-16  1.929e-17 9.866e+00 4.94e-13 ***
+SubjectContinuousVariables[, j] 1.000e+00  3.710e-17 2.695e+16  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 9.191e-18 on 47 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 7.265e+32 on 1 and 47 DF,  p-value: < 2.2e-16
+
+[1] "BrainpH  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value   Pr(>F)    
+SubjectFactorVariables[, j]  1  1.495  1.4950   23.86 1.24e-05 ***
+Residuals                   47  2.945  0.0627                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "BrainpH  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1  0.053 0.05260   0.552  0.461
+Residuals                   46  4.387 0.09537               
+1 observation deleted due to missingness
+[1] "BrainpH  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2  0.029 0.01466   0.153  0.859
+Residuals                   46  4.411 0.09588               
+[1] "PMD  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1   26.7   26.70   0.821   0.37
+Residuals                   47 1529.2   32.54               
+[1] "PMD  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  1    173  172.95   5.845 0.0196 *
+Residuals                   46   1361   29.59                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+1 observation deleted due to missingness
+[1] "PMD  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2   35.9   17.96   0.544  0.584
+Residuals                   46 1520.0   33.04               
+[1] "Age  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    180   180.1   0.517  0.476
+Residuals                   47  16384   348.6               
+[1] "Age  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    508   507.6   1.492  0.228
+Residuals                   46  15651   340.2               
+1 observation deleted due to missingness
+[1] "Age  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2     32    16.2   0.045  0.956
+Residuals                   46  16531   359.4               
+[1] "RNADegradPerSample  vs  Diagnosis"
+                            Df  Sum Sq   Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1 0.00000 0.0000025   0.002  0.966
+Residuals                   47 0.06137 0.0013057               
+[1] "RNADegradPerSample  vs  Gender"
+                            Df  Sum Sq  Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1 0.00201 0.002012   1.569  0.217
+Residuals                   46 0.05899 0.001282               
+1 observation deleted due to missingness
+[1] "RNADegradPerSample  vs  ScanDateDayOnly"
+                            Df  Sum Sq  Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2 0.00622 0.003109   2.593 0.0857 .
+Residuals                   46 0.05515 0.001199                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "Diagnosis  vs  Diagnosis"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Diagnosis  vs  Gender"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Diagnosis  vs  ScanDateDayOnly"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Gender  vs  Diagnosis"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Gender  vs  Gender"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Gender  vs  ScanDateDayOnly"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "ScanDateDayOnly  vs  Diagnosis"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "ScanDateDayOnly  vs  Gender"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "ScanDateDayOnly  vs  ScanDateDayOnly"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+                       GVIF Df GVIF^(1/(2*Df))
+BrainpH            2.240556  1        1.496849
+PMD                1.514246  1        1.230547
+Diagnosis          1.913205  1        1.383186
+Gender             1.391445  1        1.179595
+Age                1.732287  1        1.316164
+RNADegradPerSample 1.795086  1        1.339808
+ScanDateDayOnly    1.273956  2        1.062401
+[1] "BrainpH  vs  BrainpH"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-1.622e-16 -4.635e-17 -1.616e-17  1.403e-17  1.232e-15 
+
+Coefficients:
+                                  Estimate Std. Error    t value Pr(>|t|)    
+(Intercept)                     -6.090e-15  5.662e-16 -1.076e+01 2.88e-14 ***
+SubjectContinuousVariables[, j]  1.000e+00  8.957e-17  1.117e+16  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.887e-16 on 47 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 1.247e+32 on 1 and 47 DF,  p-value: < 2.2e-16
+
+[1] "BrainpH  vs  PMD"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.65645 -0.15673 -0.01906  0.15007  0.62457 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                     6.200646   0.081212  76.352   <2e-16 ***
+SubjectContinuousVariables[, j] 0.012464   0.007577   1.645    0.107    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2989 on 47 degrees of freedom
+Multiple R-squared:  0.05444,	Adjusted R-squared:  0.03432 
+F-statistic: 2.706 on 1 and 47 DF,  p-value: 0.1066
+
+[1] "BrainpH  vs  Age"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.4848 -0.2307  0.0157  0.1550  0.6152 
+
+Coefficients:
+                                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      6.858253   0.155008  44.244  < 2e-16 ***
+SubjectContinuousVariables[, j] -0.007653   0.002111  -3.625 0.000709 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2717 on 47 degrees of freedom
+Multiple R-squared:  0.2185,	Adjusted R-squared:  0.2018 
+F-statistic: 13.14 on 1 and 47 DF,  p-value: 0.0007088
+
+[1] "BrainpH  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.57009 -0.26559 -0.00985  0.19207  0.57899 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                       5.0806     0.6194   8.203 1.27e-10 ***
+SubjectContinuousVariables[, j]   2.3782     1.1912   1.996   0.0517 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2951 on 47 degrees of freedom
+Multiple R-squared:  0.07818,	Adjusted R-squared:  0.05856 
+F-statistic: 3.986 on 1 and 47 DF,  p-value: 0.05169
+
+[1] "PMD  vs  BrainpH"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-6.365 -4.618 -1.055  3.319 20.072 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      -18.462     16.785  -1.100    0.277
+SubjectContinuousVariables[, j]    4.368      2.655   1.645    0.107
+
+Residual standard error: 5.595 on 47 degrees of freedom
+Multiple R-squared:  0.05444,	Adjusted R-squared:  0.03432 
+F-statistic: 2.706 on 1 and 47 DF,  p-value: 0.1066
+
+[1] "PMD  vs  PMD"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-1.264e-15 -3.102e-16 -8.235e-17  2.690e-16  2.239e-15 
+
+Coefficients:
+                                 Estimate Std. Error   t value Pr(>|t|)    
+(Intercept)                     0.000e+00  1.527e-16 0.000e+00        1    
+SubjectContinuousVariables[, j] 1.000e+00  1.425e-17 7.019e+16   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.62e-16 on 47 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 4.927e+33 on 1 and 47 DF,  p-value: < 2.2e-16
+
+[1] "PMD  vs  Age"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-6.749 -4.140 -1.098  3.101 20.396 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                     13.40112    3.21825   4.164 0.000132 ***
+SubjectContinuousVariables[, j] -0.06027    0.04383  -1.375 0.175683    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.641 on 47 degrees of freedom
+Multiple R-squared:  0.03866,	Adjusted R-squared:  0.01821 
+F-statistic:  1.89 on 1 and 47 DF,  p-value: 0.1757
+
+[1] "PMD  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.9106 -4.2180 -0.9924  3.2766 20.3595 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                        26.86      11.79   2.278   0.0273 *
+SubjectContinuousVariables[, j]   -34.21      22.68  -1.508   0.1382  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.619 on 47 degrees of freedom
+Multiple R-squared:  0.04615,	Adjusted R-squared:  0.02586 
+F-statistic: 2.274 on 1 and 47 DF,  p-value: 0.1382
+
+[1] "Age  vs  BrainpH"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-43.489  -9.054   1.801   9.075  30.785 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      251.348     49.788   5.048 7.14e-06 ***
+SubjectContinuousVariables[, j]  -28.549      7.876  -3.625 0.000709 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 16.6 on 47 degrees of freedom
+Multiple R-squared:  0.2185,	Adjusted R-squared:  0.2018 
+F-statistic: 13.14 on 1 and 47 DF,  p-value: 0.0007088
+
+[1] "Age  vs  PMD"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-44.232  -7.686   4.635  13.447  23.164 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      76.9311     5.0015  15.382   <2e-16 ***
+SubjectContinuousVariables[, j]  -0.6416     0.4666  -1.375    0.176    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 18.41 on 47 degrees of freedom
+Multiple R-squared:  0.03866,	Adjusted R-squared:  0.01821 
+F-statistic:  1.89 on 1 and 47 DF,  p-value: 0.1757
+
+[1] "Age  vs  Age"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-6.931e-15 -1.481e-15 -1.042e-15 -2.290e-16  5.308e-14 
+
+Coefficients:
+                                  Estimate Std. Error    t value Pr(>|t|)    
+(Intercept)                     -3.248e-14  4.526e-15 -7.176e+00 4.42e-09 ***
+SubjectContinuousVariables[, j]  1.000e+00  6.165e-17  1.622e+16  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.934e-15 on 47 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 2.631e+32 on 1 and 47 DF,  p-value: < 2.2e-16
+
+[1] "Age  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-48.364  -9.069   3.491  11.338  22.478 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                       193.31      35.12   5.505  1.5e-06 ***
+SubjectContinuousVariables[, j]  -235.63      67.54  -3.489  0.00106 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 16.73 on 47 degrees of freedom
+Multiple R-squared:  0.2057,	Adjusted R-squared:  0.1888 
+F-statistic: 12.17 on 1 and 47 DF,  p-value: 0.001064
+
+[1] "RNADegradPerSample  vs  BrainpH"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.063594 -0.021398 -0.001397  0.025789  0.066755 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                      0.31119    0.10408   2.990  0.00443 **
+SubjectContinuousVariables[, j]  0.03287    0.01646   1.996  0.05169 . 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03469 on 47 degrees of freedom
+Multiple R-squared:  0.07818,	Adjusted R-squared:  0.05856 
+F-statistic: 3.986 on 1 and 47 DF,  p-value: 0.05169
+
+[1] "RNADegradPerSample  vs  PMD"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.074622 -0.021510  0.002145  0.024559  0.078145 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      0.5310546  0.0095896  55.378   <2e-16 ***
+SubjectContinuousVariables[, j] -0.0013492  0.0008947  -1.508    0.138    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03529 on 47 degrees of freedom
+Multiple R-squared:  0.04615,	Adjusted R-squared:  0.02586 
+F-statistic: 2.274 on 1 and 47 DF,  p-value: 0.1382
+
+[1] "RNADegradPerSample  vs  Age"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.073018 -0.022495  0.003425  0.024415  0.053470 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      0.5808096  0.0183721  31.614  < 2e-16 ***
+SubjectContinuousVariables[, j] -0.0008730  0.0002502  -3.489  0.00106 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.0322 on 47 degrees of freedom
+Multiple R-squared:  0.2057,	Adjusted R-squared:  0.1888 
+F-statistic: 12.17 on 1 and 47 DF,  p-value: 0.001064
+
+[1] "RNADegradPerSample  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-1.453e-17 -1.818e-18 -9.600e-19 -3.680e-19  5.893e-17 
+
+Coefficients:
+                                 Estimate Std. Error   t value Pr(>|t|)    
+(Intercept)                     1.903e-16  1.929e-17 9.866e+00 4.94e-13 ***
+SubjectContinuousVariables[, j] 1.000e+00  3.710e-17 2.695e+16  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 9.191e-18 on 47 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 7.265e+32 on 1 and 47 DF,  p-value: < 2.2e-16
+
+[1] "BrainpH  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value   Pr(>F)    
+SubjectFactorVariables[, j]  1  1.495  1.4950   23.86 1.24e-05 ***
+Residuals                   47  2.945  0.0627                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "BrainpH  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1  0.053 0.05260   0.552  0.461
+Residuals                   46  4.387 0.09537               
+1 observation deleted due to missingness
+[1] "BrainpH  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2  0.029 0.01466   0.153  0.859
+Residuals                   46  4.411 0.09588               
+[1] "PMD  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1   26.7   26.70   0.821   0.37
+Residuals                   47 1529.2   32.54               
+[1] "PMD  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  1    173  172.95   5.845 0.0196 *
+Residuals                   46   1361   29.59                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+1 observation deleted due to missingness
+[1] "PMD  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2   35.9   17.96   0.544  0.584
+Residuals                   46 1520.0   33.04               
+[1] "Age  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    180   180.1   0.517  0.476
+Residuals                   47  16384   348.6               
+[1] "Age  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    508   507.6   1.492  0.228
+Residuals                   46  15651   340.2               
+1 observation deleted due to missingness
+[1] "Age  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2     32    16.2   0.045  0.956
+Residuals                   46  16531   359.4               
+[1] "RNADegradPerSample  vs  Diagnosis"
+                            Df  Sum Sq   Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1 0.00000 0.0000025   0.002  0.966
+Residuals                   47 0.06137 0.0013057               
+[1] "RNADegradPerSample  vs  Gender"
+                            Df  Sum Sq  Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1 0.00201 0.002012   1.569  0.217
+Residuals                   46 0.05899 0.001282               
+1 observation deleted due to missingness
+[1] "RNADegradPerSample  vs  ScanDateDayOnly"
+                            Df  Sum Sq  Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2 0.00622 0.003109   2.593 0.0857 .
+Residuals                   46 0.05515 0.001199                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "Diagnosis  vs  Diagnosis"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Diagnosis  vs  Gender"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Diagnosis  vs  ScanDateDayOnly"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Gender  vs  Diagnosis"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Gender  vs  Gender"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Gender  vs  ScanDateDayOnly"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "ScanDateDayOnly  vs  Diagnosis"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "ScanDateDayOnly  vs  Gender"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "ScanDateDayOnly  vs  ScanDateDayOnly"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+                       GVIF Df GVIF^(1/(2*Df))
+BrainpH            2.240556  1        1.496849
+PMI                1.514246  1        1.230547
+Diagnosis          1.913205  1        1.383186
+Gender             1.391445  1        1.179595
+Age                1.732287  1        1.316164
+RNADegradPerSample 1.795086  1        1.339808
+ScanDateDayOnly    1.273956  2        1.062401
+[1] "BrainpH  vs  BrainpH"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-1.622e-16 -4.635e-17 -1.616e-17  1.403e-17  1.232e-15 
+
+Coefficients:
+                                  Estimate Std. Error    t value Pr(>|t|)    
+(Intercept)                     -6.090e-15  5.662e-16 -1.076e+01 2.88e-14 ***
+SubjectContinuousVariables[, j]  1.000e+00  8.957e-17  1.117e+16  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.887e-16 on 47 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 1.247e+32 on 1 and 47 DF,  p-value: < 2.2e-16
+
+[1] "BrainpH  vs  PMI"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.65645 -0.15673 -0.01906  0.15007  0.62457 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                     6.200646   0.081212  76.352   <2e-16 ***
+SubjectContinuousVariables[, j] 0.012464   0.007577   1.645    0.107    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2989 on 47 degrees of freedom
+Multiple R-squared:  0.05444,	Adjusted R-squared:  0.03432 
+F-statistic: 2.706 on 1 and 47 DF,  p-value: 0.1066
+
+[1] "BrainpH  vs  Age"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.4848 -0.2307  0.0157  0.1550  0.6152 
+
+Coefficients:
+                                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      6.858253   0.155008  44.244  < 2e-16 ***
+SubjectContinuousVariables[, j] -0.007653   0.002111  -3.625 0.000709 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2717 on 47 degrees of freedom
+Multiple R-squared:  0.2185,	Adjusted R-squared:  0.2018 
+F-statistic: 13.14 on 1 and 47 DF,  p-value: 0.0007088
+
+[1] "BrainpH  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.57009 -0.26559 -0.00985  0.19207  0.57899 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                       5.0806     0.6194   8.203 1.27e-10 ***
+SubjectContinuousVariables[, j]   2.3782     1.1912   1.996   0.0517 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.2951 on 47 degrees of freedom
+Multiple R-squared:  0.07818,	Adjusted R-squared:  0.05856 
+F-statistic: 3.986 on 1 and 47 DF,  p-value: 0.05169
+
+[1] "PMI  vs  BrainpH"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-6.365 -4.618 -1.055  3.319 20.072 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)
+(Intercept)                      -18.462     16.785  -1.100    0.277
+SubjectContinuousVariables[, j]    4.368      2.655   1.645    0.107
+
+Residual standard error: 5.595 on 47 degrees of freedom
+Multiple R-squared:  0.05444,	Adjusted R-squared:  0.03432 
+F-statistic: 2.706 on 1 and 47 DF,  p-value: 0.1066
+
+[1] "PMI  vs  PMI"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-1.264e-15 -3.102e-16 -8.235e-17  2.690e-16  2.239e-15 
+
+Coefficients:
+                                 Estimate Std. Error   t value Pr(>|t|)    
+(Intercept)                     0.000e+00  1.527e-16 0.000e+00        1    
+SubjectContinuousVariables[, j] 1.000e+00  1.425e-17 7.019e+16   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.62e-16 on 47 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 4.927e+33 on 1 and 47 DF,  p-value: < 2.2e-16
+
+[1] "PMI  vs  Age"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-6.749 -4.140 -1.098  3.101 20.396 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                     13.40112    3.21825   4.164 0.000132 ***
+SubjectContinuousVariables[, j] -0.06027    0.04383  -1.375 0.175683    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.641 on 47 degrees of freedom
+Multiple R-squared:  0.03866,	Adjusted R-squared:  0.01821 
+F-statistic:  1.89 on 1 and 47 DF,  p-value: 0.1757
+
+[1] "PMI  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.9106 -4.2180 -0.9924  3.2766 20.3595 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                        26.86      11.79   2.278   0.0273 *
+SubjectContinuousVariables[, j]   -34.21      22.68  -1.508   0.1382  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.619 on 47 degrees of freedom
+Multiple R-squared:  0.04615,	Adjusted R-squared:  0.02586 
+F-statistic: 2.274 on 1 and 47 DF,  p-value: 0.1382
+
+[1] "Age  vs  BrainpH"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-43.489  -9.054   1.801   9.075  30.785 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      251.348     49.788   5.048 7.14e-06 ***
+SubjectContinuousVariables[, j]  -28.549      7.876  -3.625 0.000709 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 16.6 on 47 degrees of freedom
+Multiple R-squared:  0.2185,	Adjusted R-squared:  0.2018 
+F-statistic: 13.14 on 1 and 47 DF,  p-value: 0.0007088
+
+[1] "Age  vs  PMI"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-44.232  -7.686   4.635  13.447  23.164 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      76.9311     5.0015  15.382   <2e-16 ***
+SubjectContinuousVariables[, j]  -0.6416     0.4666  -1.375    0.176    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 18.41 on 47 degrees of freedom
+Multiple R-squared:  0.03866,	Adjusted R-squared:  0.01821 
+F-statistic:  1.89 on 1 and 47 DF,  p-value: 0.1757
+
+[1] "Age  vs  Age"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-6.931e-15 -1.481e-15 -1.042e-15 -2.290e-16  5.308e-14 
+
+Coefficients:
+                                  Estimate Std. Error    t value Pr(>|t|)    
+(Intercept)                     -3.248e-14  4.526e-15 -7.176e+00 4.42e-09 ***
+SubjectContinuousVariables[, j]  1.000e+00  6.165e-17  1.622e+16  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 7.934e-15 on 47 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 2.631e+32 on 1 and 47 DF,  p-value: < 2.2e-16
+
+[1] "Age  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-48.364  -9.069   3.491  11.338  22.478 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                       193.31      35.12   5.505  1.5e-06 ***
+SubjectContinuousVariables[, j]  -235.63      67.54  -3.489  0.00106 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 16.73 on 47 degrees of freedom
+Multiple R-squared:  0.2057,	Adjusted R-squared:  0.1888 
+F-statistic: 12.17 on 1 and 47 DF,  p-value: 0.001064
+
+[1] "RNADegradPerSample  vs  BrainpH"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.063594 -0.021398 -0.001397  0.025789  0.066755 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                      0.31119    0.10408   2.990  0.00443 **
+SubjectContinuousVariables[, j]  0.03287    0.01646   1.996  0.05169 . 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03469 on 47 degrees of freedom
+Multiple R-squared:  0.07818,	Adjusted R-squared:  0.05856 
+F-statistic: 3.986 on 1 and 47 DF,  p-value: 0.05169
+
+[1] "RNADegradPerSample  vs  PMI"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.074622 -0.021510  0.002145  0.024559  0.078145 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      0.5310546  0.0095896  55.378   <2e-16 ***
+SubjectContinuousVariables[, j] -0.0013492  0.0008947  -1.508    0.138    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.03529 on 47 degrees of freedom
+Multiple R-squared:  0.04615,	Adjusted R-squared:  0.02586 
+F-statistic: 2.274 on 1 and 47 DF,  p-value: 0.1382
+
+[1] "RNADegradPerSample  vs  Age"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.073018 -0.022495  0.003425  0.024415  0.053470 
+
+Coefficients:
+                                  Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                      0.5808096  0.0183721  31.614  < 2e-16 ***
+SubjectContinuousVariables[, j] -0.0008730  0.0002502  -3.489  0.00106 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.0322 on 47 degrees of freedom
+Multiple R-squared:  0.2057,	Adjusted R-squared:  0.1888 
+F-statistic: 12.17 on 1 and 47 DF,  p-value: 0.001064
+
+[1] "RNADegradPerSample  vs  RNADegradPerSample"
+
+Call:
+lm(formula = SubjectContinuousVariables[, i] ~ SubjectContinuousVariables[, 
+    j])
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-1.453e-17 -1.818e-18 -9.600e-19 -3.680e-19  5.893e-17 
+
+Coefficients:
+                                 Estimate Std. Error   t value Pr(>|t|)    
+(Intercept)                     1.903e-16  1.929e-17 9.866e+00 4.94e-13 ***
+SubjectContinuousVariables[, j] 1.000e+00  3.710e-17 2.695e+16  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 9.191e-18 on 47 degrees of freedom
+Multiple R-squared:      1,	Adjusted R-squared:      1 
+F-statistic: 7.265e+32 on 1 and 47 DF,  p-value: < 2.2e-16
+
+[1] "BrainpH  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value   Pr(>F)    
+SubjectFactorVariables[, j]  1  1.495  1.4950   23.86 1.24e-05 ***
+Residuals                   47  2.945  0.0627                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "BrainpH  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1  0.053 0.05260   0.552  0.461
+Residuals                   46  4.387 0.09537               
+1 observation deleted due to missingness
+[1] "BrainpH  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2  0.029 0.01466   0.153  0.859
+Residuals                   46  4.411 0.09588               
+[1] "PMI  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1   26.7   26.70   0.821   0.37
+Residuals                   47 1529.2   32.54               
+[1] "PMI  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  1    173  172.95   5.845 0.0196 *
+Residuals                   46   1361   29.59                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+1 observation deleted due to missingness
+[1] "PMI  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2   35.9   17.96   0.544  0.584
+Residuals                   46 1520.0   33.04               
+[1] "Age  vs  Diagnosis"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    180   180.1   0.517  0.476
+Residuals                   47  16384   348.6               
+[1] "Age  vs  Gender"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1    508   507.6   1.492  0.228
+Residuals                   46  15651   340.2               
+1 observation deleted due to missingness
+[1] "Age  vs  ScanDateDayOnly"
+                            Df Sum Sq Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  2     32    16.2   0.045  0.956
+Residuals                   46  16531   359.4               
+[1] "RNADegradPerSample  vs  Diagnosis"
+                            Df  Sum Sq   Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1 0.00000 0.0000025   0.002  0.966
+Residuals                   47 0.06137 0.0013057               
+[1] "RNADegradPerSample  vs  Gender"
+                            Df  Sum Sq  Mean Sq F value Pr(>F)
+SubjectFactorVariables[, j]  1 0.00201 0.002012   1.569  0.217
+Residuals                   46 0.05899 0.001282               
+1 observation deleted due to missingness
+[1] "RNADegradPerSample  vs  ScanDateDayOnly"
+                            Df  Sum Sq  Mean Sq F value Pr(>F)  
+SubjectFactorVariables[, j]  2 0.00622 0.003109   2.593 0.0857 .
+Residuals                   46 0.05515 0.001199                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "Diagnosis  vs  Diagnosis"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Diagnosis  vs  Gender"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Diagnosis  vs  ScanDateDayOnly"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Gender  vs  Diagnosis"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Gender  vs  Gender"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "Gender  vs  ScanDateDayOnly"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "ScanDateDayOnly  vs  Diagnosis"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "ScanDateDayOnly  vs  Gender"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
+[1] "ScanDateDayOnly  vs  ScanDateDayOnly"
+
+	Pearson's Chi-squared test
+
+data:  ContingencyTable
+X-squared = 98, df = 4, p-value < 2.2e-16
+
