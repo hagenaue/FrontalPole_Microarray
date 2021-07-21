@@ -25,7 +25,7 @@ write.csv(AllDataSets, "AdrianaResults_Plus_IwamotoAndMaycoxResults_Plus_MetaAna
 pdf("Scatterplot_IwamotoMaycoxMetaAnalysisvsAdriana_Schiz_LogFC.pdf", width=5, height=5)
 plot(AllDataSets$IwamotoVsMaycoxMetaResults_b~AllDataSets$Adriana_Diagnosis_Schiz_PostHocSummary_MLM_Beta, xlab="Adriana Schiz Log2FC", ylab="IwamotoVsMaycox Meta-Analysis Schiz Effect Size")
 TempLine<-lm(AllDataSets$IwamotoVsMaycoxMetaResults_b~AllDataSets$Adriana_Diagnosis_Schiz_PostHocSummary_MLM_Beta)
-abline(TempLine, col=2)
+abline(TempLine, col=2, lwd=2)
 dev.off()
 
 summary.lm(TempLine)
