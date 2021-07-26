@@ -25,6 +25,12 @@ str(vfit)
 
 efit <- eBayes(vfit)
 
+#getting the standard error and writing it to a CSV
+setwd("C:/Users/Frosty/Desktop/Research/Summer 2021 Frontal Pole Research/FrontalPole_Microarray/Iwamoto_GSE12654/Limma_DE_Analysis/All_Models_As_CSV")
+SE<- sqrt(efit$s2.post) * efit$stdev.unscaled
+write.csv(SE, "Iwamoto_Model1_StandardErrors.csv")
+rm(SE)
+
 write.fit(efit, adjust="BH", file="Limma_results_Model_onlyDiagnosis.txt")
 write.csv(RMAExpression_customCDFAnnotation2plus2, "RMAExpression_customCDFAnnotation2plus2.csv")
 
@@ -78,6 +84,11 @@ str(vfit)
 
 efit <- eBayes(vfit)
 
+setwd("C:/Users/Frosty/Desktop/Research/Summer 2021 Frontal Pole Research/FrontalPole_Microarray/Iwamoto_GSE12654/Limma_DE_Analysis/All_Models_As_CSV")
+SE<- sqrt(efit$s2.post) * efit$stdev.unscaled
+write.csv(SE, "Iwamoto_Model3_StandardErrors.csv")
+rm(SE)
+
 write.fit(efit, adjust="BH", file="Limma_results_Model_Diagnosis_pH_RNADeg_RateofDeath_Age_PMI_Gender.txt")
 write.csv(RMAExpression_customCDFAnnotation2plus2, "RMAExpression_customCDFAnnotation2plus2.csv")
 
@@ -113,6 +124,11 @@ vfit<- lmFit(SignalSortedNoNA3, design)
 str(vfit)
 
 efit <- eBayes(vfit)
+
+#getting the standard error and writing it to a CSV
+setwd("C:/Users/Frosty/Desktop/Research/Summer 2021 Frontal Pole Research/FrontalPole_Microarray/Maycox_GSE17612/Limma_DE_Analysis/All_Models_As_CSV")
+SE<- sqrt(efit$s2.post) * efit$stdev.unscaled
+write.csv(SE, "Maycox_Model1_StandardErrors.csv")
 
 write.fit(efit, adjust="BH", file="Limma_results_Model_Diagnosis_pH.txt")
 write.csv(RMAExpression_customCDFAnnotation2plus2, "RMAExpression_customCDFAnnotation2plus2.csv")
@@ -170,6 +186,10 @@ vfit<- lmFit(SignalSortedNoNA3, design)
 str(vfit)
 
 efit <- eBayes(vfit)
+
+setwd("C:/Users/Frosty/Desktop/Research/Summer 2021 Frontal Pole Research/FrontalPole_Microarray/Maycox_GSE17612/Limma_DE_Analysis/All_Models_As_CSV")
+SE<- sqrt(efit$s2.post) * efit$stdev.unscaled
+write.csv(SE, "Maycox_Model3_StandardErrors.csv")
 
 write.fit(efit, adjust="BH", file="Limma_results_Model_Diagnosis_pH_Age_RNADeg_PMI_Gender_ScanDateDayOnly.txt")
 write.csv(RMAExpression_customCDFAnnotation2plus2, "RMAExpression_customCDFAnnotation2plus2.csv")

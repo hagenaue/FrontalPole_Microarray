@@ -14,25 +14,25 @@ rm(Iwamoto_Annotation_2)
 colnames(Iwamoto_Annotation)[colnames(Iwamoto_Annotation) == "Iwamoto_Annotation$EntrezGeneID"]<-"EntrezGeneID"
 colnames(Iwamoto_Annotation)[colnames(Iwamoto_Annotation) == "Iwamoto_Annotation$GeneSymbol"]<-"GeneSymbol"
 
-Iwamoto_Model2_NoAnnotation<-read.csv("Limma_results_Model_Diagnosis_pH_RNADeg_RateofDeath.csv", header=TRUE, stringsAsFactors = FALSE)
+Iwamoto_Model1_NoAnnotation<-read.csv("Limma_results_Model_onlyDiagnosis.csv", header=TRUE, stringsAsFactors = FALSE)
 
-IwamotoSchizEffectSizes<-cbind.data.frame(Iwamoto_Model2_NoAnnotation$Coef.DiagnosisFactorSchizophrenia, Iwamoto_Annotation)
-IwamotoBipolarEffectSizes<-cbind.data.frame(Iwamoto_Model2_NoAnnotation$Coef.DiagnosisFactorBipolar, Iwamoto_Annotation)
+IwamotoSchizEffectSizes<-cbind.data.frame(Iwamoto_Model1_NoAnnotation$Coef.DiagnosisFactorSchizophrenia, Iwamoto_Annotation)
+IwamotoBipolarEffectSizes<-cbind.data.frame(Iwamoto_Model1_NoAnnotation$Coef.DiagnosisFactorBipolar, Iwamoto_Annotation)
 
-IwamotoStandardErrors<-read.csv("Iwamoto_Model2_StandardErrors.csv", stringsAsFactors=FALSE)
+IwamotoStandardErrors<-read.csv("Iwamoto_Model1_StandardErrors.csv", stringsAsFactors=FALSE)
 IwamotoSamplingVariances<-IwamotoStandardErrors^2
 
 IwamotoSchizSamplingVariances<-cbind.data.frame(IwamotoSamplingVariances$DiagnosisFactorSchizophrenia, Iwamoto_Annotation)
 IwamotoBipolarSamplingVariances<-cbind.data.frame(IwamotoSamplingVariances$DiagnosisFactorBipolar, Iwamoto_Annotation)
 
 colnames(IwamotoSchizEffectSizes)
-colnames(IwamotoSchizEffectSizes)[colnames(IwamotoSchizEffectSizes) == "Iwamoto_Model2_NoAnnotation$Coef.DiagnosisFactorSchizophrenia"]<-"Iwamoto_SchizEffectSize"
+colnames(IwamotoSchizEffectSizes)[colnames(IwamotoSchizEffectSizes) == "Iwamoto_Model1_NoAnnotation$Coef.DiagnosisFactorSchizophrenia"]<-"Iwamoto_SchizEffectSize"
 
 colnames(IwamotoSchizSamplingVariances)
 colnames(IwamotoSchizSamplingVariances)[colnames(IwamotoSchizSamplingVariances) == "IwamotoSamplingVariances$DiagnosisFactorSchizophrenia"]<-"Iwamoto_SchizSamplingVariance"
 
 colnames(IwamotoBipolarEffectSizes)
-colnames(IwamotoBipolarEffectSizes)[colnames(IwamotoBipolarEffectSizes) == "Iwamoto_Model2_NoAnnotation$Coef.DiagnosisFactorBipolar"]<-"Iwamoto_BipolarEffectSize"
+colnames(IwamotoBipolarEffectSizes)[colnames(IwamotoBipolarEffectSizes) == "Iwamoto_Model1_NoAnnotation$Coef.DiagnosisFactorBipolar"]<-"Iwamoto_BipolarEffectSize"
 
 colnames(IwamotoBipolarSamplingVariances)
 colnames(IwamotoBipolarSamplingVariances)[colnames(IwamotoBipolarSamplingVariances) == "IwamotoSamplingVariances$DiagnosisFactorBipolar"]<-"Iwamoto_BipolarSamplingVariance"
@@ -42,8 +42,8 @@ IwamotoBipolarEffectSizesAndSamplingVariances<-join(IwamotoBipolarEffectSizes, I
 
 #writing out the files for later use
 setwd("C:/Users/Frosty/Desktop/Research/Summer 2021 Frontal Pole Research/FrontalPole_Microarray/IwaCox_MetaAnalysis")
-write.csv(IwamotoSchizEffectSizesAndSamplingVariances, "IwamotoModel2SchizEffectSizesAndSamplingVariances.csv")
-write.csv(IwamotoBipolarEffectSizesAndSamplingVariances, "IwamotoModel2BipolarEffectSizesAndSamplingVariances.csv")
+write.csv(IwamotoSchizEffectSizesAndSamplingVariances, "IwamotoModel1SchizEffectSizesAndSamplingVariances.csv")
+write.csv(IwamotoBipolarEffectSizesAndSamplingVariances, "IwamotoModel1BipolarEffectSizesAndSamplingVariances.csv")
 
 ##############################
 #    Maycox Section Begins   #
@@ -57,17 +57,17 @@ rm(Maycox_Annotation_2)
 colnames(Maycox_Annotation)[colnames(Maycox_Annotation) == "Maycox_Annotation$EntrezGeneID"]<-"EntrezGeneID"
 colnames(Maycox_Annotation)[colnames(Maycox_Annotation) == "Maycox_Annotation$GeneSymbol"]<-"GeneSymbol"
 
-Maycox_Model2_NoAnnotation<-read.csv("Limma_results_Model_Diagnosis_pH_Age_RNADeg_PMI.csv", header=TRUE, stringsAsFactors = FALSE)
+Maycox_Model1_NoAnnotation<-read.csv("Limma_results_Model_Diagnosis_pH.csv", header=TRUE, stringsAsFactors = FALSE)
 
-MaycoxSchizEffectSizes<-cbind.data.frame(Maycox_Model2_NoAnnotation$Coef.DiagnosisFactorScz, Maycox_Annotation)
+MaycoxSchizEffectSizes<-cbind.data.frame(Maycox_Model1_NoAnnotation$Coef.DiagnosisFactorScz, Maycox_Annotation)
 
-MaycoxStandardErrors<-read.csv("Maycox_Model2_StandardErrors.csv", stringsAsFactors=FALSE)
+MaycoxStandardErrors<-read.csv("Maycox_Model1_StandardErrors.csv", stringsAsFactors=FALSE)
 MaycoxSamplingVariances<-MaycoxStandardErrors^2
 
 MaycoxSchizSamplingVariances<-cbind.data.frame(MaycoxSamplingVariances$DiagnosisFactorScz, Maycox_Annotation)
 
 colnames(MaycoxSchizEffectSizes)
-colnames(MaycoxSchizEffectSizes)[colnames(MaycoxSchizEffectSizes) == "Maycox_Model2_NoAnnotation$Coef.DiagnosisFactorScz"]<-"Maycox_SchizEffectSize"
+colnames(MaycoxSchizEffectSizes)[colnames(MaycoxSchizEffectSizes) == "Maycox_Model1_NoAnnotation$Coef.DiagnosisFactorScz"]<-"Maycox_SchizEffectSize"
 
 colnames(MaycoxSchizSamplingVariances)
 colnames(MaycoxSchizSamplingVariances)[colnames(MaycoxSchizSamplingVariances) == "MaycoxSamplingVariances$DiagnosisFactorScz"]<-"Maycox_SchizSamplingVariance"
@@ -76,7 +76,7 @@ MaycoxSchizEffectSizesAndSamplingVariances<-join(MaycoxSchizEffectSizes, MaycoxS
 
 #writing out the files for later use
 setwd("C:/Users/Frosty/Desktop/Research/Summer 2021 Frontal Pole Research/FrontalPole_Microarray/IwaCox_MetaAnalysis")
-write.csv(MaycoxSchizEffectSizesAndSamplingVariances, "MaycoxModel2SchizEffectSizesAndSamplingVariances.csv")
+write.csv(MaycoxSchizEffectSizesAndSamplingVariances, "MaycoxModel1SchizEffectSizesAndSamplingVariances.csv")
 
 
 ##############################
