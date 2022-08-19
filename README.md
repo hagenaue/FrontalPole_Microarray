@@ -9,7 +9,7 @@ medRxiv 2022.06.03.22275600; doi: https://doi.org/10.1101/2022.06.03.22275600
 
 This code was primarily written by Liam Cannon Thew Forrester, with some additional contribution by Megan Hagenauer and Evelyn Richardson.
 
-#Navigating the code:
+# Navigating the code:
 
 This code focuses on the re-analysis and meta-analysis of public frontal pole (BA10) microarray data to accompany our qPCR analysis of neurotransmission-related gene expression in BA10 in subjects with Bipolar Disorder and Schizophrenia.
 
@@ -19,4 +19,4 @@ Gene Expression Omnibus #GSE1761221: n=51, CTRL: n=23, SCHIZ: n=28
 
 The code was intended for single use, and is minimally annotated and occasionally non-linear (especially in areas of troubleshooting) or completely tangential to the primary goals of the project. Feel free to message me if you have questions.
 
-The code for the qPCR analyses is found in a different repository:
+The code for the qPCR analyses is found in a different repository: https://github.com/hagenaue/Adriana_FrontalPole
