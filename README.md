@@ -7,7 +7,7 @@ Adriana Medina, Megan Hastings Hagenauer, David M. Krolewski, Evan Hughes, Liam 
 medRxiv 2022.06.03.22275600; doi: https://doi.org/10.1101/2022.06.03.22275600
 (Preprint)
 
-This code was primarily written by Liam Cannon Thew Forrester, with some additional contribution by Megan Hagenauer and Evelyn Richardson.
+This code was primarily written by Liam Cannon Thew Forrester, with mentorship and guidance by Megan Hagenauer.
 
 # Navigating the code:
 
